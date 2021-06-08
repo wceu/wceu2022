@@ -17,14 +17,14 @@
 	#subscribe-email{
 		margin: 0;
 		input{
-			width: 60%;
+			width: 60% !important;
 			height: 3.75rem;
 			float: left;
 			color: $color__tertiary;
-			padding-left: 1.5rem;
+			padding-left: 1.5rem !important;
 			background-color: $color__primary;
 			border: .125rem solid $color__tertiary;
-			border-radius: 2rem 0 0 2rem;
+			border-radius: 2rem 0 0 2rem !important;
 			box-shadow: 0.25em 0.125em 0 $color__secondary;
 			&::placeholder{
 				color: $color__tertiary;
@@ -44,16 +44,16 @@
 			display: none;
 		}
 		button{
-			width: 40%;
-			height: 3.75rem;
-			font-size: 1.125rem;
-			padding: 0 .5rem;
+			width: 40% !important;
+			height: 3.75rem !important;
+			font-size: 1.125rem !important;
+			padding: 0 .5rem !important;
 			border: .125rem solid $color__tertiary;
-			border-radius: 0 2rem 2rem 0;
+			border-radius: 0 2rem 2rem 0 !important;
 			box-shadow: 0.125em 0.125em 0 $color__secondary;
 			margin: 0;
 			@media(min-width: 480px){
-				font-size: 1.25rem;
+				font-size: 1.25rem !important;
 			}
 		}
 	}
