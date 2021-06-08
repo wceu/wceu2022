@@ -1,5 +1,5 @@
 /*_______ Cookies advise widget _______*/
-.widget.widget_eu_cookie_law_widget {
+.widget.widget_eu_cookie_law_widget{
 	bottom: 1rem;
 	right: 1rem;
 	left: initial;
@@ -23,10 +23,11 @@
 				font-size: 1rem;
 				font-weight: 600;
 				color: $color__tertiary;
-				padding: .5rem 1rem;
-				background-color: $color__primary;
-				border: 3px solid $color__primary;
-				border-radius: 0;
+				padding: .75em 1.25em;
+				background-color: $color__tertiary;
+				border: none;
+				border-radius: 5rem;
+				box-shadow: 0.125em 0.125em 0 $color__secondary;
 				margin-left: auto;
 				@include is-hover-supported {
 					&:hover {

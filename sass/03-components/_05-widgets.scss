@@ -13,8 +13,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		.subscribe-text{
+		#subscribe-text{
 			flex: 1 1 100%;
+			width: 100% !important;
 			p{
 				font-size: 1rem;
 			}
@@ -28,11 +29,11 @@
 				height: 3.75rem !important;
 				font-size: 1.125rem !important;
 				color: $color__tertiary !important;
-				padding: .25rem 1rem .25rem 1.5rem !important;
+				padding: .25rem .5rem .25rem 1.5rem !important;
 				background-color: $color__primary !important;
 				border: .125rem solid $color__tertiary !important;
 				border-radius: 2rem 0 0 2rem !important;
-				box-shadow: 0.25em 0.125em 0 $color__secondary !important;
+				box-shadow: 0.25em 0.125em 0 $color__secondary;
 				@media(min-width: 480px){
 					font-size: 1.25rem !important;
 				}
@@ -59,10 +60,10 @@
 				width: 100% !important;
 				height: 3.75rem !important;
 				font-size: 1.125rem !important;
-				padding: .25rem 1.5rem .25rem 1rem !important;
+				padding: .25rem 1.25rem .25rem .5rem !important;
 				border: .125rem solid $color__tertiary !important;
 				border-radius: 0 2rem 2rem 0 !important;
-				box-shadow: 0.125em 0.125em 0 $color__secondary !important;
+				box-shadow: 0.125em 0.125em 0 $color__secondary;
 				margin: 0 !important;
 				@media(min-width: 480px){
 					font-size: 1.25rem !important;
@@ -70,39 +71,4 @@
 			}
 		}
 	}
-}
-
-.widget{
-	// &.jetpack_subscription_widget{
-	// 	@extend %inner-tiny;
-	// 	@extend %inner-padding;
-	// 	margin-bottom: 4rem;
-	// 	// form{
-	// 	// 	display: flex;
-	// 	// 	align-items: center;
-	// 	// 	flex-flow: row wrap;
-	// 	// }
-	// 	button{
-	// 		margin-left: 0;
-	// 	}
-	// }
-	// #subscribe-text{
-	// 	flex: 1 1 100%;
-	// }
-	// #subscribe-email{
-	// 	flex: 1 1 100%;
-	// 	margin: 0;
-	// 	@media (min-width: 768px){
-	// 		flex: 0 1 60%;
-	// 	}
-	// 	input{
-	// 		width: 100%;
-	// 	}
-	// }
-	// #subscribe-submit{
-	// 	margin: 0 auto;
-	// 	@media (min-width: 768px){
-	// 		flex: 0 1 30%;
-	// 	}
-	// }
 }

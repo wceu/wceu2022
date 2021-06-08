@@ -2570,10 +2570,11 @@ body.admin-bar .site-header {
   justify-content: center;
   align-items: center;
 }
-.jetpack_subscription_widget form .subscribe-text {
+.jetpack_subscription_widget form #subscribe-text {
   flex: 1 1 100%;
+  width: 100% !important;
 }
-.jetpack_subscription_widget form .subscribe-text p {
+.jetpack_subscription_widget form #subscribe-text p {
   font-size: 1rem;
 }
 .jetpack_subscription_widget form #subscribe-email {
@@ -2586,11 +2587,11 @@ body.admin-bar .site-header {
   height: 3.75rem !important;
   font-size: 1.125rem !important;
   color: #47E2CD !important;
-  padding: 0.25rem 1rem 0.25rem 1.5rem !important;
+  padding: 0.25rem 0.5rem 0.25rem 1.5rem !important;
   background-color: #30394A !important;
   border: 0.125rem solid #47E2CD !important;
   border-radius: 2rem 0 0 2rem !important;
-  box-shadow: 0.25em 0.125em 0 #DE8E95 !important;
+  box-shadow: 0.25em 0.125em 0 #DE8E95;
 }
 @media (min-width: 480px) {
   .jetpack_subscription_widget form #subscribe-email input {
@@ -2619,10 +2620,10 @@ body.admin-bar .site-header {
   width: 100% !important;
   height: 3.75rem !important;
   font-size: 1.125rem !important;
-  padding: 0.25rem 1.5rem 0.25rem 1rem !important;
+  padding: 0.25rem 1.25rem 0.25rem 0.5rem !important;
   border: 0.125rem solid #47E2CD !important;
   border-radius: 0 2rem 2rem 0 !important;
-  box-shadow: 0.125em 0.125em 0 #DE8E95 !important;
+  box-shadow: 0.125em 0.125em 0 #DE8E95;
   margin: 0 !important;
 }
 @media (min-width: 480px) {
@@ -2659,10 +2660,11 @@ body.admin-bar .site-header {
   font-size: 1rem;
   font-weight: 600;
   color: #47E2CD;
-  padding: 0.5rem 1rem;
-  background-color: #30394A;
-  border: 3px solid #30394A;
-  border-radius: 0;
+  padding: 0.75em 1.25em;
+  background-color: #47E2CD;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0.125em 0.125em 0 #DE8E95;
   margin-left: auto;
 }
 @media not all and (hover: none) {
