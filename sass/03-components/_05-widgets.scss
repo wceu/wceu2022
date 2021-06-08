@@ -10,9 +10,10 @@
 /*_______ Suscription widget _______*/
 .jetpack_subscription_widget{
 	form{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: flex !important;
+		flex-flow: row wrap !important;
+		justify-content: center !important;
+		align-items: center !important;
 		#subscribe-text{
 			flex: 1 1 100%;
 			width: 100% !important;

@@ -2566,9 +2566,10 @@ body.admin-bar .site-header {
 
 /*_______ Suscription widget _______*/
 .jetpack_subscription_widget form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .jetpack_subscription_widget form #subscribe-text {
   flex: 1 1 100%;
