@@ -2299,8 +2299,8 @@ body.admin-bar .site-header {
   background-color: #787f86;
   border-color: #787f86;
 }
-.footer-widgets-block #subscribe-blog-blog_subscription input,
-.footer-widgets-block #subscribe-blog-blog_subscription button {
+.footer-widgets-block #subscribe-blog-blog_subscription-3 input,
+.footer-widgets-block #subscribe-blog-blog_subscription-3 button {
   box-shadow: none !important;
 }
 .footer-widgets-block .widget-title {
@@ -2565,7 +2565,7 @@ body.admin-bar .site-header {
 }
 
 /*_______ Suscription widget _______*/
-#subscribe-blog-blog_subscription-3 .subscribe-text {
+#subscribe-blog-blog_subscription-3 .subscribe-text p {
   font-size: 1rem;
 }
 #subscribe-blog-blog_subscription-3 #subscribe-email {
