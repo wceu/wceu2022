@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*!
+Theme Name: WCEU online 2020 (based on CampSite 2017 theme)
+Theme URI: http://underscores.me/
+Author: Bernhard Kau, styles by Roberto Tuñón
+Author URI: https://kau-boys.com, https://robertotunon.com
+Description: New styles for the CampSite 2017 theme, a WordCamp Base Theme. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordcamporg
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CampSite 2017 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "01-variables/01-mixins";
+@import "01-variables/02-colors";
+@import "01-variables/03-fonts";
+@import "01-variables/04-structure";
+@import "01-variables/05-columns";
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "02-base/00-normalize";
+@import "02-base/01-accessibility";
+@import "02-base/02-elements";
+@import "02-base/03-alignments";
+@import "02-base/04-typography";
+@import "02-base/05-forms";
+@import "02-base/06-buttons";
+@import "02-base/07-galleries";
+@import "02-base/08-media";
+@import "02-base/09-posts-and-pages";
+@import "02-base/10-comments";
+@import "02-base/11-infinite-scroll";
+@import "02-base/12-admin-bar";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "03-components/00-general-layout";
+@import "03-components/01-header";
+@import "03-components/02-navigation";
+@import "03-components/03-sidebar";
+@import "03-components/04-footer";
+@import "03-components/05-widgets";
+@import "03-components/07-cookies-advise";
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "04-blocks/01-group";
+@import "04-blocks/02-image";
+@import "04-blocks/03-lists";
+@import "04-blocks/04-table";
+@import "04-blocks/05-colums";
+@import "04-blocks/06-media-text";
+@import "04-blocks/07-quotes";
+@import "04-blocks/08-separators";
+@import "04-blocks/09-latest-posts";
+@import "04-blocks/10-high-links";
+@import "04-blocks/11-high-links-inline";
+@import "04-blocks/12-notations";
+@import "04-blocks/13-address";
+@import "04-blocks/14-home-header";
+@import "04-blocks/17-tags";
+@import "04-blocks/18-share";
+@import "04-blocks/19-camptix-elements";
+@import "04-blocks/20-youtube-live-chat-embed";
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+/*---------
+# Layouts
+---------*/
+// @import "05-templates/layouts/01-content-sidebar";
+// @import "05-templates/layouts/02-sidebar-content";
+@import "05-templates/layouts/03-no-sidebar";
+@import "05-templates/layouts/04-full-width";
+@import "05-templates/layouts/05-nocontent";
+
+@import "05-templates/00-home";
+@import "05-templates/01-blog-feed";
+@import "05-templates/02-single";
+@import "05-templates/03-page";
+@import "05-templates/04-contact-form";
+@import "05-templates/05-wc-lists";
+@import "05-templates/06-tickets";
+@import "05-templates/07-sponsors";
+@import "05-templates/08-attendees";
+@import "05-templates/09-schedule";
+@import "05-templates/10-speakers-sessions";
+@import "05-templates/11-404";
+@import "05-templates/12-facilitators";

@@ -1,0 +1,58 @@
+/*_______ General elements settings _______*/
+html {
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	font-weight: 400;
+	font-size: 16px;
+	color: $color__secondary;
+	margin: 0;
+	padding: 0;
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	overflow-x: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	// text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	&.noscroll{
+		overflow-y: hidden;
+	}
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+*{
+	&::selection{		
+		background-color: $color__tertiary_half;
+	}
+	&::-moz-selection{
+		background-color: $color__tertiary_half;
+	}
+}
+
+hr {
+	background-color: $color__primary;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+	clear: both;
+}
+
+img {
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+}
+
+figure {
+	margin: 0 auto;
+	overflow: hidden; /* Extra wide images within figure tags don't overflow the content area. */
+	> *{
+		width: 100%;
+		height: auto;
+	}
+}

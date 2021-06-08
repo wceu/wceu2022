@@ -1,0 +1,29 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* YouTube notation on the live chat embed */
+.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
+    font-style: normal;
+    font-size: .875rem;
+    border-left: .25rem solid $color__secondary;
+    padding-left: .5rem;
+}
+
+.wp-block-audio{
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	> *{
+		min-height: 2rem;
+	}
+}

@@ -1,0 +1,118 @@
+/*_______ Colums block _______*/
+.wp-block-columns {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	.wp-block-column{
+		> %headings{
+			margin-top: 0;
+		}
+	}
+	&.highlighted-columns{
+		.wp-block-column:not(:empty){
+			@extend %camptix-item;
+			padding: 2rem !important;
+			h2{
+				@include font-size(2);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(2.5);
+				}
+			}
+			h3{
+				@include font-size(1.5);
+				margin-bottom: .5em;
+				@media (min-width: 769px){
+					@include font-size(1.875);
+				}
+			}
+			h4{
+				@include font-size(1.25);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.5);
+				}
+			}
+			h5{
+				@include font-size(1.125);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.25);
+				}
+			}
+			h6{
+				@include font-size(1);
+				margin-bottom: .125em;
+				@media (min-width: 769px){
+					@include font-size(1.125);
+				}
+			}
+			p,
+			ul,
+			ol{
+				font-size: 1.25rem;
+				&.address-block{
+					font-size: .875rem;
+				}
+			}
+		}
+	}
+	&.info-columns{
+		justify-content: center;
+		.wp-block-column:not(:empty){
+			padding: .25em 0 .25em .75em;
+			border-left: .25rem solid $color__tertiary;
+			border-radius: .5rem 0 0 .5rem;
+			margin-bottom: 2rem;
+			align-self: stretch;
+			h2{
+				@include font-size(2);
+				margin-bottom: .5em;
+				@media (min-width: 769px){
+					@include font-size(2.5);
+				}
+			}
+			h3{
+				@include font-size(1.5);
+				margin-bottom: .5em;
+				@media (min-width: 769px){
+					@include font-size(1.875);
+				}
+			}
+			h4{
+				@include font-size(1.25);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.5);
+				}
+			}
+			h5{
+				@include font-size(1.125);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.25);
+				}
+			}
+			h6{
+				@include font-size(1);
+				margin-bottom: .125em;
+				@media (min-width: 769px){
+					@include font-size(1.125);
+				}
+			}
+			p,
+			ul,
+			ol{
+				font-size: 1.25rem;
+				&.address-block{
+					font-size: .875rem;
+				}
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.notation{
+			margin-top: 0;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+/*_______ Facilitators grid _______*/
+.wordcamp-facilitators-grid{
+	.wp-block-group__inner-container{
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-row-gap: 0;
+		grid-template-columns: 100%;
+		margin-bottom: 1rem;
+		@media (min-width: 350px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 480px){
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (min-width: 769px){
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.wordcamp-facilitator-grid-item{
+			.wp-block-group__inner-container{
+				position:relative;
+				display: flex;
+				flex-flow: column wrap;
+			}
+			.wordcamp-facilitator-avatar-container{
+				order: -1;
+				max-width: 6rem;
+				margin-bottom: 1rem;
+			}
+			.wordcamp-facilitator-title{
+				font-size: 1.5rem;
+				line-height: 100%;
+				text-align: center;
+				margin-top: 0;
+				margin-bottom: .5rem;
+				a{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+/*_______ Block with highlighted links _______*/
+* + .high-links{
+	margin-top: 2rem;
+}
+.high-links{
+	// margin-bottom: 2rem;
+	justify-content: center;
+	margin: 0;
+	.wp-block-column{
+		flex: 1 1 100%;
+		display: flex;
+		flex-flow: column wrap;
+		background-color: $color__primary;
+		border: .25rem solid $color__tertiary;
+		border-radius: 1rem;
+		box-shadow: .25em .25em 0 $color__tertiary;
+		padding: 1.5rem !important;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-bottom: 1rem;
+		@extend %transition;
+		@media (min-width: 768px){
+			flex: 0 1 25%;
+		}
+		&:focus,
+		&:focus-within,
+		&:hover{
+			background-color: $color__secondary;
+			border-color: $color__secondary;
+			box-shadow: none;
+			%headings,
+			p{
+				color: $color__primary;
+				a{
+					outline: none;
+					color: $color__primary;
+				}
+			}
+		}
+		.wp-block-image{
+			width: 100%;
+			margin: 0;
+			a{
+				display: flex;
+				padding-bottom: 1rem;
+				@media (min-width: 480px){
+					padding-bottom: 2rem;
+				}
+				img{
+					fill: $color__tertiary;
+					max-width: 4rem;
+					height: auto;
+					margin-left: 0;
+					@media (min-width: 480px){
+						max-width: 5rem;
+					}
+				}
+			}
+		}
+		%headings,
+		p{
+			color: $color__tertiary;
+			position: relative;
+			padding-right: 2rem;
+			margin-top: 0 !important;
+			margin: auto 0 0;
+			line-height: 80%;
+			// &:after{
+			// 	position: absolute;
+			// 	bottom: 0;
+			// 	right: 0;
+			// 	content: "\f344";
+			// 	font-family: 'dashicons';
+			// 	font-size: 1.75rem;
+			// 	color: $color__tertiary;
+			// }
+			a{
+				display: block;
+				font-size: 1.75rem;
+				color: $color__tertiary;
+				text-decoration: none;
+				margin-top: auto;
+				margin-bottom: 0;
+				@media (min-width: 480px){
+					font-size: 2rem;
+				}
+				&:focus,
+				&:hover{
+					color: $color__primary;
+				}
+			}
+			br{
+				display: none;
+			}
+		}
+	}
+}

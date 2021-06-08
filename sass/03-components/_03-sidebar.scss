@@ -1,0 +1,18 @@
+/*_______ Sidebar _______*/
+#secondary{
+	@extend %inner;
+}
+#primary-sidebar{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	.widget{
+		flex: 0 1 22%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 4rem;
+		&:nth-of-type(4){
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,105 @@
+/*_______ Blockquotes Blocks _______*/
+.wp-block-quote{
+	position: relative;
+	padding-right: 5%;
+	padding-left: 1.25rem;
+	border-left: .25rem solid $color__secondary;
+	margin-bottom: 2rem;
+	p{
+		font-size: 1.75rem;
+		line-height: 140%;
+		color: $color__secondary;
+		margin-bottom: .5em;
+	}
+	cite{
+		display: block;
+		font-style: normal;
+		line-height: 120%;
+		text-align: left !important;
+		color: $color__secondary_half;
+		a{
+			color: $color__tertiary_half;
+		}
+	}
+	&.is-style-large{
+		padding: 1rem 5% 0 2.5rem;
+		border: none;
+		margin-bottom: 2rem;
+		@media (min-width: 480px){
+			padding: 1rem 10% 0 3rem;
+		}
+		p{
+			font-weight: 700;
+			font-style: normal;
+			font-size: 2rem;
+			line-height: 120%;
+			color: $color__secondary;
+			padding: .5rem 0 0;
+			margin-bottom: 1rem;
+			@media (min-width: 480px){
+				font-size: 2.65rem;
+			}
+		}
+		&:after{
+			content: '”';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-weight: 700;
+			font-size: 3.25rem;
+			font-style: normal;
+			line-height: 4.875rem;
+			color: $color__tertiary;
+			@media (min-width: 480px){
+				font-size: 4.875rem;
+			}
+		}
+	}
+}
+.wp-block-pullquote{
+	padding: 2rem;
+	border-top: .25rem solid $color__primary;
+	border-bottom: .25rem solid $color__primary;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	p{
+		font-weight: 700;
+		font-size: 8vw;
+		line-height: 120%;
+		color: $color__secondary;
+		margin-bottom: 1rem;
+		@media (min-width: 480px){
+			font-size: 3rem;
+		}
+	}
+	cite{
+		display: block;
+		font-size: 1rem;
+		font-style: normal;
+		line-height: 100%;
+		color: $color__secondary_half;
+		a{
+			color: $color__secondary;
+		}
+
+	}
+	&.alignright{
+		max-width: 500px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	&.alignleft{
+		max-width: 500px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	&.is-style-solid-color{
+		background-color: $color__tertiary;
+	}
+
+}
+
+/*_______ Verse Block _______*/
+.wp-block-verse{
+	font-size: 1.25rem;
+}

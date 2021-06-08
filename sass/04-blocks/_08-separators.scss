@@ -1,0 +1,24 @@
+/*_______ Big separators _______*/
+.wp-block-separator{
+	background-color: $color__secondary;
+	margin: 4rem auto;
+	&.is-style-wide {
+		margin: 4rem auto;
+	}
+	&.is-style-dots{
+		margin: 5rem auto;
+		&:before{
+			content: '···';
+			font-weight: 800;
+			font-size: 4rem;
+			line-height: 80%;
+			letter-spacing: .5em;
+			text-align: center;
+			color: $color__secondary;
+			padding-left: .5em;
+		}
+		& + %headings{
+			margin-top: 0 !important;
+		}
+	}
+}

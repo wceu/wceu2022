@@ -1,0 +1,19 @@
+/*_______ Paragraph block with tag styled contents _______*/
+.tags-block{
+	line-height: 180%;
+	strong{
+		display: inline-block;
+		font-weight: 400;
+		line-height: 100%;
+		padding: .25rem .5rem .25rem .25rem;
+		background-color: $color__tertiary;
+		&:before{
+			content: "\f147";
+			font-family: 'dashicons';
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 80%;
+			margin-right: .25rem;
+		}
+	}
+}

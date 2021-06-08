@@ -1,0 +1,29 @@
+.gallery,
+.wp-block-gallery {
+	margin-bottom: 2rem;
+}
+
+.gallery-item,
+.blocks-gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+
+	// Loops to enumerate the classes for gallery columns.
+	@for $i from 2 through 9 {
+		.gallery-columns-#{$i} & {
+			max-width: map-get( $columns, $i );
+		}
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption{
+	color: $color__primary;
+	background:linear-gradient(0deg,rgba(200,200,200,.7),rgba(200,200,200,.3) 70%,transparent)
+}

@@ -1,0 +1,72 @@
+/*_______ Tables _______*/
+table {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 0 2rem;
+	text-align: left;
+	border-collapse: collapse;
+	thead{
+		font-size: .875rem;
+		text-align: left;
+		border-bottom: .125rem solid $color__primary;
+		th{
+			padding: .25rem;
+		}
+		// @media (min-width: 480px){
+		// 	+ tbody{
+		// 		&:before{
+		// 			content: '';
+		// 			display: block;
+		// 			padding-top: 1rem;
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+// .wp-block-table{
+// 	font-size: 1rem;
+// 	line-height: 120%;
+// 	margin-bottom: 2rem;
+// 	border-collapse: collapse;
+// 	word-break: break-word;
+// 	@media (min-width: 769px){
+// 		font-size: 1.25rem;
+// 		min-width: inherit;
+// 		word-break: keep-all;
+// 	}
+// 	thead{
+// 		font-size: 1.5rem;
+// 		color: white;
+// 		background-color: $color__primary;
+// 		th{
+// 			font-size: 1rem;
+// 			line-height: 120%;
+// 			padding: .5rem 1rem;
+// 			border-color: white;
+// 			border-top-color: $color__primary;
+// 			@media (min-width: 769px){
+// 				font-size: 1.25rem;
+// 			}
+// 			&:first-child{
+// 				border-left-color: $color__primary;
+// 			}
+// 			&:last-child{
+// 				border-right-color: $color__primary;
+// 			}
+// 		}
+// 	}
+// 	td{
+// 		padding: 1rem .5rem;
+// 	}
+// 	tfoot{
+// 		color: $color__primary;
+// 		background-color: $color__tertiary;
+// 	}
+// 	&.firstcol-bigger{
+// 		td:first-child {
+// 			text-align: left;
+// 			width: 50%;
+// 		}
+// 	}
+// }

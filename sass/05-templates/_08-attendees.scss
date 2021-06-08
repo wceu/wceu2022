@@ -1,0 +1,120 @@
+/*_______ Attendees list _______*/
+#tix-attendees {
+    max-width: $size__content-max;
+    margin: 0 auto;
+}
+.tix-attendee-list{
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	li{
+		min-height: 5rem;
+		position: relative;
+		padding: .5rem .5rem .75rem 5rem;
+		margin: 0 1% 4rem;
+		overlow: hidden;
+		@media(min-width: 769px){
+			margin: 0 1% 2rem;
+		}
+		&:hover{
+			background-color: $color__tertiary;
+		}
+		.tix-field{
+			margin-left: 0 !important;
+		}
+		.avatar{
+			display: block;
+			position: absolute;
+			top: .5rem;
+			left: .5rem;
+			width: 4rem !important;
+			height: 4rem !important;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			background-color: $color__grey_verylight;
+		}
+		.tix-attendee-name{
+			font-size: 1.125rem !important;
+			font-weight: 700;
+			line-height: 120%;
+		}
+		.tix-attendee-twitter,
+		.tix-attendee-url{
+			display: block !important;
+			font-size: .875rem !important;
+			line-height: 140%;
+			word-break: break-word;
+			&:hover{
+				color: $color__secondary;
+			}
+		}
+	}
+	&.tix-columns-2{
+		li{
+			flex: 0 0 80%;
+			max-width: 100%;
+			margin: 0 auto 2rem;
+			@media(min-width: 400px){
+				flex: 0 0 48%;
+				max-width: 48%;
+			}
+			@media(min-width: 769px){
+				flex: 0 0 48%;
+				max-width: 48%;
+			}
+		}
+	}
+	&.tix-columns-3{
+		li{
+			flex: 0 0 80%;
+			max-width: 100%;
+			margin: 0 auto 2rem;
+			@media(min-width: 400px){
+				flex: 0 0 40%;
+				max-width: 40%;
+			}
+			@media(min-width: 769px){
+				flex: 0 0 31.333%;
+				max-width: 31.333%;
+			}
+		}
+	}
+	&.tix-columns-4{
+		li{
+			flex: 0 0 80%;
+			max-width: 100%;
+			margin: 0 auto 2rem;
+			@media(min-width: 400px){
+				flex: 0 0 40%;
+				max-width: 40%;
+			}
+			@media(min-width: 480px){
+				flex: 0 0 31.333%;
+				max-width: 31.333%;
+			}
+			@media(min-width: 769px){
+				flex: 0 0 23%;
+				max-width: 23%;
+			}
+		}
+	}
+	&.tix-columns-5{
+		li{
+			flex: 0 0 80%;
+			max-width: 100%;
+			margin: 0 auto 2rem;
+			@media(min-width: 400px){
+				flex: 0 0 40%;
+				max-width: 40%;
+			}
+			@media(min-width: 480px){
+				flex: 0 0 31.333%;
+				max-width: 31.333%;
+			}
+			@media(min-width: 769px){
+				flex: 0 0 18%;
+				max-width: 18%;
+			}
+		}
+	}
+}

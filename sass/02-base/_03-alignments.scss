@@ -1,0 +1,66 @@
+/*_______ Alignments _______*/
+.alignleft {
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 480px){
+		float: left;
+		margin-right: 1.5rem;
+	}
+}
+
+.alignright {
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 480px){
+		float: right;
+		margin-left: 1.5rem;
+	}
+}
+
+.aligncenter {
+	@include center-block;
+	clear: both;
+}
+
+.alignwide,
+.is-style-wide{
+	@extend %inner;
+	padding: 0 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+.alignfull{
+	@extend %full;
+	clear: both;
+}
+
+/*_______ Clearings _______*/
+// .clear:before,
+// .clear:after,
+// .entry-content:before,
+// .entry-content:after,
+// .comment-content:before,
+// .comment-content:after,
+// .site-header:before,
+// .site-header:after,
+// // .site-content:before,
+// .site-content:after,
+// .site-footer:before,
+// .site-footer:after {
+// 	@include clearfix;
+// }
+
+// .clear:after,
+// .entry-content:after,
+// .comment-content:after,
+// .site-header:after,
+// .site-content:after,
+// .site-footer:after {
+// 	@include clearfix-after;
+// }

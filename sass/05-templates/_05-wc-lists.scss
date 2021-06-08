@@ -1,0 +1,209 @@
+/*_______ WordCamp lists _______*/
+.wordcamp-organizers,
+.wordcamp-speakers,
+.wordcamp-sessions
+// .wordcamp-post-list
+{
+	padding: 0 2rem;
+	margin: 2rem auto;
+	&.has-layout-list{
+		.wordcamp-post-list__post{
+			max-width: $size__content-supertiny;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&.has-layout-grid {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-row-gap: 0;
+		grid-template-columns: 100%;
+		@media (min-width: 480px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&.has-grid-columns-3{
+			@media (min-width: 769px){
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+		&.has-grid-columns-4{
+			@media (min-width: 769px){
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+	}
+	.wordcamp-post-list__post{
+		@extend %camptix-item;
+		padding: 1.5rem;
+		@media (min-width: 769px){
+			padding: 2rem;
+		}
+		.wordcamp-organizers__post,
+		.wordcamp-speakers__post{
+			position:relative;
+			display: flex;
+			flex-flow: column wrap;
+		}
+		.wordcamp-image__avatar-container{
+			top: 0;
+			left: 0;
+			order: -1;
+			border-radius: 100%;
+			width: 6rem;
+			height: 6rem;
+			margin-bottom: 1rem;
+			overflow: hidden;
+		}
+		.wordcamp-block__item-title{
+			font-size: 1.75rem;
+			line-height: 100%;
+			margin-top: 0;
+			margin-bottom: .5rem;
+			a{
+				text-decoration: none;
+			}
+		}
+		.wordcamp-block__item-content{
+			display: flex;
+			flex-flow: column wrap;
+			p{
+				font-size: 1rem;
+				line-height: 140%;
+				margin-bottom: 0;
+				word-break: break-word;
+				white-space: normal;
+			}
+		}
+	}
+}
+
+.personal-links,
+.organizer-links{
+	margin-bottom: 1rem;
+	br{
+		display: none;
+	}
+	a{
+		@extend %camptix-nice-link;
+		display: table;
+	}
+}
+
+/*_______ WordCamp Speakers _______*/
+.wordcamp-speakers{
+	.wordcamp-post-list__post{
+		display: flex;
+		flex-flow: column wrap;
+		.wordcamp-speakers__post{
+			height: 100%;
+			.wordcamp-speakers__content{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+.wordcamp-speakers__sessions{
+	width: 100%;
+	margin-top: auto;
+	.wordcamp-speakers__sessions-list-item{
+		position: relative;
+		padding: .25rem .25rem .25rem .75rem;
+		margin-bottom: 0;
+		z-index: 2;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: .25rem;
+			height: 100%;
+			background-color: $color__tertiary;
+			z-index: -1;
+			@extend %transition;
+		}
+		&:hover{
+			&:before{
+				width: 20rem;
+			}
+			.wordcamp-speakers__session-info{
+				color: $color__primary;
+			}
+		}
+	}
+	.wordcamp-speakers__sessions-heading{
+		font-size: 1.125rem;
+		margin-bottom: .5rem;
+		&:after{
+			content: ':';
+		}
+	}
+	.wordcamp-speakers__sessions-list{
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.wordcamp-speakers__session-link{
+		display: block;
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 110%;
+		text-decoration: none;
+		margin-bottom: 1rem;
+		&:hover{
+			text-decoration: underline !important;
+		}
+	}
+	.wordcamp-speakers__session-info{
+		display: block;
+		font-style: normal;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $color__secondary;
+		@extend %transition;
+	}
+}
+
+/*_______ WordCamp Sessions _______*/
+.wordcamp-sessions{
+	.wordcamp-sessions__post{
+		display: flex;
+		flex-flow: column wrap;
+		&:focus,
+		&:hover{
+			.wordcamp-sessions__time-location{
+				color: $color__secondary;
+			}
+		}
+	}
+	.wordcamp-sessions__speakers{
+		font-style: normal;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		a{
+			@extend %camptix-nice-link;
+		}
+	}
+	.wordcamp-sessions__details{
+		order: -1;
+		margin-bottom: 1rem;
+		.wordcamp-sessions__categories{
+			font-weight: 400;
+			font-style: normal;
+			font-size: .875rem;
+			text-transform: uppercase;
+			line-height: 100%;
+			color: $color__grey_light;
+		}
+	}
+	.wordcamp-sessions__time-location{
+		display: block;
+		font-style: normal;
+		font-size: 1rem;
+		font-weight: 700;
+		color: $color__grey;
+		padding-left: .5rem;
+		border-left: .25rem solid $color__tertiary;
+		margin-bottom: .5rem;
+		@extend %transition;
+	}
+}

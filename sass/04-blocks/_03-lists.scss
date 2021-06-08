@@ -1,0 +1,67 @@
+/*_______ Lists _______*/
+.entry-content{
+	ol, ul{
+		list-style: none;
+		margin-bottom: 1rem;
+	}
+	li > ul, li > ol{
+		margin: 1rem 0;
+	}
+	ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names){
+		padding-left: 1rem;
+		@media (min-width: 480px){
+			padding-left: 1.5rem;
+		}
+		li{
+			position: relative;
+			color: $color__secondary-half;
+			padding: 0;
+			margin-bottom: 1rem;
+			&:before{
+				content: '';
+				position: absolute;
+				top: .5em;
+				left: -.875rem;
+				width: .5rem;
+				height: .5rem;
+				border: .125rem solid $color__tertiary;
+				border-radius: 100%;
+				@media (min-width: 480px){
+					top: .45em;
+				}
+			}
+		}
+	}
+	ol{
+		padding-left: 1.5rem;
+		counter-reset: orderedlist-counter;
+		@media (min-width: 480px){
+			padding-left: 1.5rem;
+		}
+		li{
+			position: relative;
+			color: $color__secondary_half;
+			padding: 0;
+			margin-bottom: 1rem;
+			counter-increment: orderedlist-counter;
+			&:before{
+				content: counter(orderedlist-counter) ". ";
+				position: absolute;
+				top: .025rem;
+			    left: -1.25rem;
+				width: 1.25rem;
+				height: 1.25rem;
+				font-weight: 400;
+				line-height: .5rem;
+				color: $color__tertiary;
+				margin-top: .5rem;
+				@media (min-width: 480px){
+					top: .125rem;
+					left: -1.5rem;
+					text-indent: -.25rem;
+				}
+			}
+		}
+	}
+
+}

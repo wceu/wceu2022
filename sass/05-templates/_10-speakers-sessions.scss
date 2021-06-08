@@ -1,0 +1,144 @@
+/*_______ Speaker & Session singles _______*/
+.single-wcb_speaker,
+.single-wcb_session{
+	.entry-header{
+		display: block;
+	}
+	.entry-title{
+		@extend %inner-moretiny;
+		&:before{
+			content: '';
+			display: block;
+			width: 5rem;
+			height: 5rem;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin: 0 auto 1rem;
+			filter: contrast(0.5);
+		}
+	}
+	.entry-content{
+		@extend %inner-moretiny;
+		margin: 0 auto;
+	}
+}
+
+.single-wcb_speaker{
+	.entry-header{
+		padding: 5rem 2rem 3rem;
+		margin-bottom: -3rem;
+	}
+	.entry-title{
+		&:before{
+			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-speaker.png);
+		}
+	}
+}
+
+.single-wcb_session{
+	.entry-header{
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+	}
+	.entry-title{
+		text-align: left;
+		&:before{
+			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-session.png);
+			margin: 0 0 1rem;
+		}
+	}
+}
+
+/*_______ Speaker single _______*/
+.speaker-avatar{
+	margin-bottom: 2rem;
+	z-index: 1;
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+.speaker-sessions{
+	&:after{
+		content: ':';
+	}
+}
+#speaker-session-names{
+	list-style: none;
+	@extend %camptix-item;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	@media (min-width: 800px){
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&:hover{
+		transform: none;
+	}
+	li{
+		padding: 0;
+		margin: 0;
+		&:before{
+			display: none;
+		}
+		a{
+			font-family: $font__main;
+			font-size: 1.75rem;
+			font-weight: 700;
+			line-height: 110%;
+			color: $color__secondary;
+			&:focus,
+			&:hover{
+				text-decoration: underline;
+				color: $color__primary;
+			}
+		}
+	}
+}
+
+/*_______ Session single _______*/
+.session-speakers{
+	display: inline-block;
+	font-family: $font__main;
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-right: .5rem !important;
+	&:after{
+		content: ':';
+	}
+}
+#session-speaker-names{
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0 !important;
+	li{
+		padding: 0;
+		margin: 0;
+		&:before{
+			display: none;
+		}
+		a{
+			@extend %camptix-nice-link;
+			font-family: $font__main;
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.session-categories-links{
+	@extend %inner-moretiny;
+	margin: 0 auto;
+	display: block;
+	&:before{
+		content: 'Category: ';
+		font-family: $font__main;
+		font-weight: 700;
+		font-size: 1rem;
+	}
+	a{
+		@extend %camptix-nice-link;
+	}
+}

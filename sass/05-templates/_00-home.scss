@@ -1,0 +1,95 @@
+/*_______ Home page _______*/
+.home,
+.page-template-page-full-width{
+	.site{
+		margin-top: 0;
+	}
+	.site-content,
+	.entry-content,
+	.hentry{
+		margin-bottom: 0;
+	}
+	.entry-header{
+		display: none;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+/*_______ Big header on home page _______*/
+.home-big-hero{
+	padding-top: 4rem;
+	padding-bottom: 0;
+	background-image: url(../assets/images/wp-dots.svg);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position-x: -120%;
+    background-position-y: -2rem;
+	margin-top: 0;
+	margin-bottom: 4rem;
+	@media(min-width: 769px){
+		padding-bottom: 2rem;
+		background-size: 64%;
+		background-position: 120% -4.5rem;
+		margin-bottom: 0;
+	}
+	.wp-block-group__inner-container{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.wceu-big-title{
+		margin-bottom: 0;
+		color: $color__secondary !important;
+		.second-word{
+			margin-left: 2rem;
+		}
+		strong{
+			font-size: 80%;
+			color: $color__tertiary;
+		}
+	}
+	.wceu-subtitle{
+		font-size: 1.75rem;
+		color: $color__secondary;
+		margin-bottom: 0 !important;
+		strong{
+			color: $color__tertiary;
+		}
+	}
+	// If it's created with a cover block (worse results)
+	// img{
+	// 	top: -15% !important;
+	// 	left: 25% !important;
+	// 	object-fit: contain !important;
+	// }
+}
+
+.home-intro{
+	padding: 0 2rem;
+	margin-top: 0;
+	margin-bottom: 4rem;
+	@media(min-width: 769px){
+		margin-bottom: 6rem;
+	}
+	.wp-block-column{
+		&:first-child{
+			
+			@media(min-width: 769px){
+				
+			}
+		}
+		&:nth-child(2){
+			order: -1;
+			margin-bottom: 1rem;
+			@media(min-width: 769px){
+				order: initial;
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+	.wceu-big-claim{
+		color: $color__secondary;
+		margin-bottom: 0;
+	}
+}

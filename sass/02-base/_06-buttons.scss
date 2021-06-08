@@ -1,0 +1,229 @@
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	float: none;
+	position: relative;
+	display: table;
+	width: auto;
+	font-weight: 700;
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	line-height: 100%;
+	color: $color__primary;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	margin: 1rem auto;
+	padding: .75em 1.25em;
+	background-color: $color__tertiary;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0.125em 0.125em 0 $color__secondary;
+	cursor: pointer;
+	@extend %transition;
+	@media (min-width: 480px){
+		font-size: 1.5rem;
+	}
+	&:visited{
+		color: inherit;
+	}
+	&:focus,
+	&:hover{
+		color: $color__primary;
+		background-color: $color__secondary;
+		border-color: $color__secondary !important;
+	}
+	&:active{
+		color: $color__primary;
+		background-color: $color__secondary;
+	}
+	&.invert{
+		color: $color__tertiary;
+		background-color: $color__primary;
+		box-shadow: 0.125em 0.125em 0 $color__tertiary;
+		&:focus,
+		&:hover{
+			color: $color__primary;
+			background-color: $color__tertiary;
+		}
+	}
+	&.outlined{
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 100%;
+		color: $color__primary;
+		text-align: center;
+		padding: .75em 1.25em;
+		background-color: transparent;
+		border: .25rem solid $color__primary;
+		border-radius: 0;
+		box-shadow: none;
+		&:focus,
+		&:hover{
+			outline: none;
+			color: $color__tertiary;
+			background-color: $color__primary;
+		}
+	}
+}
+
+.wp-block-buttons{
+	// margin-bottom: 2rem;
+}
+.wp-block-button{
+	margin-bottom: 2rem;
+	.wp-block-button__link{
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 100%;
+		color: $color__primary;
+		text-align: center;
+		padding: .75em 1.25em;
+		background-color: $color__tertiary;
+		border-radius: 5rem;
+		box-shadow: 0.125em 0.125em 0 $color__secondary;
+		@extend %transition;
+		@media(min-width: 480px){
+			font-size: 1.75rem;
+		}
+		&:focus{
+			outline: none;
+		}
+		&:focus,
+		&:hover{
+			color: $color__primary !important;
+			background-color: $color__secondary;
+			box-shadow: 0 0 0 $color__tertiary;
+		}
+	}
+	&.is-style-outline{
+		.wp-block-button__link{
+			font-size: 1.25rem;
+			color: $color__tertiary;
+			padding: .75em 1.25em;
+			background-color: $color__primary;
+			border: .125rem solid $color__tertiary;
+			border-radius: 5rem;
+			box-shadow: 0.125em 0.125em 0 $color__secondary;
+			&:focus{
+				outline: none;
+			}
+			&:focus,
+			&:hover{
+				color: $color__secondary !important;
+				border-color: $color__secondary;
+				box-shadow: 0 0 0 $color__secondary;
+			}
+		}
+	}
+	&.aligncenter{
+		.wp-block-button__link{
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&.with-icon{
+		.wp-block-button__link{
+			&:after{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: 'dashicons';
+				font-size: 1.5rem;
+				font-weight: normal;
+				margin-left: .5rem;
+			}
+		}
+		&.right-arrow{
+			.wp-block-button__link{
+				&:after{
+					content: "\f344";
+				}
+			}
+		}
+		&.down-arrow{
+			.wp-block-button__link{
+				&:after{
+					content: "\f346";
+				}
+			}
+		}
+		&.external{
+			.wp-block-button__link{
+				&:after{
+					content: "\f504";
+				}
+			}
+		}
+		&.map{
+			.wp-block-button__link{
+				&:after{
+					content: "\f231";
+					font-family: 'dashicons';
+				}
+			}
+		}
+	}
+	&.external-link{
+		margin-bottom: 1.25em;
+		.wp-block-button__link{
+			display: inline-block;
+			font-size: 1.125rem;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			border-bottom: .125rem solid;
+			box-shadow: none;
+			margin: 0;
+			&:before{
+				display: inline-block;
+				vertical-align: middle;
+				content: "\f504";
+				font-family: 'dashicons';
+				font-weight: normal;
+				font-size: 1rem;
+				color: $color__secondary;
+				margin-right: .25rem;
+			}
+		}
+	}
+	&.anchor-link{
+		.wp-block-button__link{
+			color: $color__primary;
+			background-color: transparent;
+			border: .25rem solid $color__primary;
+			box-shadow: none;
+			&:after{
+				content: ' ';
+				font-family: 'dashicons';
+				vertical-align: middle;
+			}
+			&:hover{
+				color: $color__tertiary;
+				background-color: $color__primary;
+			}
+		}
+	}
+}
+
+.more-link{
+	display: table;
+	font-size: .875rem;
+	font-weight: 700;
+	color: $color__primary;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 0;
+	border-bottom: .125rem solid;
+	&:hover{
+		color: $color__secondary;
+	}
+}
+
+.edit-link {
+	display: block;
+	font-size: 1rem;
+	text-decoration: underline;
+}

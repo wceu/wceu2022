@@ -1,0 +1,104 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// Target all headings
+@mixin headings {
+	h1, h2, h3, h4, h5, h6 {
+		@content;
+	}
+}
+h1, h2, h3,
+h4, h5, h6 {
+    @extend %headings !optional;
+}
+
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+%transition{
+	transition: all .25s ease-in-out;
+}
+
+// Keyframes Animation
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+// Check if browser support hover effect
+@mixin is-hover-supported {
+    @media not all and (hover: none) {
+        @content;
+    }
+}
+
+// Responsive Media Codes
+$phone-portrait : 666px;
+$phone : 736px;
+$tablet-portrait : 768px;
+$tablet : 1024px;
+$laptops : 1600px;
+$desktops: 1800px;
+
+@mixin tablet {
+  @media only screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+    @media only screen and (max-width: #{$tablet-portrait}) {
+      @content;
+    }
+}
+@mixin phone {
+    @media only screen and (max-width: #{$phone}) {
+      @content;
+    }
+}
+@mixin phone-portrait {
+    @media only screen and (max-width: #{$phone-portrait}) {
+      @content;
+    }
+}

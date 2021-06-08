@@ -1,0 +1,59 @@
+/*_______ Site header _______*/
+.site-header{
+	position: fixed;
+	top: 0;
+	width:100%;
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 0 1rem;
+	// background-color: $color__primary;
+	// -- Blur effect -- 
+	// background-color: transparentize($color__primary, .25);
+	// backdrop-filter: blur(5px);
+	margin: 0 auto;
+	z-index: 10;
+	@media(min-width: 350px){
+		padding: 0 1rem;
+	}
+	@media(min-width: 1280px){
+		padding: 0 12%;
+	}
+	@media(min-width: 1920px){
+		padding: 0 18%;
+	}
+}
+
+.custom-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex: 0 0 auto;
+	padding: 1rem 0 0;
+	@media(min-width: 769px){
+		height: 100%;
+		padding: 1rem 0 0;
+	}
+	.custom-header-media{
+		display: none;
+	}
+	.site-branding{
+		.custom-logo-link{
+			display: block;
+			margin: 0;
+			padding: 0;
+			@extend %transition;
+			&:hover{
+				opacity: .7;
+			}
+		}
+		.custom-logo{
+			width: 88px;
+			height: auto;
+			@media(min-width: 769px){
+				width: 111px;
+			}
+		}
+	}
+}

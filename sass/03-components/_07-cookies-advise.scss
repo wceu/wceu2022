@@ -1,0 +1,52 @@
+/*_______ Cookies advise widget _______*/
+.widget.widget_eu_cookie_law_widget {
+	bottom: 1rem;
+	right: 1rem;
+	left: initial;
+	#eu-cookie-law {
+		max-width: 22rem;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 120%;
+		color: $color__primary;
+		padding: 1.25rem 1.25rem 4rem 1.25rem;
+		background-color: $color__tertiary;
+		border: .25rem solid $color__primary;
+		form {
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+			width: 100%;
+			input[type="submit"]{
+				float: none;
+				display: block;
+				font-size: 1rem;
+				font-weight: 600;
+				color: $color__tertiary;
+				padding: .5rem 1rem;
+				background-color: $color__primary;
+				border: 3px solid $color__primary;
+				border-radius: 0;
+				margin-left: auto;
+				@include is-hover-supported {
+					&:hover {
+						color: $color__primary;
+						background-color: $color__tertiary;
+					}
+				}
+			}
+		}
+	}
+	@include phone-portrait {
+		/**
+		* Tablet Portrait
+		*/
+		#eu-cookie-law {
+			form {
+				bottom: 5px;
+				right: 5px;
+			}
+		}
+	}
+	
+}

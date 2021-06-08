@@ -1,0 +1,39 @@
+/*_______ Group Blocks _______*/
+.wp-block-group{
+	padding: 0;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	@media (min-width: 375px){
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+	&.has-background{
+		padding: 3rem 1rem;
+		@media (min-width: 375px){
+			padding: 5rem 0;
+		}
+		.wp-block-group__inner-container{
+			%headings, p{
+				color: $color__primary;
+			}
+		}	
+	}
+	.wp-block-group__inner-container{
+		> *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
+			@extend %inner-tiny;
+			@extend %inner-padding;
+		}
+		%headings{
+			margin-top: 0;
+			margin-bottom: 1.5rem;
+		}
+	}
+	&.notation{
+		.wp-block-group__inner-container{
+			> *{
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+			}
+		}
+	}
+}

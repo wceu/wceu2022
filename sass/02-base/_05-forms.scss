@@ -1,0 +1,227 @@
+/*_______ Common forms elements _______*/
+fieldset{
+	border: none;
+	padding: 0;
+	margin: 0 auto 1rem;
+}
+
+label{
+	display: block;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 120%;
+	text-align: left;
+	color: $color__secondary;
+	margin-bottom: .25rem;
+	@media (min-width: 480px){
+		font-size: 1.25rem;
+	}
+}
+
+input,
+select,
+textarea,
+.select2-selection__rendered{
+	appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	display: block;
+	max-width: 100%; 
+	width: 100%;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 100%;
+	color: $color__primary;
+	padding: .25rem .75em;
+	background-color: white;
+	border: none;
+	border-bottom: .25rem solid $color__tertiary;
+	border-radius: .25rem;
+	outline: none;
+	resize: none;
+	@media (min-width: 480px){
+		font-size: 1.25rem;
+	}
+	&:focus{
+		border-color: $color__secondary;
+	}
+	&::placeholder{
+		color: $color__primary;
+	}
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:hover{
+	border: .1875rem solid $color__primary !important;
+	-webkit-text-fill-color: $color__primary !important;
+	-webkit-box-shadow: 0 0 0px 1000px $color__tertiary inset !important;
+}
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus{
+	border: .1875rem solid $color__secondary !important;
+}
+
+
+input[type="checkbox"],
+input[type="radio"]{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 1.5rem;
+	min-width: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	min-height: 1.5rem;
+	padding: 0;
+	border: .125rem solid $color__tertiary;
+	overflow: hidden;
+	&:focus{
+		outline: none;
+		border: 1px solid $color__secondary;
+	}
+}
+input[type="checkbox"]{
+	&:checked{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -3px;
+			font-family: 'dashicons';
+			font-size: 1.5rem;
+			color: $color__secondary;
+		}
+	}
+}
+
+input[type="radio"]{
+	border-radius: 100%;
+	&:checked{
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $color__secondary;
+			border: .125rem solid white;
+			border-radius: 100%;
+		}
+	}
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+	margin-left: 1rem;
+	margin-bottom: 0;
+}
+
+select,
+.select2-selection__rendered{
+	position: relative;
+	font-size: 1.125rem;
+	padding-right: 2rem;
+	background-image: url('https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png');
+	background-repeat: no-repeat;
+	background-position: right .5em top 50%;
+	background-size: 1rem;
+	option{
+		&[value=""],
+		&:first-child{
+			color: $color__grey;
+		}
+	}
+	&:invalid{
+		color: $color__grey;
+	}
+}
+
+_:-ms-lang(x),
+select {
+	background-image: none;
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type="hidden"]{
+	display: none;
+}
+
+
+/*_______ Feedback tool select _______*/
+.speaker-feedback__wrapper{
+	flex-flow: row wrap;
+	input[type="submit"]{
+		margin: 0;
+	}
+	.speaker-feedback__field{
+		display: block;
+	}
+}
+.select2-container{
+	width: auto !important;
+	max-width: 30rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.speaker-feedback-navigation .select2-selection{
+	height: auto;
+}
+.select2-selection--single{
+	border: none !important;
+	border-radius: 0 !important;
+	&:focus{
+		outline: none !important;
+		border: none !important;
+		border-radius: 0 !important;
+		.select2-selection__rendered{
+			border-color: $color__secondary;
+		}
+	}
+}
+.select2-selection__rendered{
+	display: block !important;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 100% !important;
+	color: $color__primary !important;
+	padding-right: 2rem !important;
+	margin: 0 !important;
+	white-space: pre-wrap !important;
+	@media (min-width: 480px){
+		font-size: 1.5rem;
+    	white-space: nowrap !important;
+	}
+}
+.select2-selection__arrow{
+	display: none !important;
+}
+.select2-dropdown{
+	border: .1875rem solid $color__primary !important;
+	border-radius: 0 !important;
+}
+.select2-results__options{
+	border: none !important;
+	border-radius: 0 !important;
+}
+.select2-results__option{
+	margin-bottom: 1rem;
+	padding: 1rem !important;
+	&--highlighted{
+		color: $color__primary !important;
+		background-color: $color__secondary !important;
+	}
+	&:focus{
+		outline: none !important;
+	}
+}

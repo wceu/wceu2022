@@ -1,0 +1,95 @@
+.widget {
+	margin: 0 0 2rem;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/*_______ Suscription widget _______*/
+.widget_text{
+	.subscribe-text{
+		font-size: 1rem;
+	}
+}
+#subscribe-blog-blog_subscription{
+	#subscribe-email{
+		margin: 0;
+		input{
+			width: 60%;
+			height: 3.75rem;
+			float: left;
+			color: $color__tertiary;
+			padding-left: 1.5rem;
+			background-color: $color__primary;
+			border: .125rem solid $color__tertiary;
+			border-radius: 2rem 0 0 2rem;
+			box-shadow: 0.25em 0.125em 0 $color__secondary;
+			&::placeholder{
+				color: $color__tertiary;
+			}
+			&:focus{
+				outline: none;
+				border-color: $color__secondary;
+			}
+		}
+		label, br{
+			display: none;
+		}
+	}
+	#subscribe-submit{
+		margin-bottom: 0;
+		br{
+			display: none;
+		}
+		button{
+			width: 40%;
+			height: 3.75rem;
+			font-size: 1.125rem;
+			padding: 0 .5rem;
+			border: .125rem solid $color__tertiary;
+			border-radius: 0 2rem 2rem 0;
+			box-shadow: 0.125em 0.125em 0 $color__secondary;
+			margin: 0;
+			@media(min-width: 480px){
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
+.widget{
+	// &.jetpack_subscription_widget{
+	// 	@extend %inner-tiny;
+	// 	@extend %inner-padding;
+	// 	margin-bottom: 4rem;
+	// 	// form{
+	// 	// 	display: flex;
+	// 	// 	align-items: center;
+	// 	// 	flex-flow: row wrap;
+	// 	// }
+	// 	button{
+	// 		margin-left: 0;
+	// 	}
+	// }
+	// #subscribe-text{
+	// 	flex: 1 1 100%;
+	// }
+	// #subscribe-email{
+	// 	flex: 1 1 100%;
+	// 	margin: 0;
+	// 	@media (min-width: 768px){
+	// 		flex: 0 1 60%;
+	// 	}
+	// 	input{
+	// 		width: 100%;
+	// 	}
+	// }
+	// #subscribe-submit{
+	// 	margin: 0 auto;
+	// 	@media (min-width: 768px){
+	// 		flex: 0 1 30%;
+	// 	}
+	// }
+}
