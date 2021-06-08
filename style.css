@@ -2565,14 +2565,13 @@ body.admin-bar .site-header {
 }
 
 /*_______ Suscription widget _______*/
-.widget_text .subscribe-text {
+#subscribe-blog-blog_subscription-3 .subscribe-text {
   font-size: 1rem;
 }
-
-#subscribe-blog-blog_subscription #subscribe-email {
+#subscribe-blog-blog_subscription-3 #subscribe-email {
   margin: 0;
 }
-#subscribe-blog-blog_subscription #subscribe-email input {
+#subscribe-blog-blog_subscription-3 #subscribe-email input {
   width: 60%;
   height: 3.75rem;
   float: left;
@@ -2583,23 +2582,23 @@ body.admin-bar .site-header {
   border-radius: 2rem 0 0 2rem;
   box-shadow: 0.25em 0.125em 0 #DE8E95;
 }
-#subscribe-blog-blog_subscription #subscribe-email input::placeholder {
+#subscribe-blog-blog_subscription-3 #subscribe-email input::placeholder {
   color: #47E2CD;
 }
-#subscribe-blog-blog_subscription #subscribe-email input:focus {
+#subscribe-blog-blog_subscription-3 #subscribe-email input:focus {
   outline: none;
   border-color: #DE8E95;
 }
-#subscribe-blog-blog_subscription #subscribe-email label, #subscribe-blog-blog_subscription #subscribe-email br {
+#subscribe-blog-blog_subscription-3 #subscribe-email label, #subscribe-blog-blog_subscription-3 #subscribe-email br {
   display: none;
 }
-#subscribe-blog-blog_subscription #subscribe-submit {
+#subscribe-blog-blog_subscription-3 #subscribe-submit {
   margin-bottom: 0;
 }
-#subscribe-blog-blog_subscription #subscribe-submit br {
+#subscribe-blog-blog_subscription-3 #subscribe-submit br {
   display: none;
 }
-#subscribe-blog-blog_subscription #subscribe-submit button {
+#subscribe-blog-blog_subscription-3 #subscribe-submit button {
   width: 40%;
   height: 3.75rem;
   font-size: 1.125rem;
@@ -2610,7 +2609,7 @@ body.admin-bar .site-header {
   margin: 0;
 }
 @media (min-width: 480px) {
-  #subscribe-blog-blog_subscription #subscribe-submit button {
+  #subscribe-blog-blog_subscription-3 #subscribe-submit button {
     font-size: 1.25rem;
   }
 }
