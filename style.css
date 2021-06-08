@@ -2571,11 +2571,11 @@ body.admin-bar .site-header {
 .jetpack_subscription_widget #subscribe-email {
   width: 60% !important;
   margin: 0 !important;
+  float: left !important;
 }
 .jetpack_subscription_widget #subscribe-email input {
   width: 100% !important;
   height: 3.75rem !important;
-  float: left !important;
   font-size: 1.125rem !important;
   color: #47E2CD !important;
   padding: 0.25rem 1rem 0.25rem 1.5rem !important;
@@ -2602,6 +2602,7 @@ body.admin-bar .site-header {
 .jetpack_subscription_widget #subscribe-submit {
   width: 40% !important;
   margin-bottom: 0 !important;
+  float: right !important;
 }
 .jetpack_subscription_widget #subscribe-submit br {
   display: none !important;

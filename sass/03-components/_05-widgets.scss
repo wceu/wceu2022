@@ -17,10 +17,10 @@
 	#subscribe-email{
 		width: 60% !important;
 		margin: 0 !important;
+		float: left !important;
 		input{
 			width: 100% !important;
 			height: 3.75rem !important;
-			float: left !important;
 			font-size: 1.125rem !important;
 			color: $color__tertiary !important;
 			padding: .25rem 1rem .25rem 1.5rem !important;
@@ -46,6 +46,7 @@
 	#subscribe-submit{
 		width: 40% !important;
 		margin-bottom: 0 !important;
+		float: right !important;
 		br{
 			display: none !important;
 		}
