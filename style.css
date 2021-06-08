@@ -2299,8 +2299,8 @@ body.admin-bar .site-header {
   background-color: #787f86;
   border-color: #787f86;
 }
-.footer-widgets-block #subscribe-blog-blog_subscription-3 input,
-.footer-widgets-block #subscribe-blog-blog_subscription-3 button {
+.footer-widgets-block .jetpack_subscription_widget input,
+.footer-widgets-block .jetpack_subscription_widget button {
   box-shadow: none !important;
 }
 .footer-widgets-block .widget-title {
@@ -2565,13 +2565,13 @@ body.admin-bar .site-header {
 }
 
 /*_______ Suscription widget _______*/
-#subscribe-blog-blog_subscription-3 .subscribe-text p {
+.jetpack_subscription_widget .subscribe-text p {
   font-size: 1rem;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-email {
+.jetpack_subscription_widget #subscribe-email {
   margin: 0;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-email input {
+.jetpack_subscription_widget #subscribe-email input {
   width: 60%;
   height: 3.75rem;
   float: left;
@@ -2582,23 +2582,23 @@ body.admin-bar .site-header {
   border-radius: 2rem 0 0 2rem;
   box-shadow: 0.25em 0.125em 0 #DE8E95;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-email input::placeholder {
+.jetpack_subscription_widget #subscribe-email input::placeholder {
   color: #47E2CD;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-email input:focus {
+.jetpack_subscription_widget #subscribe-email input:focus {
   outline: none;
   border-color: #DE8E95;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-email label, #subscribe-blog-blog_subscription-3 #subscribe-email br {
+.jetpack_subscription_widget #subscribe-email label, .jetpack_subscription_widget #subscribe-email br {
   display: none;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-submit {
+.jetpack_subscription_widget #subscribe-submit {
   margin-bottom: 0;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-submit br {
+.jetpack_subscription_widget #subscribe-submit br {
   display: none;
 }
-#subscribe-blog-blog_subscription-3 #subscribe-submit button {
+.jetpack_subscription_widget #subscribe-submit button {
   width: 40%;
   height: 3.75rem;
   font-size: 1.125rem;
@@ -2609,7 +2609,7 @@ body.admin-bar .site-header {
   margin: 0;
 }
 @media (min-width: 480px) {
-  #subscribe-blog-blog_subscription-3 #subscribe-submit button {
+  .jetpack_subscription_widget #subscribe-submit button {
     font-size: 1.25rem;
   }
 }
