@@ -15,43 +15,43 @@
 		}
 	}
 	#subscribe-email{
-		margin: 0;
+		width: 60% !important;
+		margin: 0 !important;
 		input{
-			width: 60% !important;
-			height: 3.75rem;
-			float: left;
-			color: $color__tertiary;
+			height: 3.75rem !important;
+			float: left !important;
+			color: $color__tertiary !important;
 			padding-left: 1.5rem !important;
-			background-color: $color__primary;
-			border: .125rem solid $color__tertiary;
+			background-color: $color__primary !important;
+			border: .125rem solid $color__tertiary !important;
 			border-radius: 2rem 0 0 2rem !important;
-			box-shadow: 0.25em 0.125em 0 $color__secondary;
+			box-shadow: 0.25em 0.125em 0 $color__secondary !important;
 			&::placeholder{
-				color: $color__tertiary;
+				color: $color__tertiary !important;
 			}
 			&:focus{
-				outline: none;
-				border-color: $color__secondary;
+				outline: none !important;
+				border-color: $color__secondary !important;
 			}
 		}
 		label, br{
-			display: none;
+			display: none !important;
 		}
 	}
 	#subscribe-submit{
-		margin-bottom: 0;
+		width: 40% !important;
+		margin-bottom: 0 !important;
 		br{
-			display: none;
+			display: none !important;
 		}
 		button{
-			width: 40% !important;
 			height: 3.75rem !important;
 			font-size: 1.125rem !important;
 			padding: 0 .5rem !important;
-			border: .125rem solid $color__tertiary;
+			border: .125rem solid $color__tertiary !important;
 			border-radius: 0 2rem 2rem 0 !important;
-			box-shadow: 0.125em 0.125em 0 $color__secondary;
-			margin: 0;
+			box-shadow: 0.125em 0.125em 0 $color__secondary !important;
+			margin: 0 !important;
 			@media(min-width: 480px){
 				font-size: 1.25rem !important;
 			}
