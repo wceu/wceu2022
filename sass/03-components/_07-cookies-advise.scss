@@ -22,7 +22,7 @@
 				display: block;
 				font-size: 1rem;
 				font-weight: 600;
-				color: $color__tertiary;
+				color: $color__primary;
 				padding: .75em 1.25em;
 				background-color: $color__tertiary;
 				border: none;
@@ -31,8 +31,8 @@
 				margin-left: auto;
 				@include is-hover-supported {
 					&:hover {
-						color: $color__primary;
-						background-color: $color__tertiary;
+						background-color: $color__secondary;
+						box-shadow: 0 0 0 $color__tertiary;
 					}
 				}
 			}
