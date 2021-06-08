@@ -22,15 +22,16 @@
 				display: block;
 				font-size: 1rem;
 				font-weight: 600;
-				color: $color__primary;
+				color: $color__tertiary;
 				padding: .75em 1.25em;
-				background-color: $color__tertiary;
+				background-color: $color__primary;
 				border: none;
 				border-radius: 5rem;
 				box-shadow: 0.125em 0.125em 0 $color__secondary;
 				margin-left: auto;
 				@include is-hover-supported {
 					&:hover {
+						color: $color__primary;
 						background-color: $color__secondary;
 						box-shadow: 0 0 0 $color__tertiary;
 					}

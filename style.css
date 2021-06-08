@@ -2660,9 +2660,9 @@ body.admin-bar .site-header {
   display: block;
   font-size: 1rem;
   font-weight: 600;
-  color: #30394A;
+  color: #47E2CD;
   padding: 0.75em 1.25em;
-  background-color: #47E2CD;
+  background-color: #30394A;
   border: none;
   border-radius: 5rem;
   box-shadow: 0.125em 0.125em 0 #DE8E95;
@@ -2670,6 +2670,7 @@ body.admin-bar .site-header {
 }
 @media not all and (hover: none) {
   .widget.widget_eu_cookie_law_widget #eu-cookie-law form input[type=submit]:hover {
+    color: #30394A;
     background-color: #DE8E95;
     box-shadow: 0 0 0 #47E2CD;
   }
