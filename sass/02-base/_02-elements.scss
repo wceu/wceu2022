@@ -52,7 +52,7 @@ figure {
 	margin: 0 auto;
 	overflow: hidden; /* Extra wide images within figure tags don't overflow the content area. */
 	> *{
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 	}
 }

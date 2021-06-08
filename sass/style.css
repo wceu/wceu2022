@@ -574,7 +574,7 @@ figure {
   /* Extra wide images within figure tags don't overflow the content area. */
 }
 figure > * {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
