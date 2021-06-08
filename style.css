@@ -2573,14 +2573,21 @@ body.admin-bar .site-header {
   margin: 0 !important;
 }
 .jetpack_subscription_widget #subscribe-email input {
+  width: 100% !important;
   height: 3.75rem !important;
   float: left !important;
+  font-size: 1.125rem !important;
   color: #47E2CD !important;
-  padding-left: 1.5rem !important;
+  padding: 0.25rem 1rem 0.25rem 1.5rem !important;
   background-color: #30394A !important;
   border: 0.125rem solid #47E2CD !important;
   border-radius: 2rem 0 0 2rem !important;
   box-shadow: 0.25em 0.125em 0 #DE8E95 !important;
+}
+@media (min-width: 480px) {
+  .jetpack_subscription_widget #subscribe-email input {
+    font-size: 1.25rem !important;
+  }
 }
 .jetpack_subscription_widget #subscribe-email input::placeholder {
   color: #47E2CD !important;
@@ -2600,9 +2607,10 @@ body.admin-bar .site-header {
   display: none !important;
 }
 .jetpack_subscription_widget #subscribe-submit button {
+  width: 100% !important;
   height: 3.75rem !important;
   font-size: 1.125rem !important;
-  padding: 0 0.5rem !important;
+  padding: 0.25rem 1.5rem 0.25rem 1rem !important;
   border: 0.125rem solid #47E2CD !important;
   border-radius: 0 2rem 2rem 0 !important;
   box-shadow: 0.125em 0.125em 0 #DE8E95 !important;
