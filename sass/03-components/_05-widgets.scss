@@ -9,58 +9,64 @@
 
 /*_______ Suscription widget _______*/
 .jetpack_subscription_widget{
-	.subscribe-text{
-		p{
-			font-size: 1rem;
-		}
-	}
-	#subscribe-email{
-		width: 60% !important;
-		margin: 0 !important;
-		float: left !important;
-		input{
-			width: 100% !important;
-			height: 3.75rem !important;
-			font-size: 1.125rem !important;
-			color: $color__tertiary !important;
-			padding: .25rem 1rem .25rem 1.5rem !important;
-			background-color: $color__primary !important;
-			border: .125rem solid $color__tertiary !important;
-			border-radius: 2rem 0 0 2rem !important;
-			box-shadow: 0.25em 0.125em 0 $color__secondary !important;
-			@media(min-width: 480px){
-				font-size: 1.25rem !important;
-			}
-			&::placeholder{
-				color: $color__tertiary !important;
-			}
-			&:focus{
-				outline: none !important;
-				border-color: $color__secondary !important;
+	form{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.subscribe-text{
+			flex: 1 1 100%;
+			p{
+				font-size: 1rem;
 			}
 		}
-		label, br{
-			display: none !important;
-		}
-	}
-	#subscribe-submit{
-		width: 40% !important;
-		margin-bottom: 0 !important;
-		float: right !important;
-		br{
-			display: none !important;
-		}
-		button{
-			width: 100% !important;
-			height: 3.75rem !important;
-			font-size: 1.125rem !important;
-			padding: .25rem 1.5rem .25rem 1rem !important;
-			border: .125rem solid $color__tertiary !important;
-			border-radius: 0 2rem 2rem 0 !important;
-			box-shadow: 0.125em 0.125em 0 $color__secondary !important;
+		#subscribe-email{
+			flex: 0 1 auto !important;
+			max-width: 60% !important;
 			margin: 0 !important;
-			@media(min-width: 480px){
-				font-size: 1.25rem !important;
+			input{
+				width: 100% !important;
+				height: 3.75rem !important;
+				font-size: 1.125rem !important;
+				color: $color__tertiary !important;
+				padding: .25rem 1rem .25rem 1.5rem !important;
+				background-color: $color__primary !important;
+				border: .125rem solid $color__tertiary !important;
+				border-radius: 2rem 0 0 2rem !important;
+				box-shadow: 0.25em 0.125em 0 $color__secondary !important;
+				@media(min-width: 480px){
+					font-size: 1.25rem !important;
+				}
+				&::placeholder{
+					color: $color__tertiary !important;
+				}
+				&:focus{
+					outline: none !important;
+					border-color: $color__secondary !important;
+				}
+			}
+			label, br{
+				display: none !important;
+			}
+		}
+		#subscribe-submit{
+			flex: 0 1 auto !important;
+			max-width: 40% !important;
+			margin: 0 !important;
+			br{
+				display: none !important;
+			}
+			button{
+				width: 100% !important;
+				height: 3.75rem !important;
+				font-size: 1.125rem !important;
+				padding: .25rem 1.5rem .25rem 1rem !important;
+				border: .125rem solid $color__tertiary !important;
+				border-radius: 0 2rem 2rem 0 !important;
+				box-shadow: 0.125em 0.125em 0 $color__secondary !important;
+				margin: 0 !important;
+				@media(min-width: 480px){
+					font-size: 1.25rem !important;
+				}
 			}
 		}
 	}

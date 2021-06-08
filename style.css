@@ -2565,15 +2565,23 @@ body.admin-bar .site-header {
 }
 
 /*_______ Suscription widget _______*/
-.jetpack_subscription_widget .subscribe-text p {
+.jetpack_subscription_widget form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jetpack_subscription_widget form .subscribe-text {
+  flex: 1 1 100%;
+}
+.jetpack_subscription_widget form .subscribe-text p {
   font-size: 1rem;
 }
-.jetpack_subscription_widget #subscribe-email {
-  width: 60% !important;
+.jetpack_subscription_widget form #subscribe-email {
+  flex: 0 1 auto !important;
+  max-width: 60% !important;
   margin: 0 !important;
-  float: left !important;
 }
-.jetpack_subscription_widget #subscribe-email input {
+.jetpack_subscription_widget form #subscribe-email input {
   width: 100% !important;
   height: 3.75rem !important;
   font-size: 1.125rem !important;
@@ -2585,29 +2593,29 @@ body.admin-bar .site-header {
   box-shadow: 0.25em 0.125em 0 #DE8E95 !important;
 }
 @media (min-width: 480px) {
-  .jetpack_subscription_widget #subscribe-email input {
+  .jetpack_subscription_widget form #subscribe-email input {
     font-size: 1.25rem !important;
   }
 }
-.jetpack_subscription_widget #subscribe-email input::placeholder {
+.jetpack_subscription_widget form #subscribe-email input::placeholder {
   color: #47E2CD !important;
 }
-.jetpack_subscription_widget #subscribe-email input:focus {
+.jetpack_subscription_widget form #subscribe-email input:focus {
   outline: none !important;
   border-color: #DE8E95 !important;
 }
-.jetpack_subscription_widget #subscribe-email label, .jetpack_subscription_widget #subscribe-email br {
+.jetpack_subscription_widget form #subscribe-email label, .jetpack_subscription_widget form #subscribe-email br {
   display: none !important;
 }
-.jetpack_subscription_widget #subscribe-submit {
-  width: 40% !important;
-  margin-bottom: 0 !important;
-  float: right !important;
+.jetpack_subscription_widget form #subscribe-submit {
+  flex: 0 1 auto !important;
+  max-width: 40% !important;
+  margin: 0 !important;
 }
-.jetpack_subscription_widget #subscribe-submit br {
+.jetpack_subscription_widget form #subscribe-submit br {
   display: none !important;
 }
-.jetpack_subscription_widget #subscribe-submit button {
+.jetpack_subscription_widget form #subscribe-submit button {
   width: 100% !important;
   height: 3.75rem !important;
   font-size: 1.125rem !important;
@@ -2618,7 +2626,7 @@ body.admin-bar .site-header {
   margin: 0 !important;
 }
 @media (min-width: 480px) {
-  .jetpack_subscription_widget #subscribe-submit button {
+  .jetpack_subscription_widget form #subscribe-submit button {
     font-size: 1.25rem !important;
   }
 }
