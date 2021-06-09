@@ -3254,7 +3254,7 @@ table thead th {
   margin: 1rem 0 1rem auto;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt .more-link:after {
-  content: " ";
+  content: "";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;

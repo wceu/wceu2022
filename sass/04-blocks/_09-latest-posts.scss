@@ -108,7 +108,7 @@
 				margin: 1rem 0 1rem auto;
 				@extend %transition;
 				&:after{
-					content: " ";
+					content: "\f344";
 					font-family: 'dashicons';
 					display: inline-block;
 					vertical-align: middle;
