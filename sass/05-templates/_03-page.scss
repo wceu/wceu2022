@@ -10,12 +10,14 @@
 	.entry-title,
 	.page-title{
 		margin: 0;
-		word-break: break-word;
-		hyphens: auto;
-		-ms-hyphens: auto;
-		-moz-hyphens: auto;
 	}
 	.entry-image{
+		display: none;
+	}
+}
+.page-template,
+.page-template-default{	
+	.entry-footer{
 		display: none;
 	}
 }
