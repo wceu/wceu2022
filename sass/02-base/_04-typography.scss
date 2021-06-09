@@ -14,7 +14,7 @@ body{
 h1{
 	font-size: 20vw;
 	font-weight: 700;
-	line-height: 80%;
+	line-height: 90%;
 	margin-top: 0;
 	margin-bottom: .5em;
 	word-break: break-word;
@@ -31,11 +31,19 @@ h2{
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: .5em;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
 	@media (min-width: 480px){
 		font-size: 7vw;
 	}
 	@media (min-width: 769px){
 		@include font-size(4.5);
+		word-break: keep-all;
+		hyphens: none;
+		-ms-hyphens: none;
+		-moz-hyphens: none;
 	}
 }
 
@@ -86,12 +94,6 @@ h6{
 // 		}
 // 	}
 // }
-
-.big-title {
-	font-size: 2.5rem;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-}
 
 /*_______ Typography elements _______*/
 p {

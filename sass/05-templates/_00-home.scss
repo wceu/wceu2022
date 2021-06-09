@@ -38,8 +38,15 @@
 		margin-bottom: 0;
 	}
 	.wceu-big-title{
-		margin-bottom: 0;
+		font-size: 20vw;
+		font-weight: 700;
+		line-height: 80%;
 		color: $color__secondary !important;
+		margin-top: 0;
+		margin-bottom: 0;
+		@media (min-width: 769px){
+			@include font-size(15.5);
+		}
 		.second-word{
 			margin-left: 2rem;
 		}
