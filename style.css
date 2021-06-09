@@ -4424,7 +4424,7 @@ h6 + .notation {
 .wp-block-jetpack-contact-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between !important;
   flex-direction: row;
   max-width: 720px;
 }
@@ -4482,7 +4482,7 @@ h6 + .notation {
 }
 @media (min-width: 768px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.grunion-field-width-50-wrap {
-    flex: 0 0 48%;
+    flex: 1 1 48%;
   }
 }
 .wp-block-jetpack-contact-form .contact-form-submission {

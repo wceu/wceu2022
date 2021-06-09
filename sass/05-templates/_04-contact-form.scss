@@ -2,7 +2,7 @@
 .wp-block-jetpack-contact-form{
 	display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between !important;
     flex-direction: row;
 	@extend %inner;
 	@extend %inner-padding;
@@ -53,7 +53,7 @@
 			flex: 1 1 100%;
 			margin-right: 0;
 			@media (min-width: 768px){
-				flex: 0 0 48%;
+				flex: 1 1 48%;
 			}
 		}
 	}
