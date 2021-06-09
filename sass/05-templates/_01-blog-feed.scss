@@ -19,9 +19,11 @@
 			}
 			.page-title{
 				position: static !important;
-				width: auto !important;
-				height: auto !important;
+				width: auto;
+				height: auto;
+				clip-path: none;
 				text-align: left;
+				color: $color__secondary;
 				margin: 0;
 			}
 		}

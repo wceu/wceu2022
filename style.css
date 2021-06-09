@@ -3843,9 +3843,11 @@ h6 + .notation {
 .search-results .site-main header .page-title,
 .search-results .site-main .page-header .page-title {
   position: static !important;
-  width: auto !important;
-  height: auto !important;
+  width: auto;
+  height: auto;
+  clip-path: none;
   text-align: left;
+  color: #DE8E95;
   margin: 0;
 }
 
