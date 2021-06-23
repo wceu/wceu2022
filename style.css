@@ -55,7 +55,7 @@ input[type=submit] {
 .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, .site-info, .footer-widgets-block, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
   max-width: 100%;
   margin-left: auto;
@@ -65,7 +65,7 @@ input[type=submit] {
   .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, .site-info, .footer-widgets-block, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
     max-width: 1200px;
   }
@@ -2402,8 +2402,19 @@ body.admin-bar .site-header {
 }
 
 .site-info {
-  text-align: center;
-  padding: 2rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  border-top: 0.0625rem solid #DE8E95;
+}
+@media (min-width: 768px) {
+  .site-info {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .site-info p {
   font-size: 0.875rem;
@@ -2412,13 +2423,16 @@ body.admin-bar .site-header {
 .site-info a {
   display: block;
   font-size: 0.875rem;
-  color: #DE8E95;
+  line-height: 100%;
+  text-decoration: underline;
   padding: 0;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .site-info a {
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 0;
   }
 }
 .site-info a:hover {
@@ -2427,36 +2441,15 @@ body.admin-bar .site-header {
 .site-info span {
   display: none;
 }
-
-.site-info-generator {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 100%;
-}
-.site-info-generator:after {
-  content: "";
-  display: block;
-  font-family: "dashicons";
-  font-size: 3rem;
-  color: #47E2CD;
-  margin: 1.5rem auto;
+.site-info .privacy-policy-link:before {
+  content: "|";
+  color: #DE8E95;
+  margin: 0 1rem;
 }
 @media (min-width: 768px) {
-  .site-info-generator:after {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 1rem;
+  .site-info .privacy-policy-link:before {
+    display: none;
   }
-}
-
-.site-info-network {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 100%;
-}
-
-.privacy-policy-link {
-  display: none !important;
 }
 
 .widget {
