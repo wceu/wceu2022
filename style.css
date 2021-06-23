@@ -2147,7 +2147,7 @@ body.admin-bar .site-header {
 
 #footer-widgets {
   background-color: #30394A;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .footer-widgets-block {
@@ -2426,6 +2426,8 @@ body.admin-bar .site-header {
   line-height: 100%;
   text-decoration: underline;
   padding: 0;
+}
+.site-info a:not(:last-of-type) {
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -2441,14 +2443,23 @@ body.admin-bar .site-header {
 .site-info span {
   display: none;
 }
+.site-info .site-info-network {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .site-info .site-info-network {
+    margin-left: auto;
+  }
+}
 .site-info .privacy-policy-link:before {
+  display: none;
   content: "|";
   color: #DE8E95;
   margin: 0 1rem;
 }
 @media (min-width: 768px) {
   .site-info .privacy-policy-link:before {
-    display: none;
+    display: block;
   }
 }
 

@@ -14,7 +14,7 @@
 
 #footer-widgets{
 	background-color: $color__primary;
-	margin-bottom: 2.5rem;
+	margin-bottom: 4rem;
 }
 
 .footer-widgets-block{
@@ -311,7 +311,9 @@
 		line-height: 100%;
 		text-decoration: underline;
 		padding: 0;
-		margin-bottom: 2rem;
+		&:not(:last-of-type){
+			margin-bottom: 2rem;
+		}
 		@media (min-width: 768px){
 			display: inline-block;
 			vertical-align: middle;
@@ -327,16 +329,19 @@
 	.site-info-generator{
 	}
 	.site-info-network{
+		margin-left: 0;
+		@media (min-width: 768px){
+			margin-left: auto;
+		}
 	}
 	.privacy-policy-link{
 		&:before{
+			display: none;
 			content: '|';
 			color: $color__secondary;
 			margin: 0 1rem;
-		}
-		@media (min-width: 768px){
-			&:before{
-				display: none;
+			@media (min-width: 768px){
+				display: block;
 			}
 		}
 	}
