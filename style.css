@@ -2426,8 +2426,6 @@ body.admin-bar .site-header {
   line-height: 100%;
   text-decoration: underline;
   padding: 0;
-}
-.site-info a:not(:last-of-type) {
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -2436,6 +2434,9 @@ body.admin-bar .site-header {
     vertical-align: middle;
     margin-bottom: 0;
   }
+}
+.site-info a:not(:last-of-type) {
+  margin-bottom: 0;
 }
 .site-info a:hover {
   color: #737477;
@@ -2453,13 +2454,16 @@ body.admin-bar .site-header {
 }
 .site-info .privacy-policy-link:before {
   display: none;
-  content: "|";
-  color: #DE8E95;
-  margin: 0 1rem;
 }
 @media (min-width: 768px) {
   .site-info .privacy-policy-link:before {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 0.0625rem;
+    height: 100%;
+    background-color: #DE8E95;
+    margin: 0 1rem;
   }
 }
 
