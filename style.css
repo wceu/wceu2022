@@ -2435,7 +2435,7 @@ body.admin-bar .site-header {
     margin-bottom: 0;
   }
 }
-.site-info a:not(:last-of-type) {
+.site-info a:last-of-type {
   margin-bottom: 0;
 }
 .site-info a:hover {
@@ -2461,7 +2461,7 @@ body.admin-bar .site-header {
     vertical-align: middle;
     content: "";
     width: 0.0625rem;
-    height: 100%;
+    height: 1rem;
     background-color: #DE8E95;
     margin: 0 1rem;
   }
