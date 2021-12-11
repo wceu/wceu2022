@@ -25,7 +25,7 @@
 		padding: 1rem 5% 0 2.5rem;
 		border: none;
 		margin-bottom: 2rem;
-		@media (min-width: 480px){
+		@include phone-portrait{
 			padding: 1rem 10% 0 3rem;
 		}
 		p{
@@ -36,7 +36,7 @@
 			color: $color__secondary;
 			padding: .5rem 0 0;
 			margin-bottom: 1rem;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				font-size: 2.65rem;
 			}
 		}
@@ -50,7 +50,7 @@
 			font-style: normal;
 			line-height: 4.875rem;
 			color: $color__tertiary;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				font-size: 4.875rem;
 			}
 		}
@@ -68,7 +68,7 @@
 		line-height: 120%;
 		color: $color__secondary;
 		margin-bottom: 1rem;
-		@media (min-width: 480px){
+		@include phone-portrait{
 			font-size: 3rem;
 		}
 	}

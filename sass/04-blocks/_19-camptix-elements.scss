@@ -31,7 +31,7 @@
 	color: $color__tertiary;
 	margin-bottom: .25rem;
 	z-index: 1;
-	@media (min-width: 375px){
+	@include phone-tiny{
 		font-size: 1.25rem;
 	}
 	&:focus,

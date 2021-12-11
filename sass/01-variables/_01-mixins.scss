@@ -74,31 +74,54 @@ h4, h5, h6 {
     }
 }
 
-// Responsive Media Codes
-$phone-portrait : 666px;
-$phone : 736px;
-$tablet-portrait : 768px;
+/*_______ Media queries _______*/
+$phone-tiny : 350px;
+$phone-portrait : 480px;
+$phone : 599px;
+$tablet-portrait : 769px;
 $tablet : 1024px;
-$laptops : 1600px;
-$desktops: 1800px;
+$content : 1200px;
+$laptop : 1440px;
+$desktop: 1800px;
 
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop}) {
+		@content;
+	}
+}
+@mixin laptop {
+	@media only screen and (min-width: #{$laptop}) {
+		@content;
+	}
+}
+@mixin content {
+	@media only screen and (min-width: #{$content}) {
+		@content;
+	}
+}
 @mixin tablet {
-  @media only screen and (max-width: #{$tablet}) {
-    @content;
-  }
+	@media only screen and (min-width: #{$tablet}) {
+		@content;
+	}
 }
 @mixin tablet-portrait {
-    @media only screen and (max-width: #{$tablet-portrait}) {
-      @content;
-    }
+	@media only screen and (min-width: #{$tablet-portrait}) {
+		@content;
+	}
 }
 @mixin phone {
-    @media only screen and (max-width: #{$phone}) {
-      @content;
-    }
+	@media only screen and (min-width: #{$phone}) {
+		@content;
+	}
 }
 @mixin phone-portrait {
-    @media only screen and (max-width: #{$phone-portrait}) {
-      @content;
-    }
+	@media only screen and (min-width: #{$phone-portrait}) {
+		@content;
+	}
+}
+
+@mixin phone-tiny {
+	@media only screen and (max-width: #{$phone-tiny}) {
+		@content;
+	}
 }

@@ -18,16 +18,16 @@
 		grid-column-gap: 1rem;
 		grid-row-gap: 0;
 		grid-template-columns: 100%;
-		@media (min-width: 480px){
+		@include phone-portrait{
 			grid-template-columns: repeat(2, 1fr);
 		}
 		&.has-grid-columns-3{
-			@media (min-width: 769px){
+			@include tablet-portrait{
 				grid-template-columns: repeat(3, 1fr);
 			}
 		}
 		&.has-grid-columns-4{
-			@media (min-width: 769px){
+			@include tablet-portrait{
 				grid-template-columns: repeat(4, 1fr);
 			}
 		}
@@ -35,7 +35,7 @@
 	.wordcamp-post-list__post{
 		@extend %camptix-item;
 		padding: 1.5rem;
-		@media (min-width: 769px){
+		@include tablet-portrait{
 			padding: 2rem;
 		}
 		.wordcamp-organizers__post,

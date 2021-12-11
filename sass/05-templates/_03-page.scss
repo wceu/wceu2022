@@ -3,7 +3,7 @@
 .page-template .entry-header{
 	padding: 4rem 2rem 0;
 	margin-bottom: 4rem;
-	@media(min-width: 769px){
+	@include tablet-portrait{
 		padding: 4rem 10%;
 		margin-bottom: 4rem;
 	}

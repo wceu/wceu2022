@@ -6,13 +6,13 @@
 		grid-row-gap: 0;
 		grid-template-columns: 100%;
 		margin-bottom: 1rem;
-		@media (min-width: 350px){
+		@include phone-tiny{
 			grid-template-columns: repeat(2, 1fr);
 		}
-		@media (min-width: 480px){
+		@include phone-portrait{
 			grid-template-columns: repeat(3, 1fr);
 		}
-		@media (min-width: 769px){
+		@include tablet-portrait{
 			grid-template-columns: repeat(4, 1fr);
 		}
 		.wordcamp-facilitator-grid-item{

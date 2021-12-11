@@ -11,7 +11,7 @@
 .wceu-sponsors-title{
 	font-size: 2.5rem;
 	text-align: center;
-	@media(min-width: 768px){
+	@include tablet-portrait{
 		font-size: 3rem;
 	}
 }
@@ -29,7 +29,7 @@ div[class^="wcorg-sponsor-level-"] {
 		font-size: 1.5rem;
 		text-align: center;
 		margin-bottom: 1.5rem;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			font-size: 2rem;
 		}
 		&:before{
@@ -45,7 +45,7 @@ div[class^="wcorg-sponsor-level-"] {
 
 .wcorg-sponsor{
 	margin: 0;
-	@media(min-width: 768px){
+	@include tablet-portrait{
 		max-width: inherit;
 		margin: 0;
 	}
@@ -61,7 +61,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-super-admin{
 	.wcorg-sponsor{
 		flex: 1 1 100%;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 50%;
 		}
 		img{
@@ -74,7 +74,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-administrator{
 	.wcorg-sponsor{
 		flex: 0 1 80%;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 33.333%;
 		}
 		img{
@@ -87,7 +87,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-editor{
 	.wcorg-sponsor{
 		flex: 0 1 80%;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 25%;
 		}
 		img{
@@ -100,7 +100,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-author{
 	.wcorg-sponsor{
 		flex: 0 1 80%;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 20%;
 		}
 		img{
@@ -113,7 +113,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-smb{
 	.wcorg-sponsor{
 		flex: 0 1 70%;
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 20%;
 		}
 		img{
@@ -129,7 +129,7 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-partner
 {
 	.wcorg-sponsor{
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 31.333%;
 		}
 		img{
@@ -160,20 +160,20 @@ div[class^="wcorg-sponsor-level-"] {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	border-collapse: collapse;
-	@media(min-width: 768px){
+	@include tablet-portrait{
 		max-width: $size__content-moretiny;
 	}
 	tr{
-		@media(min-width: 768px){
+		@include tablet-portrait{
 			border: none;
 		}
 		td{
 			display: block;
-			@media(min-width: 768px){
+			@include tablet-portrait{
 				display: table-cell;
 			}
 			&:first-child{
-				@media(min-width: 768px){
+				@include tablet-portrait{
 					max-width: 200px;
 					text-align: right;
 					padding-right: 2rem;

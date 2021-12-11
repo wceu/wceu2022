@@ -1,22 +1,16 @@
 /*_______ Fixing the fixed header with admin bar _______*/
 body.admin-bar {
-    .site-header {
-        top: 32px;
-    }
-	/**
-	 * Tablet Portrait
-	 */
-    @include tablet-portrait {
-        .site-header {
-            top: 46px;
-        }
-    }
-	/**
-	 * Phone
-	 */
-    @media screen and (max-width: 600px) {
-        #wpadminbar {
-            position: fixed;
-        }
-    }
+	.site-header {
+		top: 32px;
+	}
+	@include tablet-portrait{
+		.site-header {
+			top: 46px;
+		}
+	}
+	@include phone{
+		#wpadminbar {
+			position: fixed;
+		}
+	}
 }

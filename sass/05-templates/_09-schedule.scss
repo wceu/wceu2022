@@ -52,7 +52,7 @@
 					background-color: $color__secondary;
 					border: none;
 					overflow: hidden;
-					@media (min-width: 700px){
+					@include tablet-portrait{
 						display: block;
 						text-align: right;
 						padding: .5rem;
@@ -69,7 +69,7 @@
 				}
 				&.wcpt-session-type-session,
 				&.wcpt-session-type-custom{
-					@media (min-width: 700px){
+					@include tablet-portrait{
 						width: 45%;
 					}
 					.wcpt-session-title{
@@ -77,10 +77,10 @@
 						font-weight: 700;
 						font-size: 1.25rem;
 						text-decoration: none;
-						@media (min-width: 480px){
+						@include phone-portrait{
 							font-size: 1.5rem;
 						}
-						@media (min-width: 769px){
+						@include tablet-portrait{
 							font-size: 1.5rem;
 						}
 					}
@@ -105,17 +105,17 @@
 						background-color: $color__tertiary;
 						border: none;
 						margin-bottom: .5rem;
-						@media (min-width: 700px){
+						@include tablet-portrait{
 							display: none;
 						}
 					}
 					&.wcb-track-track-1.wcb-track-track-2{
-						@media (min-width: 700px){
+						@include tablet-portrait{
 							text-align: center;
 						}
 					}
 					.wcb-session-cell-content{
-						@media (min-width: 700px){
+						@include tablet-portrait{
 							padding-right: 2rem;
 						}
 						.wcpt-session-title{
@@ -125,10 +125,10 @@
 							text-decoration: none;
 							margin-bottom: .5rem;
 							padding: 0;
-							@media (min-width: 375px){
+							@include phone-tiny{
 								font-size: 1.5rem;
 							}
-							@media (min-width: 769px){
+							@include tablet-portrait{
 								font-size: 1.5rem;
 							}
 						}
@@ -181,7 +181,7 @@
 					}
 				}
 				&.wcpt-session-empty {
-					@media (max-width: 700px){
+					@include tablet-portrait{
 						display: none;
 					}
 				}
@@ -381,7 +381,7 @@
 	bottom: 4rem;
 	font-size: 1rem;
 	border-radius: 0;
-	@media (min-width: 375px){
+	@include phone-tiny{
 		max-width: 350px;
 		right: 1rem;
 	}
@@ -526,7 +526,7 @@
 			@extend %camptix-item;
 			flex: 1 1 100%;
 			margin-bottom: 2rem;
-			@media (min-width: 768px){
+			@include tablet-portrait{
 				flex: 0 1 48%;
 			}
 			&.type-custom{

@@ -23,7 +23,7 @@ input[type="submit"] {
 	box-shadow: 0.125em 0.125em 0 $color__secondary;
 	cursor: pointer;
 	@extend %transition;
-	@media (min-width: 480px){
+	@include phone-portrait{
 		font-size: 1.5rem;
 	}
 	&:visited{
@@ -85,7 +85,7 @@ input[type="submit"] {
 		border-radius: 5rem;
 		box-shadow: 0.125em 0.125em 0 $color__secondary;
 		@extend %transition;
-		@media(min-width: 480px){
+		@include phone-portrait{
 			font-size: 1.75rem;
 		}
 		&:focus{

@@ -14,7 +14,7 @@
 			border-radius: 2rem;
 			box-shadow: .5rem .5rem 0 $color__tertiary;
 			margin: 0 auto;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				font-size: 8rem;
 			}
 			&:before{
@@ -24,7 +24,7 @@
 				font-weight: 400;
 				margin-bottom: 1rem;
 				// color: $color__tertiary;
-				@media (min-width: 769px){
+				@include tablet-portrait{
 					font-size: 5rem;
 				}
 			}
@@ -41,7 +41,7 @@
 			text-align: center;
 			padding: 1.5rem 0 0;
 			margin: -2rem auto 0;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				font-size: 2rem;
 			}
 		}
@@ -65,7 +65,7 @@
 				color: $color__tertiary;
 				padding: .5rem 1rem;
 				background-color: $color__primary;
-				@media (min-width: 480px){
+				@include phone-portrait{
 					height: auto;
 					font-size: 1.5rem;
 					padding: .625rem 1rem;
@@ -75,7 +75,7 @@
 		.widget{
 			display: block;
 			margin-bottom: 4rem;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				width: 45%;
 				&:first-of-type{
 					

@@ -14,7 +14,7 @@
 			width: 100%;
 			padding: 2rem;
 			margin-bottom: 4rem;
-			@media(min-width: 769px){
+			@include tablet-portrait{
 				padding: 4rem 0;
 			}
 			.page-title{
@@ -44,12 +44,12 @@
 .search-results{
 	.hentry{
 		position:relative;
-		@media(min-width: 480px){
+		@include phone-portrait{
 			flex: 0 0 48%;
 			max-width: 48%;
 			margin: 0 1% 4rem;
 		}
-		@media(min-width: 769px){
+		@include tablet-portrait{
 			flex: 0 0 31.333%;
 			max-width: 31.333%;
 			margin: 0 1% 4rem;
@@ -65,7 +65,7 @@
 				margin-bottom: .5rem !important;
 				border-radius: 1rem;
 				overflow: hidden;
-				@media (min-width: 768px){
+				@include tablet-portrait{
 					height: 13rem;
 				}
 				&:before{
@@ -86,7 +86,7 @@
 					height: 10srem;
 					object-fit: cover;
 					filter: grayscale(1) brightness(1.25);
-					@media (min-width: 768px){
+					@include tablet-portrait{
 						height: 13rem;
 					}
 				}

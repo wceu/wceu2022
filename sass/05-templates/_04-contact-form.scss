@@ -7,7 +7,7 @@
 	@extend %inner;
 	@extend %inner-padding;
 	max-width: $size__content-tiny;
-	@media (min-width: 480px){
+	@include phone-portrait{
 		padding: 0;
 	}
 	input[type="submit"]{
@@ -31,7 +31,7 @@
 		&.mid-left-wrap{
 			float: none;
 			width: 100%;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				float: left;
 				width: 48%;
 			}
@@ -39,7 +39,7 @@
 		&.mid-right-wrap{
 			float: none;
 			width: 100%;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				float: right;
 				width: 48%;
 			}
@@ -52,7 +52,7 @@
 		&.grunion-field-width-50-wrap{
 			flex: 1 1 100%;
 			margin-right: 0;
-			@media (min-width: 768px){
+			@include tablet-portrait{
 				flex: 1 1 48%;
 			}
 		}

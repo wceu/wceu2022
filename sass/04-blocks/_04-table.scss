@@ -12,7 +12,7 @@ table {
 		th{
 			padding: .25rem;
 		}
-		// @media (min-width: 480px){
+		// @include phone-portrait{
 		// 	+ tbody{
 		// 		&:before{
 		// 			content: '';
@@ -30,7 +30,7 @@ table {
 // 	margin-bottom: 2rem;
 // 	border-collapse: collapse;
 // 	word-break: break-word;
-// 	@media (min-width: 769px){
+// 	@include tablet-portrait{
 // 		font-size: 1.25rem;
 // 		min-width: inherit;
 // 		word-break: keep-all;
@@ -45,7 +45,7 @@ table {
 // 			padding: .5rem 1rem;
 // 			border-color: white;
 // 			border-top-color: $color__primary;
-// 			@media (min-width: 769px){
+// 			@include tablet-portrait{
 // 				font-size: 1.25rem;
 // 			}
 // 			&:first-child{

@@ -9,7 +9,7 @@
 	}
 	ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names){
 		padding-left: 1rem;
-		@media (min-width: 480px){
+		@include phone-portrait{
 			padding-left: 1.5rem;
 		}
 		li{
@@ -26,7 +26,7 @@
 				height: .5rem;
 				border: .125rem solid $color__tertiary;
 				border-radius: 100%;
-				@media (min-width: 480px){
+				@include phone-portrait{
 					top: .45em;
 				}
 			}
@@ -35,7 +35,7 @@
 	ol{
 		padding-left: 1.5rem;
 		counter-reset: orderedlist-counter;
-		@media (min-width: 480px){
+		@include phone-portrait{
 			padding-left: 1.5rem;
 		}
 		li{
@@ -55,7 +55,7 @@
 				line-height: .5rem;
 				color: $color__tertiary;
 				margin-top: .5rem;
-				@media (min-width: 480px){
+				@include phone-portrait{
 					top: .125rem;
 					left: -1.5rem;
 					text-indent: -.25rem;

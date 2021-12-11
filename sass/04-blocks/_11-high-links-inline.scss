@@ -28,7 +28,7 @@
 				font-weight: 800;
 				line-height: 100%;
 				margin-bottom: 0;
-				@media (min-width: 480px){
+				@include phone-portrait{
 					font-size: 1.75rem;
 				}
 				a{

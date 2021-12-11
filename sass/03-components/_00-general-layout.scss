@@ -5,7 +5,7 @@
 	min-width: 100%;
 	min-height: 100%;
 	margin-top: 5rem;
-	@media(min-width: 769px){
+	@include tablet-portrait{
 		margin-top: 6rem;
 	}
 }

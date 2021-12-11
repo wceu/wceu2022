@@ -19,7 +19,7 @@
 		margin-right: 1%;
 		margin-bottom: 1rem;
 		@extend %transition;
-		@media (min-width: 768px){
+		@include tablet-portrait{
 			flex: 0 1 25%;
 		}
 		&:focus,
@@ -41,7 +41,7 @@
 			width: 100%;
 			margin: 0;
 			margin-bottom: 1rem;
-			@media (min-width: 480px){
+			@include phone-portrait{
 				margin-bottom: 2rem;
 			}
 			a{
@@ -51,7 +51,7 @@
 					max-width: 4rem;
 					height: auto;
 					margin-left: 0;
-					@media (min-width: 480px){
+					@include phone-portrait{
 						max-width: 5rem;
 					}
 				}
@@ -81,7 +81,7 @@
 				text-decoration: none;
 				margin-top: auto;
 				margin-bottom: 0;
-				@media (min-width: 480px){
+				@include phone-portrait{
 					font-size: 2rem;
 				}
 				&:focus,

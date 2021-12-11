@@ -17,7 +17,7 @@
 	border-radius: 1rem;
 	box-shadow: .25rem .25rem 0 $color__tertiary;
 	margin-bottom: 2rem;
-	@media (min-width: 375px){
+	@include phone-tiny{
 		padding: 2rem;
 	}
 	%headings{
@@ -28,8 +28,7 @@
 	.wp-block-group__inner-container{
 		margin: 0;
 	}
-	%headings,
-	p{
+	%headings, p, a{
 		color: $color__primary;
 	}
 	p{
@@ -37,9 +36,6 @@
 		line-height: 120%;
 		&:last-of-type{
 			margin-bottom: 0;
-		}
-		a{
-			color: $color__primary !important;
 		}
 	}
 	ul, ol{
@@ -53,9 +49,8 @@
 	}
 	&.dark{
 		background-color: $color__primary;
-		%headings,
-		p{
-			color: $color__secondary !important;
+		%headings, p, a{
+			color: $color__secondary;
 		}
 	}
 }

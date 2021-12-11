@@ -43,6 +43,7 @@ input[type=submit] {
   transition: all 0.25s ease-in-out;
 }
 
+/*_______ Media queries _______*/
 /*_______ Color variables _______*/
 /*_______ Brand colors _______*/
 /*_______ Grays _______*/
@@ -61,7 +62,7 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
@@ -78,7 +79,7 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .error404 .page-content, .error404 .page-header .page-title, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .search-no-results .content-area, .wp-block-group .wp-block-group__inner-container > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .no-comments, .comments-title, .comment-respond, .comment-list {
@@ -93,7 +94,7 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .session-categories-links, .single-wcb_speaker .entry-content,
 .single-wcb_session .entry-content, .single-wcb_speaker .entry-title,
 .single-wcb_session .entry-title {
@@ -106,7 +107,7 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .single.single-wcb_sponsor .entry-image {
     max-width: 400px;
   }
@@ -120,7 +121,7 @@ input[type=submit] {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .error404 .page-content, .wp-block-jetpack-contact-form, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
@@ -571,7 +572,7 @@ figure > * {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .alignleft {
     float: left;
     margin-right: 1.5rem;
@@ -584,7 +585,7 @@ figure > * {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .alignright {
     float: right;
     margin-left: 1.5rem;
@@ -636,7 +637,7 @@ h1 {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h1 {
     font-size: 160px;
     font-size: 10rem;
@@ -653,12 +654,12 @@ h2 {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   h2 {
     font-size: 7vw;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h2 {
     font-size: 72px;
     font-size: 4.5rem;
@@ -675,7 +676,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h3 {
     font-size: 48px;
     font-size: 3rem;
@@ -689,7 +690,7 @@ h4 {
   margin-top: 0;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h4 {
     font-size: 40px;
     font-size: 2.5rem;
@@ -703,7 +704,7 @@ h5 {
   margin-top: 0;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h5 {
     font-size: 32px;
     font-size: 2rem;
@@ -717,7 +718,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.125em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h6 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -732,7 +733,7 @@ p {
   margin: 0 0 1em;
   color: #F4C3C8;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   p {
     font-size: 24px;
     font-size: 1.5rem;
@@ -803,7 +804,7 @@ ol, ul {
   line-height: 120%;
   margin-bottom: 1em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   ol, ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -901,7 +902,7 @@ label {
   color: #DE8E95;
   margin-bottom: 0.25rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   label {
     font-size: 1.25rem;
   }
@@ -929,7 +930,7 @@ textarea,
   outline: none;
   resize: none;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   input,
 select,
 textarea,
@@ -989,7 +990,7 @@ input[type=radio]:focus {
 }
 
 input[type=checkbox]:checked:after {
-  content: "";
+  content: "\f147";
   position: absolute;
   top: 0;
   left: -3px;
@@ -1100,7 +1101,7 @@ input[type=hidden] {
   margin: 0 !important;
   white-space: pre-wrap !important;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .select2-selection__rendered {
     font-size: 1.5rem;
     white-space: nowrap !important;
@@ -1158,7 +1159,7 @@ input[type=submit] {
   box-shadow: 0.125em 0.125em 0 #DE8E95;
   cursor: pointer;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .btn,
 button,
 input[type=button],
@@ -1260,7 +1261,7 @@ input[type=submit].outlined:hover {
   border-radius: 5rem;
   box-shadow: 0.125em 0.125em 0 #DE8E95;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-button .wp-block-button__link {
     font-size: 1.75rem;
   }
@@ -1304,16 +1305,16 @@ input[type=submit].outlined:hover {
   margin-left: 0.5rem;
 }
 .wp-block-button.with-icon.right-arrow .wp-block-button__link:after {
-  content: "";
+  content: "\f344";
 }
 .wp-block-button.with-icon.down-arrow .wp-block-button__link:after {
-  content: "";
+  content: "\f346";
 }
 .wp-block-button.with-icon.external .wp-block-button__link:after {
-  content: "";
+  content: "\f504";
 }
 .wp-block-button.with-icon.map .wp-block-button__link:after {
-  content: "";
+  content: "\f231";
   font-family: "dashicons";
 }
 .wp-block-button.external-link {
@@ -1332,7 +1333,7 @@ input[type=submit].outlined:hover {
 .wp-block-button.external-link .wp-block-button__link:before {
   display: inline-block;
   vertical-align: middle;
-  content: "";
+  content: "\f504";
   font-family: "dashicons";
   font-weight: normal;
   font-size: 1rem;
@@ -1346,7 +1347,7 @@ input[type=submit].outlined:hover {
   box-shadow: none;
 }
 .wp-block-button.anchor-link .wp-block-button__link:after {
-  content: " ";
+  content: " \f346";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -1609,7 +1610,7 @@ input[type=submit].outlined:hover {
   background-color: #30394A;
 }
 .no-comments:before {
-  content: "";
+  content: "\f158";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -1627,23 +1628,15 @@ input[type=submit].outlined:hover {
 }
 
 /*_______ Fixing the fixed header with admin bar _______*/
-body.admin-bar {
-  /**
-   * Tablet Portrait
-   */
-  /**
-   * Phone
-   */
-}
 body.admin-bar .site-header {
   top: 32px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   body.admin-bar .site-header {
     top: 46px;
   }
 }
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 599px) {
   body.admin-bar #wpadminbar {
     position: fixed;
   }
@@ -1660,7 +1653,7 @@ body.admin-bar .site-header {
   min-height: 100%;
   margin-top: 5rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .site {
     margin-top: 6rem;
   }
@@ -1682,12 +1675,12 @@ body.admin-bar .site-header {
   margin: 0 auto;
   z-index: 10;
 }
-@media (min-width: 350px) {
+@media only screen and (max-width: 350px) {
   .site-header {
     padding: 0 1rem 0 2rem;
   }
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .site-header {
     padding: 0 2rem;
   }
@@ -1701,7 +1694,7 @@ body.admin-bar .site-header {
   flex: 0 0 auto;
   padding: 1rem 0 0;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .custom-header {
     height: 100%;
     padding: 1rem 0 0;
@@ -1722,7 +1715,7 @@ body.admin-bar .site-header {
   width: 88px;
   height: auto;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .custom-header .site-branding .custom-logo {
     width: 111px;
   }
@@ -1753,12 +1746,12 @@ body.admin-bar .site-header {
   overflow-y: auto;
   z-index: 10;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .main-navigation .menu {
     width: 60vw;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu {
     position: initial;
     width: auto;
@@ -1775,7 +1768,7 @@ body.admin-bar .site-header {
 .main-navigation .menu .menu-item {
   margin: 0 0 1.5rem;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item {
     flex: 0 0 auto;
     margin: 0 0 0 1rem;
@@ -1788,19 +1781,19 @@ body.admin-bar .site-header {
   line-height: 100%;
   color: #30394A;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item a {
     font-size: 1rem;
     color: #47E2CD;
     padding: 0.5rem;
   }
 }
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item a {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item:focus > a, .main-navigation .menu .menu-item:focus-within > a, .main-navigation .menu .menu-item:hover > a {
     color: #DE8E95;
   }
@@ -1808,7 +1801,7 @@ body.admin-bar .site-header {
 .main-navigation .menu .menu-item.current-menu-item > a {
   color: #47E2CD;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.current-menu-item > a {
     color: #DE8E95;
   }
@@ -1821,7 +1814,7 @@ body.admin-bar .site-header {
   border-radius: 2rem;
   box-shadow: 0.125em 0.125em 0 #DE8E95;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised {
     width: auto;
     margin: 0 0 0 1rem;
@@ -1832,7 +1825,7 @@ body.admin-bar .site-header {
   padding: 0.5rem 0.75rem;
   text-shadow: none;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised:focus, .main-navigation .menu .menu-item.emphasised:focus-within, .main-navigation .menu .menu-item.emphasised:hover {
     border-color: #DE8E95;
     box-shadow: 0 0 0 #47E2CD;
@@ -1841,7 +1834,7 @@ body.admin-bar .site-header {
     color: #DE8E95;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised:active {
     background-color: #47E2CD;
     box-shadow: 0 0 0 #47E2CD;
@@ -1861,9 +1854,9 @@ body.admin-bar .site-header {
   position: relative;
   background-color: transparent;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.menu-item-has-children > a:after {
-    content: "";
+    content: "\f543";
     font-family: "dashicons";
     display: inline-block;
     vertical-align: middle;
@@ -1873,7 +1866,7 @@ body.admin-bar .site-header {
     transition: all 0.25s ease-in-out;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.menu-item-has-children.focus, .main-navigation .menu .menu-item.menu-item-has-children:focus-within, .main-navigation .menu .menu-item.menu-item-has-children:hover,
 .main-navigation .menu .menu-item.menu-item-has-children > a:focus,
 .main-navigation .menu .menu-item.menu-item-has-children > a:hover {
@@ -1895,7 +1888,7 @@ body.admin-bar .site-header {
 .main-navigation .menu .menu-item.menu-item-has-children .dropdown-toggle {
   display: none;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.menu-item-has-children.current-menu-parent > a {
     color: #DE8E95;
   }
@@ -1912,7 +1905,7 @@ body.admin-bar .site-header {
   text-shadow: none;
   z-index: 10;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu {
     position: absolute;
     top: 1rem;
@@ -1927,12 +1920,12 @@ body.admin-bar .site-header {
     transition: all 0.25s ease-in-out;
   }
 }
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu {
     top: 1.25rem;
   }
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .main-navigation .sub-menu {
     top: 1.5rem;
   }
@@ -1945,7 +1938,7 @@ body.admin-bar .site-header {
 .main-navigation .sub-menu .menu-item:last-of-type {
   margin-bottom: 0;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu .menu-item {
     flex: 0 0 auto;
     line-height: 140%;
@@ -1959,13 +1952,13 @@ body.admin-bar .site-header {
   color: #47E2CD;
   padding: 0.5rem 0.25rem;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu .menu-item a {
     font-size: 1rem;
     padding: 1rem;
   }
 }
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu .menu-item a {
     font-size: 1.125rem;
   }
@@ -1979,7 +1972,7 @@ body.admin-bar .site-header {
 .main-navigation .sub-menu .menu-item:active {
   background-color: #30394A;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu .menu-item.current-menu-item > a {
     color: #DE8E95;
   }
@@ -1989,7 +1982,7 @@ body.admin-bar .site-header {
   text-decoration: none;
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   #header-widget-1 {
     margin-left: 1.5rem;
   }
@@ -2012,14 +2005,14 @@ body.admin-bar .site-header {
   color: #47E2CD !important;
   padding: 0;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .more-info {
     font-size: 1rem;
     width: 5rem;
     padding: 0;
   }
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .more-info {
     top: 1rem;
   }
@@ -2045,17 +2038,17 @@ body.admin-bar .site-header {
   margin: 0;
   z-index: 20;
 }
-@media (min-width: 350px) {
+@media only screen and (max-width: 350px) {
   .menu-toggle {
     right: 5rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .menu-toggle {
     top: 2rem;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .menu-toggle {
     display: none;
   }
@@ -2077,7 +2070,7 @@ body.admin-bar .site-header {
   right: 0;
 }
 .main-navigation.toggled-on .menu-toggle:before {
-  content: "";
+  content: "\f335";
   font-family: "dashicons";
   font-weight: 400;
   font-size: 3rem;
@@ -2156,7 +2149,7 @@ body.admin-bar .site-header {
   justify-content: space-between;
   padding: 0 2rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .footer-widgets-block {
     flex-flow: row wrap;
   }
@@ -2217,12 +2210,12 @@ body.admin-bar .site-header {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .footer-widgets-block .widget-title {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .footer-widgets-block .widget-title {
     font-size: 1.5rem;
   }
@@ -2238,7 +2231,7 @@ body.admin-bar .site-header {
   line-height: 100%;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .footer-widgets-block .widget_nav_menu .menu .menu-item {
     font-size: 1rem;
     margin-bottom: 1.25rem;
@@ -2276,12 +2269,12 @@ body.admin-bar .site-header {
   background-color: #47E2CD;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   #footer-widget-2 .widget:nth-of-type(1), #footer-widget-2 .widget:nth-of-type(2), #footer-widget-2 .widget:nth-of-type(3) {
     flex: 0 1 45%;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #footer-widget-2 .widget:nth-of-type(1), #footer-widget-2 .widget:nth-of-type(2), #footer-widget-2 .widget:nth-of-type(3) {
     flex: 0 1 25%;
   }
@@ -2290,12 +2283,12 @@ body.admin-bar .site-header {
   flex: 0 1 10%;
   margin: 0 auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   #footer-widget-2 .widget:nth-of-type(4) {
     flex: 0 1 48%;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #footer-widget-2 .widget:nth-of-type(4) {
     flex: 0 1 20%;
     margin: 2rem 0 0 auto;
@@ -2310,12 +2303,12 @@ body.admin-bar .site-header {
 #footer-widget-3 .widget {
   margin-bottom: 4rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   #footer-widget-3 .widget {
     flex: 0 1 48%;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #footer-widget-3 .widget {
     flex: 0 1 33%;
     margin-bottom: 0;
@@ -2325,7 +2318,7 @@ body.admin-bar .site-header {
   max-width: 300px;
   margin: 2rem auto 0;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #footer-widget-3 .widget_search {
     margin: 0;
   }
@@ -2385,19 +2378,19 @@ body.admin-bar .site-header {
   color: #DE8E95;
 }
 #menu-social .menu-item.facebook a:before {
-  content: "";
+  content: "\f305";
   font-family: "dashicons";
 }
 #menu-social .menu-item.twitter a:before {
-  content: "";
+  content: "\f301";
   font-family: "dashicons";
 }
 #menu-social .menu-item.instagram a:before {
-  content: "";
+  content: "\f12d";
   font-family: "dashicons";
 }
 #menu-social .menu-item.linkedin a:before {
-  content: "";
+  content: "\f18d";
   font-family: "dashicons";
 }
 
@@ -2409,7 +2402,7 @@ body.admin-bar .site-header {
   padding: 2rem;
   border-top: 0.0625rem solid #DE8E95;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .site-info {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -2428,7 +2421,7 @@ body.admin-bar .site-header {
   padding: 0;
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .site-info a {
     display: inline-block;
     vertical-align: middle;
@@ -2447,7 +2440,7 @@ body.admin-bar .site-header {
 .site-info .site-info-network {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .site-info .site-info-network {
     margin-left: auto;
   }
@@ -2455,7 +2448,7 @@ body.admin-bar .site-header {
 .site-info .privacy-policy-link:before {
   display: none;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .site-info .privacy-policy-link:before {
     display: inline-block;
     vertical-align: middle;
@@ -2505,7 +2498,7 @@ body.admin-bar .site-header {
   border-radius: 2rem 0 0 2rem !important;
   box-shadow: 0.25em 0.125em 0 #DE8E95;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .jetpack_subscription_widget form #subscribe-email input {
     font-size: 1.25rem !important;
   }
@@ -2532,13 +2525,15 @@ body.admin-bar .site-header {
   width: 100% !important;
   height: 3.75rem !important;
   font-size: 1.125rem !important;
+  color: #30394A;
   padding: 0.25rem 1.25rem 0.25rem 0.5rem !important;
+  background-color: #47E2CD;
   border: 0.125rem solid #47E2CD !important;
   border-radius: 0 2rem 2rem 0 !important;
   box-shadow: 0.125em 0.125em 0 #DE8E95;
   margin: 0 !important;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .jetpack_subscription_widget form #subscribe-submit button {
     font-size: 1.25rem !important;
   }
@@ -2586,7 +2581,7 @@ body.admin-bar .site-header {
     box-shadow: 0 0 0 #47E2CD;
   }
 }
-@media only screen and (max-width: 666px) {
+@media only screen and (min-width: 480px) {
   .widget.widget_eu_cookie_law_widget {
     /**
     * Tablet Portrait
@@ -2607,7 +2602,7 @@ body.admin-bar .site-header {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .wp-block-group {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -2616,7 +2611,7 @@ body.admin-bar .site-header {
 .wp-block-group.has-background {
   padding: 3rem 1rem;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .wp-block-group.has-background {
     padding: 5rem 0;
   }
@@ -2686,7 +2681,7 @@ body.admin-bar .site-header {
 .entry-content ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names) {
   padding-left: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .entry-content ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names) {
     padding-left: 1.5rem;
   }
@@ -2707,7 +2702,7 @@ body.admin-bar .site-header {
   border: 0.125rem solid #47E2CD;
   border-radius: 100%;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .entry-content ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names) li:before {
     top: 0.45em;
   }
@@ -2716,7 +2711,7 @@ body.admin-bar .site-header {
   padding-left: 1.5rem;
   counter-reset: orderedlist-counter;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .entry-content ol {
     padding-left: 1.5rem;
   }
@@ -2740,7 +2735,7 @@ body.admin-bar .site-header {
   color: #47E2CD;
   margin-top: 0.5rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .entry-content ol li:before {
     top: 0.125rem;
     left: -1.5rem;
@@ -2782,7 +2777,7 @@ table thead th {
   font-size: 2rem;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h2 {
     font-size: 40px;
     font-size: 2.5rem;
@@ -2793,7 +2788,7 @@ table thead th {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h3 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -2804,7 +2799,7 @@ table thead th {
   font-size: 1.25rem;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h4 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -2815,7 +2810,7 @@ table thead th {
   font-size: 1.125rem;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h5 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -2826,7 +2821,7 @@ table thead th {
   font-size: 1rem;
   margin-bottom: 0.125em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h6 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -2857,7 +2852,7 @@ table thead th {
   font-size: 2rem;
   margin-bottom: 0.5em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h2 {
     font-size: 40px;
     font-size: 2.5rem;
@@ -2868,7 +2863,7 @@ table thead th {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h3 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -2879,7 +2874,7 @@ table thead th {
   font-size: 1.25rem;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h4 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -2890,7 +2885,7 @@ table thead th {
   font-size: 1.125rem;
   margin-bottom: 0.25em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h5 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -2901,7 +2896,7 @@ table thead th {
   font-size: 1rem;
   margin-bottom: 0.125em;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h6 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -2932,7 +2927,7 @@ table thead th {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-media-text {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -2944,7 +2939,7 @@ table thead th {
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
   padding: 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
     padding: 0 2rem 0 0;
   }
@@ -2980,7 +2975,7 @@ table thead th {
 .wp-block-media-text .wp-block-media-text__content {
   padding: 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-media-text .wp-block-media-text__content {
     padding: 0 0 0 2rem;
   }
@@ -2989,7 +2984,7 @@ table thead th {
   display: flex;
   flex-flow: column wrap;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-media-text.is-stacked-on-mobile {
     display: grid;
   }
@@ -3024,7 +3019,7 @@ table thead th {
   border: none;
   margin-bottom: 2rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-quote.is-style-large {
     padding: 1rem 10% 0 3rem;
   }
@@ -3038,7 +3033,7 @@ table thead th {
   padding: 0.5rem 0 0;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-quote.is-style-large p {
     font-size: 2.65rem;
   }
@@ -3054,7 +3049,7 @@ table thead th {
   line-height: 4.875rem;
   color: #47E2CD;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-quote.is-style-large:after {
     font-size: 4.875rem;
   }
@@ -3074,7 +3069,7 @@ table thead th {
   color: #DE8E95;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-pullquote p {
     font-size: 3rem;
   }
@@ -3153,7 +3148,7 @@ table thead th {
 .wp-block-latest-posts.is-grid {
   padding: 0 2rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-latest-posts.is-grid {
     padding: 0;
   }
@@ -3167,14 +3162,14 @@ table thead th {
   margin-bottom: 2rem;
   overflow: hidden;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-latest-posts.is-grid li {
     flex: 0 0 48%;
     max-width: 48%;
     margin: 0 1% 1rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wp-block-latest-posts.is-grid li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
@@ -3188,7 +3183,7 @@ table thead th {
   border-radius: 1rem;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
     height: 13rem;
   }
@@ -3212,7 +3207,7 @@ table thead th {
   object-fit: cover;
   filter: grayscale(1) brightness(1.25);
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image img {
     height: 13rem;
   }
@@ -3256,7 +3251,7 @@ table thead th {
   margin: 1rem 0 1rem auto;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt .more-link:after {
-  content: "";
+  content: "\f344";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -3288,7 +3283,7 @@ table thead th {
   margin-right: 1%;
   margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .high-links .wp-block-column {
     flex: 0 1 25%;
   }
@@ -3322,7 +3317,7 @@ table thead th {
   margin: 0;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .high-links .wp-block-column .wp-block-image {
     margin-bottom: 2rem;
   }
@@ -3336,7 +3331,7 @@ table thead th {
   height: auto;
   margin-left: 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .high-links .wp-block-column .wp-block-image a img {
     max-width: 5rem;
   }
@@ -3361,7 +3356,7 @@ table thead th {
   margin-top: auto;
   margin-bottom: 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .high-links .wp-block-column h1 a, .high-links .wp-block-column h2 a, .high-links .wp-block-column h3 a,
 .high-links .wp-block-column h4 a, .high-links .wp-block-column h5 a, .high-links .wp-block-column h6 a,
 .high-links .wp-block-column p a {
@@ -3411,7 +3406,7 @@ table thead th {
   line-height: 100%;
   margin-bottom: 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .high-links-inline .wp-block-media-text .wp-block-media-text__content p {
     font-size: 1.75rem;
   }
@@ -3428,7 +3423,7 @@ table thead th {
   color: #30394A;
 }
 .high-links-inline .wp-block-media-text .wp-block-media-text__content p a:after {
-  content: "";
+  content: "\f344";
   font-family: "dashicons";
   margin-left: 1rem;
   margin-right: 0;
@@ -3463,7 +3458,7 @@ table thead th {
   box-shadow: 0.25rem 0.25rem 0 #47E2CD;
   margin-bottom: 2rem;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .notation {
     padding: 2rem;
   }
@@ -3476,8 +3471,7 @@ table thead th {
   margin: 0;
 }
 .notation h1, .notation h2, .notation h3,
-.notation h4, .notation h5, .notation h6,
-.notation p {
+.notation h4, .notation h5, .notation h6, .notation p, .notation a {
   color: #30394A;
 }
 .notation p {
@@ -3486,9 +3480,6 @@ table thead th {
 }
 .notation p:last-of-type {
   margin-bottom: 0;
-}
-.notation p a {
-  color: #30394A !important;
 }
 .notation ul, .notation ol {
   margin-top: 0;
@@ -3503,9 +3494,8 @@ table thead th {
   background-color: #30394A;
 }
 .notation.dark h1, .notation.dark h2, .notation.dark h3,
-.notation.dark h4, .notation.dark h5, .notation.dark h6,
-.notation.dark p {
-  color: #DE8E95 !important;
+.notation.dark h4, .notation.dark h5, .notation.dark h6, .notation.dark p, .notation.dark a {
+  color: #DE8E95;
 }
 
 p + .notation,
@@ -3525,7 +3515,7 @@ h6 + .notation {
   padding-left: 2.25rem;
 }
 .schedule-time:before {
-  content: "";
+  content: "\f508";
   position: absolute;
   top: 0;
   left: 0;
@@ -3552,7 +3542,7 @@ h6 + .notation {
   background-color: #47E2CD;
 }
 .tags-block strong:before {
-  content: "";
+  content: "\f147";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -3569,7 +3559,7 @@ h6 + .notation {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .sharedaddy {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -3603,7 +3593,7 @@ h6 + .notation {
   line-height: 100% !important;
   padding: 0.5rem !important;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .sharedaddy ul li .share-icon {
     padding: 1rem !important;
   }
@@ -3612,7 +3602,7 @@ h6 + .notation {
   display: block !important;
   font-size: 1.5rem !important;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .sharedaddy ul li .share-icon:before {
     font-size: 2rem !important;
   }
@@ -3668,7 +3658,7 @@ h6 + .notation {
   margin-bottom: 0.25rem;
   z-index: 1;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
 .organizer-links a {
     font-size: 1.25rem;
@@ -3742,7 +3732,7 @@ h6 + .notation {
   margin-top: 0;
   margin-bottom: 4rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .home-big-hero {
     padding-bottom: 2rem;
     background-size: 64%;
@@ -3754,6 +3744,14 @@ h6 + .notation {
   margin-top: 0;
   margin-bottom: 0;
 }
+.home-big-hero .wp-block-column {
+  flex-basis: 100% !important;
+}
+@media only screen and (min-width: 769px) {
+  .home-big-hero .wp-block-column {
+    flex-basis: inherit !important;
+  }
+}
 .home-big-hero .wceu-big-title {
   font-size: 20vw;
   font-weight: 700;
@@ -3762,7 +3760,7 @@ h6 + .notation {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .home-big-hero .wceu-big-title {
     font-size: 248px;
     font-size: 15.5rem;
@@ -3787,20 +3785,20 @@ h6 + .notation {
 .home-intro {
   padding: 0 2rem;
   margin-top: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .home-intro {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 }
 .home-intro .wp-block-column:nth-child(2) {
   order: -1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 599px) {
   .home-intro .wp-block-column:nth-child(2) {
-    order: initial;
+    order: 2;
     margin-bottom: 0;
   }
 }
@@ -3828,7 +3826,7 @@ h6 + .notation {
   padding: 2rem;
   margin-bottom: 4rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .blog .site-main header,
 .blog .site-main .page-header,
 .archive .site-main header,
@@ -3865,7 +3863,7 @@ h6 + .notation {
 .search-results .hentry {
   position: relative;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .blog .hentry,
 .archive .hentry,
 .search-results .hentry {
@@ -3874,7 +3872,7 @@ h6 + .notation {
     margin: 0 1% 4rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .blog .hentry,
 .archive .hentry,
 .search-results .hentry {
@@ -3899,7 +3897,7 @@ h6 + .notation {
   border-radius: 1rem;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .blog .hentry .entry-header .entry-image,
 .archive .hentry .entry-header .entry-image,
 .search-results .hentry .entry-header .entry-image {
@@ -3929,7 +3927,7 @@ h6 + .notation {
   object-fit: cover;
   filter: grayscale(1) brightness(1.25);
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .blog .hentry .entry-header .entry-image img,
 .archive .hentry .entry-header .entry-image img,
 .search-results .hentry .entry-header .entry-image img {
@@ -4060,7 +4058,7 @@ h6 + .notation {
   padding: 8rem 1.5rem 0;
   margin-bottom: 3rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .single .entry-header {
     padding: 10rem 10% 0;
     margin-bottom: 5rem;
@@ -4091,7 +4089,7 @@ h6 + .notation {
   border-left: 0.0625rem solid #47E2CD;
   margin: 1rem 0;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .single .entry-meta {
     font-size: 1rem;
     margin: 2rem 0;
@@ -4214,7 +4212,7 @@ h6 + .notation {
   margin-bottom: 0.5rem;
 }
 .tags-links a:before {
-  content: "";
+  content: "\f323";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4236,7 +4234,7 @@ h6 + .notation {
   padding: 4rem 1rem;
   overflow: hidden;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation,
 .single .post-navigation {
     padding: 0;
@@ -4258,7 +4256,7 @@ h6 + .notation {
   margin: 0 auto;
   border-bottom: 0.125rem solid #47E2CD;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div,
 .single .post-navigation .nav-links div {
     position: fixed;
@@ -4275,7 +4273,7 @@ h6 + .notation {
   color: #47E2CD;
   background-color: transparent;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a {
     font-size: 0;
@@ -4293,7 +4291,7 @@ h6 + .notation {
   vertical-align: middle;
   padding: 0;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after {
@@ -4313,7 +4311,7 @@ h6 + .notation {
   outline: none;
   color: #DE8E95;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div a:focus, .single .posts-navigation .nav-links div a:hover,
 .single .post-navigation .nav-links div a:focus,
 .single .post-navigation .nav-links div a:hover {
@@ -4326,7 +4324,7 @@ h6 + .notation {
   left: 0;
   text-align: left;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-previous,
 .single .post-navigation .nav-links div.nav-previous {
     padding: 0;
@@ -4335,10 +4333,10 @@ h6 + .notation {
 }
 .single .posts-navigation .nav-links div.nav-previous a:before,
 .single .post-navigation .nav-links div.nav-previous a:before {
-  content: "";
+  content: "\f340";
   margin-right: 0.25rem;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-previous a:before,
 .single .post-navigation .nav-links div.nav-previous a:before {
     left: 20%;
@@ -4346,7 +4344,7 @@ h6 + .notation {
     margin: 0;
   }
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-previous a:focus:before, .single .posts-navigation .nav-links div.nav-previous a:hover:before,
 .single .post-navigation .nav-links div.nav-previous a:focus:before,
 .single .post-navigation .nav-links div.nav-previous a:hover:before {
@@ -4360,7 +4358,7 @@ h6 + .notation {
   text-align: right;
   padding-right: 0.5rem;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-next,
 .single .post-navigation .nav-links div.nav-next {
     padding: 0;
@@ -4374,10 +4372,10 @@ h6 + .notation {
 }
 .single .posts-navigation .nav-links div.nav-next a:after,
 .single .post-navigation .nav-links div.nav-next a:after {
-  content: "";
+  content: "\f344";
   margin-left: 0.25rem;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-next a:after,
 .single .post-navigation .nav-links div.nav-next a:after {
     left: 20%;
@@ -4385,7 +4383,7 @@ h6 + .notation {
     margin: 0;
   }
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div.nav-next a:focus:after, .single .posts-navigation .nav-links div.nav-next a:hover:after,
 .single .post-navigation .nav-links div.nav-next a:focus:after,
 .single .post-navigation .nav-links div.nav-next a:hover:after {
@@ -4399,7 +4397,7 @@ h6 + .notation {
   padding: 4rem 2rem 0;
   margin-bottom: 4rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .page-template-default .entry-header,
 .page-template .entry-header {
     padding: 4rem 10%;
@@ -4430,7 +4428,7 @@ h6 + .notation {
   flex-direction: row;
   max-width: 720px;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-jetpack-contact-form {
     padding: 0;
   }
@@ -4459,7 +4457,7 @@ h6 + .notation {
   float: none;
   width: 100%;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.mid-left-wrap {
     float: left;
     width: 48%;
@@ -4469,7 +4467,7 @@ h6 + .notation {
   float: none;
   width: 100%;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.mid-right-wrap {
     float: right;
     width: 48%;
@@ -4482,7 +4480,7 @@ h6 + .notation {
   flex: 1 1 100%;
   margin-right: 0;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.grunion-field-width-50-wrap {
     flex: 1 1 48%;
   }
@@ -4514,21 +4512,21 @@ h6 + .notation {
   grid-row-gap: 0;
   grid-template-columns: 100%;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wordcamp-organizers.has-layout-grid,
 .wordcamp-speakers.has-layout-grid,
 .wordcamp-sessions.has-layout-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wordcamp-organizers.has-layout-grid.has-grid-columns-3,
 .wordcamp-speakers.has-layout-grid.has-grid-columns-3,
 .wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wordcamp-organizers.has-layout-grid.has-grid-columns-4,
 .wordcamp-speakers.has-layout-grid.has-grid-columns-4,
 .wordcamp-sessions.has-layout-grid.has-grid-columns-4 {
@@ -4540,7 +4538,7 @@ h6 + .notation {
 .wordcamp-sessions .wordcamp-post-list__post {
   padding: 1.5rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wordcamp-organizers .wordcamp-post-list__post,
 .wordcamp-speakers .wordcamp-post-list__post,
 .wordcamp-sessions .wordcamp-post-list__post {
@@ -4727,7 +4725,7 @@ h6 + .notation {
   align-items: stretch;
   flex-flow: column wrap;
 }
-@media (min-width: 650px) {
+@media only screen and (min-width: 599px) {
   .tix-js .tix_tickets_table {
     flex-flow: row wrap;
   }
@@ -4740,7 +4738,7 @@ h6 + .notation {
   flex-flow: column wrap;
   justify-content: center;
 }
-@media (min-width: 650px) {
+@media only screen and (min-width: 599px) {
   .tix-js .tix_tickets_table tbody {
     flex-flow: row wrap;
   }
@@ -4756,7 +4754,7 @@ h6 + .notation {
 .tix-js .tix_tickets_table tr[class^=tix-ticket-]:focus {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 650px) {
+@media only screen and (min-width: 599px) {
   .tix-js .tix_tickets_table tr[class^=tix-ticket-] {
     flex: 0 1 40%;
     max-width: 40%;
@@ -4871,7 +4869,7 @@ h6 + .notation {
 }
 #tix #tix-errors .tix-error:before,
 #tix #tix-infos .tix-error:before {
-  content: "";
+  content: "\f153";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4880,7 +4878,7 @@ h6 + .notation {
 }
 #tix #tix-errors .tix-info:before,
 #tix #tix-infos .tix-info:before {
-  content: "";
+  content: "\f529";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4891,7 +4889,7 @@ h6 + .notation {
 .tix-order-summary tbody {
   width: 100%;
 }
-@media (max-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-order-summary {
     /* Force table to not be like tables anymore */
     /* Hide table headers (but not display: none;, for accessibility) */
@@ -4969,7 +4967,7 @@ h6 + .notation {
   flex-flow: column wrap;
   margin-bottom: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form tr, .tix_invoice_table tr {
     flex-flow: row nowrap;
   }
@@ -4980,7 +4978,7 @@ h6 + .notation {
   line-height: 120%;
   margin-bottom: 0.25rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form td.tix-left, .tix_invoice_table td.tix-left {
     width: 40%;
     text-align: right;
@@ -4990,7 +4988,7 @@ h6 + .notation {
   font-weight: 400;
   font-size: 1.25rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form td.tix-left label, .tix_invoice_table td.tix-left label {
     text-align: right;
   }
@@ -4998,7 +4996,7 @@ h6 + .notation {
 .tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
   width: 100%;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
     width: 58%;
     margin-left: 2rem;
@@ -5011,7 +5009,7 @@ h6 + .notation {
   margin-left: 10%;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form td.tix-right label, .tix_invoice_table td.tix-right label {
     margin-left: 0;
   }
@@ -5019,7 +5017,7 @@ h6 + .notation {
 .tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
   margin-top: 1rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
     margin-top: 0;
   }
@@ -5159,7 +5157,7 @@ h6 + .notation {
   font-size: 2.5rem;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wceu-sponsors-title {
     font-size: 3rem;
   }
@@ -5181,7 +5179,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   text-align: center;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
 div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
     font-size: 2rem;
@@ -5200,7 +5198,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor {
   margin: 0;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor {
     max-width: inherit;
     margin: 0;
@@ -5217,7 +5215,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor-level-super-admin .wcorg-sponsor {
   flex: 1 1 100%;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-super-admin .wcorg-sponsor {
     flex: 0 1 50%;
   }
@@ -5230,7 +5228,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor-level-administrator .wcorg-sponsor {
   flex: 0 1 80%;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-administrator .wcorg-sponsor {
     flex: 0 1 33.333%;
   }
@@ -5243,7 +5241,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor-level-editor .wcorg-sponsor {
   flex: 0 1 80%;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-editor .wcorg-sponsor {
     flex: 0 1 25%;
   }
@@ -5256,7 +5254,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor-level-author .wcorg-sponsor {
   flex: 0 1 80%;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-author .wcorg-sponsor {
     flex: 0 1 20%;
   }
@@ -5269,7 +5267,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcorg-sponsor-level-smb .wcorg-sponsor {
   flex: 0 1 70%;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-smb .wcorg-sponsor {
     flex: 0 1 20%;
   }
@@ -5279,7 +5277,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   max-height: 8rem;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wcorg-sponsor-level-after-party .wcorg-sponsor,
 .wcorg-sponsor-level-coffee-break .wcorg-sponsor,
 .wcorg-sponsor-level-media-partners .wcorg-sponsor,
@@ -5311,12 +5309,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-right: auto !important;
   border-collapse: collapse;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .sponsor-booths {
     max-width: 600px;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .sponsor-booths tr {
     border: none;
   }
@@ -5324,12 +5322,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .sponsor-booths tr td {
   display: block;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .sponsor-booths tr td {
     display: table-cell;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .sponsor-booths tr td:first-child {
     max-width: 200px;
     text-align: right;
@@ -5362,7 +5360,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin: 0 1% 4rem;
   overlow: hidden;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .tix-attendee-list li {
     margin: 0 1% 2rem;
   }
@@ -5405,13 +5403,13 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   max-width: 100%;
   margin: 0 auto 2rem;
 }
-@media (min-width: 400px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-2 li {
     flex: 0 0 48%;
     max-width: 48%;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .tix-attendee-list.tix-columns-2 li {
     flex: 0 0 48%;
     max-width: 48%;
@@ -5422,13 +5420,13 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   max-width: 100%;
   margin: 0 auto 2rem;
 }
-@media (min-width: 400px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-3 li {
     flex: 0 0 40%;
     max-width: 40%;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .tix-attendee-list.tix-columns-3 li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
@@ -5439,19 +5437,19 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   max-width: 100%;
   margin: 0 auto 2rem;
 }
-@media (min-width: 400px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-4 li {
     flex: 0 0 40%;
     max-width: 40%;
   }
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-4 li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .tix-attendee-list.tix-columns-4 li {
     flex: 0 0 23%;
     max-width: 23%;
@@ -5462,19 +5460,19 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   max-width: 100%;
   margin: 0 auto 2rem;
 }
-@media (min-width: 400px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-5 li {
     flex: 0 0 40%;
     max-width: 40%;
   }
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .tix-attendee-list.tix-columns-5 li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .tix-attendee-list.tix-columns-5 li {
     flex: 0 0 18%;
     max-width: 18%;
@@ -5539,7 +5537,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   border: none;
   overflow: hidden;
 }
-@media (min-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td:first-of-type, .wcpt-schedule tbody tr td.wcpt-time {
     display: block;
     text-align: right;
@@ -5555,7 +5553,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   content: " CEST";
   font-size: 80%;
 }
-@media (min-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom {
     width: 45%;
   }
@@ -5566,12 +5564,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 1.25rem;
   text-decoration: none;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcpt-session-title, .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcpt-session-title, .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
     font-size: 1.5rem;
   }
@@ -5598,17 +5596,17 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   border: none;
   margin-bottom: 0.5rem;
 }
-@media (min-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
     display: none;
   }
 }
-@media (min-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
     text-align: center;
   }
 }
-@media (min-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content {
     padding-right: 2rem;
   }
@@ -5621,12 +5619,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 0.5rem;
   padding: 0;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
     font-size: 1.5rem;
   }
@@ -5657,7 +5655,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   text-decoration: none;
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
-  content: "";
+  content: "\f154";
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session {
   background-color: #47E2CD;
@@ -5666,12 +5664,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   color: #DE8E95;
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
-  content: "";
+  content: "\f155";
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session:hover {
   background-color: #47E2CD;
 }
-@media (max-width: 700px) {
+@media only screen and (min-width: 769px) {
   .wcpt-schedule tbody tr td.wcpt-session-empty {
     display: none;
   }
@@ -5727,7 +5725,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   border-color: #30394A;
 }
 .entry-content a.show-email-form .dashicons-star-filled:before {
-  content: "";
+  content: "\f537";
   vertical-align: middle;
 }
 .entry-content a.show-email-form .dashicons-email-alt {
@@ -5749,7 +5747,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 1rem;
   border-radius: 0;
 }
-@media (min-width: 375px) {
+@media only screen and (max-width: 350px) {
   .email-form {
     max-width: 350px;
     right: 1rem;
@@ -5815,7 +5813,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 1.25rem;
 }
 #fav-session-print:before {
-  content: "";
+  content: "\f491";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -5877,7 +5875,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   flex: 1 1 100%;
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session {
     flex: 0 1 48%;
   }
@@ -6006,7 +6004,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 769px) {
   #speaker-session-names {
     margin-left: auto;
     margin-right: auto;
@@ -6090,19 +6088,19 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   box-shadow: 0.5rem 0.5rem 0 #47E2CD;
   margin: 0 auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .error404 .page-header .page-title {
     font-size: 8rem;
   }
 }
 .error404 .page-header .page-title:before {
-  content: "";
+  content: "\f530";
   display: block;
   font-family: "dashicons";
   font-weight: 400;
   margin-bottom: 1rem;
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .error404 .page-header .page-title:before {
     font-size: 5rem;
   }
@@ -6118,7 +6116,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   padding: 1.5rem 0 0;
   margin: -2rem auto 0;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .error404 .page-content > p {
     font-size: 2rem;
   }
@@ -6145,7 +6143,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   padding: 0.5rem 1rem;
   background-color: #30394A;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .error404 .page-content .search-form .search-submit {
     height: auto;
     font-size: 1.5rem;
@@ -6156,7 +6154,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   display: block;
   margin-bottom: 4rem;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .error404 .page-content .widget {
     width: 45%;
   }
@@ -6201,7 +6199,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 1rem;
 }
 .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before {
-  content: "";
+  content: "\f323";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -6227,17 +6225,17 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   grid-template-columns: 100%;
   margin-bottom: 1rem;
 }
-@media (min-width: 350px) {
+@media only screen and (max-width: 350px) {
   .wordcamp-facilitators-grid .wp-block-group__inner-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .wordcamp-facilitators-grid .wp-block-group__inner-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .wordcamp-facilitators-grid .wp-block-group__inner-container {
     grid-template-columns: repeat(4, 1fr);
   }
