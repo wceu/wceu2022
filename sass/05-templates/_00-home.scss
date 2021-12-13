@@ -37,6 +37,7 @@
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+	.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:only-child),
 	.wp-block-column{
 		flex-basis: 100% !important;
 		@include tablet-portrait{

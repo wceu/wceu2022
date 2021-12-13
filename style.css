@@ -3744,11 +3744,13 @@ h6 + .notation {
   margin-top: 0;
   margin-bottom: 0;
 }
+.home-big-hero .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child),
 .home-big-hero .wp-block-column {
   flex-basis: 100% !important;
 }
 @media only screen and (min-width: 769px) {
-  .home-big-hero .wp-block-column {
+  .home-big-hero .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child),
+.home-big-hero .wp-block-column {
     flex-basis: inherit !important;
   }
 }
