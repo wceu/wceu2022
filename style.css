@@ -4454,7 +4454,7 @@ h6 + .notation {
   margin-right: auto;
 }
 .wp-block-jetpack-contact-form h1, .wp-block-jetpack-contact-form h2, .wp-block-jetpack-contact-form h3,
-.wp-block-jetpack-contact-form h4, .wp-block-jetpack-contact-form h5, .wp-block-jetpack-contact-form h6 {
+.wp-block-jetpack-contact-form h4, .wp-block-jetpack-contact-form h5, .wp-block-jetpack-contact-form h6, .wp-block-jetpack-contact-form p {
   flex: 1 1 100%;
 }
 .wp-block-jetpack-contact-form .grunion-field-wrap {
