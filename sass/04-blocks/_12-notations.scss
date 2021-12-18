@@ -52,6 +52,12 @@
 		%headings, p, a{
 			color: $color__secondary;
 		}
+		.wp-block-jetpack-contact-form,
+		.contact-form{
+			%headings, p, a{
+				color: $color__secondary;
+			}
+		}
 	}
 }
 

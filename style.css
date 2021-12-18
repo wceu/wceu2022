@@ -3497,6 +3497,18 @@ table thead th {
 .notation.dark h4, .notation.dark h5, .notation.dark h6, .notation.dark p, .notation.dark a {
   color: #DE8E95;
 }
+.notation.dark .wp-block-jetpack-contact-form h1, .notation.dark .wp-block-jetpack-contact-form h2, .notation.dark .wp-block-jetpack-contact-form h3,
+.notation.dark .wp-block-jetpack-contact-form h4, .notation.dark .wp-block-jetpack-contact-form h5, .notation.dark .wp-block-jetpack-contact-form h6, .notation.dark .wp-block-jetpack-contact-form p, .notation.dark .wp-block-jetpack-contact-form a,
+.notation.dark .contact-form h1,
+.notation.dark .contact-form h2,
+.notation.dark .contact-form h3,
+.notation.dark .contact-form h4,
+.notation.dark .contact-form h5,
+.notation.dark .contact-form h6,
+.notation.dark .contact-form p,
+.notation.dark .contact-form a {
+  color: #DE8E95;
+}
 
 p + .notation,
 h1 + .notation,
@@ -3784,6 +3796,7 @@ h6 + .notation {
   color: #47E2CD;
 }
 
+/*_______ Home page columns with CTA _______*/
 .home-intro {
   padding: 0 2rem;
   margin-top: 0;
