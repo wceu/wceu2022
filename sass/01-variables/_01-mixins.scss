@@ -121,7 +121,7 @@ $desktop: 1800px;
 }
 
 @mixin phone-tiny {
-	@media only screen and (max-width: #{$phone-tiny}) {
+	@media only screen and (min-width: #{$phone-tiny}) {
 		@content;
 	}
 }

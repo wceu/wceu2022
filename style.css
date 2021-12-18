@@ -1675,7 +1675,7 @@ body.admin-bar .site-header {
   margin: 0 auto;
   z-index: 10;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .site-header {
     padding: 0 1rem 0 2rem;
   }
@@ -2038,7 +2038,7 @@ body.admin-bar .site-header {
   margin: 0;
   z-index: 20;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .menu-toggle {
     right: 5rem;
   }
@@ -2602,7 +2602,7 @@ body.admin-bar .site-header {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .wp-block-group {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -2611,7 +2611,7 @@ body.admin-bar .site-header {
 .wp-block-group.has-background {
   padding: 3rem 1rem;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .wp-block-group.has-background {
     padding: 5rem 0;
   }
@@ -3458,7 +3458,7 @@ table thead th {
   box-shadow: 0.25rem 0.25rem 0 #47E2CD;
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .notation {
     padding: 2rem;
   }
@@ -3670,7 +3670,7 @@ h6 + .notation {
   margin-bottom: 0.25rem;
   z-index: 1;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
 .organizer-links a {
     font-size: 1.25rem;
@@ -5634,7 +5634,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 0.5rem;
   padding: 0;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
     font-size: 1.5rem;
   }
@@ -5762,7 +5762,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 1rem;
   border-radius: 0;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .email-form {
     max-width: 350px;
     right: 1rem;
@@ -6240,7 +6240,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   grid-template-columns: 100%;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .wordcamp-facilitators-grid .wp-block-group__inner-container {
     grid-template-columns: repeat(2, 1fr);
   }
