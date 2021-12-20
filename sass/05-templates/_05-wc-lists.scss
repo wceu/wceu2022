@@ -79,12 +79,13 @@
 
 .personal-links,
 .organizer-links{
-	margin-bottom: 1rem;
+	font-size: .875rem !important;
+	margin-bottom: 1rem !important;
 	br{
 		display: none;
 	}
 	a{
-		@extend %camptix-nice-link;
+		font-size: .875rem !important;
 		display: table;
 	}
 }

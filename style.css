@@ -3658,8 +3658,7 @@ h6 + .notation {
   filter: grayscale(0);
 }
 
-.session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
-.organizer-links a {
+.session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a {
   position: relative;
   display: inline-block;
   font-weight: 400;
@@ -3671,14 +3670,11 @@ h6 + .notation {
   z-index: 1;
 }
 @media only screen and (min-width: 350px) {
-  .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
-.organizer-links a {
+  .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a {
     font-size: 1.25rem;
   }
 }
-.session-categories-links a:focus, #session-speaker-names li a:focus, .sponsors-schedule tbody tr td a:focus, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:focus, .wordcamp-sessions .wordcamp-sessions__speakers a:focus, .personal-links a:focus,
-.organizer-links a:focus, .session-categories-links a:hover, #session-speaker-names li a:hover, .sponsors-schedule tbody tr td a:hover, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:hover, .wordcamp-sessions .wordcamp-sessions__speakers a:hover, .personal-links a:hover,
-.organizer-links a:hover {
+.session-categories-links a:focus, #session-speaker-names li a:focus, .sponsors-schedule tbody tr td a:focus, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:focus, .wordcamp-sessions .wordcamp-sessions__speakers a:focus, .session-categories-links a:hover, #session-speaker-names li a:hover, .sponsors-schedule tbody tr td a:hover, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:hover, .wordcamp-sessions .wordcamp-sessions__speakers a:hover {
   color: #737477;
   text-decoration: underline;
 }
@@ -4613,7 +4609,8 @@ h6 + .notation {
 
 .personal-links,
 .organizer-links {
-  margin-bottom: 1rem;
+  font-size: 0.875rem !important;
+  margin-bottom: 1rem !important;
 }
 .personal-links br,
 .organizer-links br {
@@ -4621,6 +4618,7 @@ h6 + .notation {
 }
 .personal-links a,
 .organizer-links a {
+  font-size: 0.875rem !important;
   display: table;
 }
 
