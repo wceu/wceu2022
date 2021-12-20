@@ -3495,7 +3495,7 @@ table thead th {
 }
 .notation.dark h1, .notation.dark h2, .notation.dark h3,
 .notation.dark h4, .notation.dark h5, .notation.dark h6, .notation.dark p, .notation.dark a {
-  color: #DE8E95;
+  color: #DE8E95 !important;
 }
 .notation.dark .wp-block-jetpack-contact-form h1, .notation.dark .wp-block-jetpack-contact-form h2, .notation.dark .wp-block-jetpack-contact-form h3,
 .notation.dark .wp-block-jetpack-contact-form h4, .notation.dark .wp-block-jetpack-contact-form h5, .notation.dark .wp-block-jetpack-contact-form h6, .notation.dark .wp-block-jetpack-contact-form p, .notation.dark .wp-block-jetpack-contact-form a,

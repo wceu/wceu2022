@@ -50,7 +50,7 @@
 	&.dark{
 		background-color: $color__primary;
 		%headings, p, a{
-			color: $color__secondary;
+			color: $color__secondary !important;
 		}
 		.wp-block-jetpack-contact-form,
 		.contact-form{
