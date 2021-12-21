@@ -4637,9 +4637,10 @@ h6 + .notation {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 100%;
-  color: white;
+  color: #DE8E95;
   padding: 0.125rem 0.25rem;
-  background-color: #DE8E95;
+  border: 0.0625rem solid #DE8E95;
+  border-radius: 1rem;
 }
 /*_______ WordCamp Speakers _______*/
 .wordcamp-speakers .wordcamp-post-list__post {
