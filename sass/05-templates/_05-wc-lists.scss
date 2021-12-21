@@ -90,6 +90,42 @@
 	}
 }
 
+/*_______ WordCamp Organisers _______*/
+/*_______ Adding "Team Lead" badge _______*/
+.wordcamp-organizer{
+	&.slug-nemanja-cimbaljevic,
+	&.slug-juan-hernando,
+	&.slug-sjoerd-blom,
+	&.slug-sabrina-zeidan,
+	&.slug-takis-bouyouris,
+	&.slug-roberto-tunon,
+	&.slug-evangelia-pappa,
+	&.slug-jason-rouet
+	{
+		.wordcamp-organizers__title{
+			position: relative;
+			margin-top: 1.5rem !important;
+			&:before{
+				content: 'Team Lead';
+				position: absolute;
+				top: -1.5rem;
+				left: 0;
+				display: inline;
+				font-size: .875rem;
+				font-weight: 400;
+				line-height: 100%;
+				color: white;
+				padding: .125rem .25rem;
+				background-color: $color__secondary;
+				@media (min-width: 769px){
+					
+				}
+			}
+		}
+	}
+}
+
+
 /*_______ WordCamp Speakers _______*/
 .wordcamp-speakers{
 	.wordcamp-post-list__post{

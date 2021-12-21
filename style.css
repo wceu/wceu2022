@@ -4622,6 +4622,25 @@ h6 + .notation {
   display: table;
 }
 
+/*_______ WordCamp Organisers _______*/
+/*_______ Adding "Team Lead" badge _______*/
+.wordcamp-organizer.slug-nemanja-cimbaljevic .wordcamp-organizers__title, .wordcamp-organizer.slug-juan-hernando .wordcamp-organizers__title, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title, .wordcamp-organizer.slug-sabrina-zeidan .wordcamp-organizers__title, .wordcamp-organizer.slug-takis-bouyouris .wordcamp-organizers__title, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title, .wordcamp-organizer.slug-evangelia-pappa .wordcamp-organizers__title, .wordcamp-organizer.slug-jason-rouet .wordcamp-organizers__title {
+  position: relative;
+  margin-top: 1.5rem !important;
+}
+.wordcamp-organizer.slug-nemanja-cimbaljevic .wordcamp-organizers__title:before, .wordcamp-organizer.slug-juan-hernando .wordcamp-organizers__title:before, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title:before, .wordcamp-organizer.slug-sabrina-zeidan .wordcamp-organizers__title:before, .wordcamp-organizer.slug-takis-bouyouris .wordcamp-organizers__title:before, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title:before, .wordcamp-organizer.slug-evangelia-pappa .wordcamp-organizers__title:before, .wordcamp-organizer.slug-jason-rouet .wordcamp-organizers__title:before {
+  content: "Team Lead";
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  padding: 0.125rem 0.25rem;
+  background-color: #DE8E95;
+}
 /*_______ WordCamp Speakers _______*/
 .wordcamp-speakers .wordcamp-post-list__post {
   display: flex;
