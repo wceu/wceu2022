@@ -108,15 +108,15 @@
 			&:before{
 				content: 'Team Lead';
 				position: absolute;
-				top: -1.5rem;
+				top: -1.75rem;
 				left: 0;
 				display: inline;
 				font-size: .875rem;
 				font-weight: 400;
 				line-height: 100%;
 				color: $color__secondary;
-				padding: .125rem .25rem;
-				border: 0.0625rem solid $color__secondary;
+				padding: .125rem .5rem;
+				border: 0.0625rem solid $color__secondary	;
     			border-radius: 1rem;
 				@media (min-width: 769px){
 					
