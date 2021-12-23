@@ -3752,13 +3752,11 @@ h6 + .notation {
   margin-top: 0;
   margin-bottom: 0;
 }
-.home-big-hero .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child),
-.home-big-hero .wp-block-column {
+.home-big-hero .wp-block-columns:first-child .wp-block-column {
   flex-basis: 100% !important;
 }
 @media only screen and (min-width: 769px) {
-  .home-big-hero .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child),
-.home-big-hero .wp-block-column {
+  .home-big-hero .wp-block-columns:first-child .wp-block-column {
     flex-basis: inherit !important;
   }
 }
@@ -3791,29 +3789,27 @@ h6 + .notation {
 .home-big-hero .wceu-subtitle strong {
   color: #47E2CD;
 }
-
-/*_______ Home page columns with CTA _______*/
-.home-intro {
+.home-big-hero .home-intro {
   padding: 0 2rem;
   margin-top: 0;
   margin-bottom: 6rem;
 }
 @media only screen and (min-width: 769px) {
-  .home-intro {
+  .home-big-hero .home-intro {
     margin-bottom: 8rem;
   }
 }
-.home-intro .wp-block-column:nth-child(2) {
+.home-big-hero .home-intro .wp-block-column:nth-child(2) {
   order: -1;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 599px) {
-  .home-intro .wp-block-column:nth-child(2) {
+  .home-big-hero .home-intro .wp-block-column:nth-child(2) {
     order: 2;
     margin-bottom: 0;
   }
 }
-.home-intro .wceu-big-claim {
+.home-big-hero .home-intro .wceu-big-claim {
   color: #DE8E95;
   margin-bottom: 0;
 }
