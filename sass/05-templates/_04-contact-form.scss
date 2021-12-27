@@ -46,7 +46,14 @@
 		}
 		.grunion-field-label{
 			span{
-				display: none;
+				font-size: 0;
+				&:after{
+					content: '*';
+					display: inline-block;
+					font-size: 1.25rem;
+					font-weight: bold;
+					margin-left: .125rem;
+				}
 			}
 		}
 		&.grunion-field-width-50-wrap{

@@ -4480,7 +4480,14 @@ h6 + .notation {
   }
 }
 .wp-block-jetpack-contact-form .grunion-field-wrap .grunion-field-label span {
-  display: none;
+  font-size: 0;
+}
+.wp-block-jetpack-contact-form .grunion-field-wrap .grunion-field-label span:after {
+  content: "*";
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 0.125rem;
 }
 .wp-block-jetpack-contact-form .grunion-field-wrap.grunion-field-width-50-wrap {
   flex: 1 1 100%;
