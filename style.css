@@ -627,9 +627,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 20vw;
+  font-size: 18vw;
   font-weight: 700;
-  line-height: 90%;
+  line-height: 100%;
   margin-top: 0;
   margin-bottom: 0.5em;
   word-break: break-word;
