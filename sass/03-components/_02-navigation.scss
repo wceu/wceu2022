@@ -70,7 +70,7 @@
 			}
 			&.current-menu-item{
 				> a{
-					color: $color__tertiary;
+					color: $color__primary;
 					@include tablet{
 						color: $color__secondary;
 					}
@@ -176,7 +176,7 @@
 		overflow: hidden;
 		height: auto;
 		padding: 0 0 0 .5rem;
-		border-left: .125rem solid $color__secondary_half;
+		border-left: .0625rem solid $color__primary;
 		margin: .25rem 0 0;
 		text-shadow: none;
 		z-index: 10;
@@ -214,8 +214,8 @@
 				margin:0;
 			}
 			a{
-				font-size: 1.25rem;
-				color: $color__tertiary;
+				font-size: 1.5rem;
+				color: $color__primary;
 				padding: .5rem .25rem;
 				@include tablet{
 					font-size: 1rem;

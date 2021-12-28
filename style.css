@@ -1799,7 +1799,7 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .menu .menu-item.current-menu-item > a {
-  color: #47E2CD;
+  color: #30394A;
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.current-menu-item > a {
@@ -1900,7 +1900,7 @@ body.admin-bar .site-header {
   overflow: hidden;
   height: auto;
   padding: 0 0 0 0.5rem;
-  border-left: 0.125rem solid #F4C3C8;
+  border-left: 0.0625rem solid #30394A;
   margin: 0.25rem 0 0;
   text-shadow: none;
   z-index: 10;
@@ -1948,8 +1948,8 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .sub-menu .menu-item a {
-  font-size: 1.25rem;
-  color: #47E2CD;
+  font-size: 1.5rem;
+  color: #30394A;
   padding: 0.5rem 0.25rem;
 }
 @media only screen and (min-width: 1024px) {
