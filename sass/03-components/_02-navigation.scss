@@ -219,6 +219,7 @@
 				padding: .5rem .25rem;
 				@include tablet{
 					font-size: 1rem;
+					color: $color__tertiary;
 					padding: 1rem;
 				}
 				@include tablet{

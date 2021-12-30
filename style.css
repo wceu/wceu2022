@@ -1955,6 +1955,7 @@ body.admin-bar .site-header {
 @media only screen and (min-width: 1024px) {
   .main-navigation .sub-menu .menu-item a {
     font-size: 1rem;
+    color: #47E2CD;
     padding: 1rem;
   }
 }
