@@ -5138,9 +5138,13 @@ h6 + .notation {
   border-radius: 5rem;
   box-shadow: 0.125em 0.125em 0 #DE8E95;
 }
-#tix .tix-submit .tix-checkout-button:focus, #tix .tix-submit .tix-checkout-button:hover {
-  color: #47E2CD;
-  background-color: #30394A;
+@media not all and (hover: none) {
+  #tix .tix-submit .tix-checkout-button:focus, #tix .tix-submit .tix-checkout-button:hover {
+    outline: none;
+    color: #30394A !important;
+    background-color: #DE8E95;
+    box-shadow: 0 0 0 #47e2cd;
+  }
 }
 
 /*_______ Sponsors list _______*/
