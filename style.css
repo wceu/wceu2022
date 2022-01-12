@@ -5396,7 +5396,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   color: #DE8E95;
 }
 .tix-attendee-list li .tix-attendee-url:nth-of-type(2) {
-  display: none;
+  display: none !important;
 }
 .tix-attendee-list.tix-columns-2 li {
   flex: 0 0 80%;
