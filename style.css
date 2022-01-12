@@ -5122,7 +5122,7 @@ h6 + .notation {
   width: 100%;
   padding: 2rem 1rem;
 }
-#tix .tix-submit #tix-preferred-payment-option {
+#tix .tix-submit .tix-payment-method {
   display: none;
 }
 #tix .tix-submit .tix-payment-method {
