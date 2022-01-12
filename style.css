@@ -5393,7 +5393,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .tix-attendee-list li .tix-field.tix-attendee-twitter:hover, .tix-attendee-list li .tix-field.tix-attendee-url:hover {
   color: #DE8E95;
 }
-.tix-attendee-list li .tix-field.tix-attendee-url:nth-of-type(2) {
+.tix-attendee-list li .tix-field.tix-attendee-url + .tix-attendee-url {
   display: none !important;
 }
 .tix-attendee-list.tix-columns-2 li {
