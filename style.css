@@ -5087,6 +5087,22 @@ h6 + .notation {
   font-size: 70%;
   color: #DE8E95;
 }
+.tix-attendee-form .tix-row-coc, .tix_invoice_table .tix-row-coc {
+  margin-bottom: 4rem;
+}
+.tix-attendee-form .tix-row-covid-waiver .tix-left, .tix_invoice_table .tix-row-covid-waiver .tix-left {
+  width: 100%;
+  text-align: left;
+}
+.tix-attendee-form .tix-row-covid-waiver .tix-left label, .tix_invoice_table .tix-row-covid-waiver .tix-left label {
+  text-align: left;
+  display: inline;
+  flex-flow: row wrap;
+}
+.tix-attendee-form .tix-row-covid-waiver p, .tix_invoice_table .tix-row-covid-waiver p {
+  font-size: 1.125rem;
+  color: #DE8E95;
+}
 
 .camptix-invoice-toggle-wrapper {
   display: block;
@@ -5102,6 +5118,7 @@ h6 + .notation {
 }
 
 #tix .tix-submit {
+  float: none !important;
   width: 100%;
   padding: 2rem 1rem;
 }
