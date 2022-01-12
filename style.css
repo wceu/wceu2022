@@ -5125,63 +5125,6 @@ h6 + .notation {
 #tix .tix-submit .tix-payment-method {
   display: none;
 }
-#tix .tix-submit .tix-payment-method {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-}
-#tix .tix-submit .tix-payment-method .tix-payment-tab {
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  padding: 0.5rem;
-  margin: 0;
-  text-align: center;
-  line-height: 100%;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-family: "Source Code Pro", sans-serif;
-  flex: 1 1 auto;
-}
-#tix .tix-submit .tix-payment-method .tix-payment-tab:hover {
-  color: white;
-  background-color: #47E2CD;
-  outline: none;
-  border: 0;
-}
-#tix .tix-submit .tix-payment-method .tix-payment-tab.tix-tab-selected {
-  font-weight: 700;
-  color: white;
-  padding: 0.5rem;
-  background-color: #30394A;
-  border: none;
-}
-#tix .tix-submit .tix-alternate-payment-option {
-  float: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-#tix .tix-submit .tix-alternate-payment-option label {
-  color: #30394A;
-  font-size: 1.25rem;
-  padding: 0;
-}
-#tix .tix-submit .tix-payment-method-container {
-  float: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 2rem auto;
-}
-#tix .tix-submit .tix-payment-method-container.tix-hidden {
-  display: none;
-}
 #tix .tix-submit .tix-checkout-button {
   float: none;
   letter-spacing: 0;
