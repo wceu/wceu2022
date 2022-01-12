@@ -5385,7 +5385,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   line-height: 120%;
 }
 .tix-attendee-list li .tix-field.tix-attendee-twitter, .tix-attendee-list li .tix-field.tix-attendee-url {
-  display: block !important;
+  display: block;
   font-size: 0.875rem !important;
   line-height: 140%;
   word-break: break-word;
