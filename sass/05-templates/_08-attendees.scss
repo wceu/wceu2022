@@ -16,9 +16,6 @@
 		@include tablet-portrait{
 			margin: 0 1% 2rem;
 		}
-		&:hover{
-			background-color: $color__tertiary;
-		}
 		.tix-field{
 			margin-left: 0 !important;
 		}

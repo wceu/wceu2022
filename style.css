@@ -5365,9 +5365,6 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
     margin: 0 1% 2rem;
   }
 }
-.tix-attendee-list li:hover {
-  background-color: #47E2CD;
-}
 .tix-attendee-list li .tix-field {
   margin-left: 0 !important;
 }
