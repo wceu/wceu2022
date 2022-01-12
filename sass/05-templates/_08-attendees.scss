@@ -45,6 +45,11 @@
 				color: $color__secondary;
 			}
 		}
+		.tix-attendee-url{
+			&:nth-of-type(2){
+				display: none;
+			}
+		}
 	}
 	&.tix-columns-2{
 		li{
