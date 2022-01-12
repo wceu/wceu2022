@@ -16,9 +16,6 @@
 		@include tablet-portrait{
 			margin: 0 1% 2rem;
 		}
-		.tix-field{
-			margin-left: 0 !important;
-		}
 		.avatar{
 			display: block;
 			position: absolute;
@@ -30,24 +27,27 @@
 			margin-bottom: 1rem;
 			background-color: $color__grey_verylight;
 		}
-		.tix-attendee-name{
-			font-size: 1.125rem !important;
-			font-weight: 700;
-			line-height: 120%;
-		}
-		.tix-attendee-twitter,
-		.tix-attendee-url{
-			display: block !important;
-			font-size: .875rem !important;
-			line-height: 140%;
-			word-break: break-word;
-			&:hover{
-				color: $color__secondary;
+		.tix-field{
+			margin-left: 0 !important;
+			&.tix-attendee-name{
+				font-size: 1.125rem !important;
+				font-weight: 700;
+				line-height: 120%;
 			}
-		}
-		.tix-attendee-url{
-			&:nth-of-type(2){
-				display: none !important;
+			&.tix-attendee-twitter,
+			&.tix-attendee-url{
+				display: block !important;
+				font-size: .875rem !important;
+				line-height: 140%;
+				word-break: break-word;
+				&:hover{
+					color: $color__secondary;
+				}
+			}
+			&.tix-attendee-url{
+				&:nth-of-type(2){
+					display: none !important;
+				}
 			}
 		}
 	}
