@@ -4433,7 +4433,7 @@ h6 + .notation {
   flex-wrap: wrap;
   justify-content: space-between !important;
   flex-direction: row;
-  max-width: 720px;
+  max-width: 100%;
 }
 @media only screen and (min-width: 480px) {
   .wp-block-jetpack-contact-form {
@@ -4496,7 +4496,7 @@ h6 + .notation {
 }
 @media only screen and (min-width: 769px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.grunion-field-width-50-wrap {
-    flex: 1 1 48%;
+    flex: 0 1 48% !important;
   }
 }
 .wp-block-jetpack-contact-form .contact-form-submission {
