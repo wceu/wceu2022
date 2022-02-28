@@ -4997,10 +4997,6 @@ h6 + .notation {
 }
 
 /*_______ Registry information _______*/
-.tix-attendee-form,
-.tix_invoice_table {
-  display: inherit !important;
-}
 .tix-attendee-form tr,
 .tix_invoice_table tr {
   width: 100%;
