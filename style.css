@@ -4997,109 +4997,138 @@ h6 + .notation {
 }
 
 /*_______ Registry information _______*/
-.tix-attendee-form tr, .tix_invoice_table tr {
+.tix-attendee-form,
+.tix_invoice_table {
+  display: inherit;
+}
+.tix-attendee-form tr,
+.tix_invoice_table tr {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form tr, .tix_invoice_table tr {
+  .tix-attendee-form tr,
+.tix_invoice_table tr {
     flex-flow: row nowrap;
   }
 }
-.tix-attendee-form td.tix-left, .tix_invoice_table td.tix-left {
+.tix-attendee-form td.tix-left,
+.tix_invoice_table td.tix-left {
   width: 100%;
   text-align: left;
   line-height: 120%;
   margin-bottom: 0.25rem;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form td.tix-left, .tix_invoice_table td.tix-left {
+  .tix-attendee-form td.tix-left,
+.tix_invoice_table td.tix-left {
     width: 40%;
     text-align: right;
   }
 }
-.tix-attendee-form td.tix-left label, .tix_invoice_table td.tix-left label {
+.tix-attendee-form td.tix-left label,
+.tix_invoice_table td.tix-left label {
   font-weight: 400;
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form td.tix-left label, .tix_invoice_table td.tix-left label {
+  .tix-attendee-form td.tix-left label,
+.tix_invoice_table td.tix-left label {
     text-align: right;
   }
 }
-.tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
+.tix-attendee-form td.tix-right,
+.tix_invoice_table td.tix-right {
   width: 100%;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
+  .tix-attendee-form td.tix-right,
+.tix_invoice_table td.tix-right {
     width: 58%;
     margin-left: 2rem;
   }
 }
-.tix-attendee-form td.tix-right br, .tix_invoice_table td.tix-right br {
+.tix-attendee-form td.tix-right br,
+.tix_invoice_table td.tix-right br {
   display: none;
 }
-.tix-attendee-form td.tix-right label, .tix_invoice_table td.tix-right label {
+.tix-attendee-form td.tix-right label,
+.tix_invoice_table td.tix-right label {
   margin-left: 10%;
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form td.tix-right label, .tix_invoice_table td.tix-right label {
+  .tix-attendee-form td.tix-right label,
+.tix_invoice_table td.tix-right label {
     margin-left: 0;
   }
 }
-.tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
+.tix-attendee-form td.tix-right label:first-child,
+.tix_invoice_table td.tix-right label:first-child {
   margin-top: 1rem;
 }
 @media only screen and (min-width: 480px) {
-  .tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
+  .tix-attendee-form td.tix-right label:first-child,
+.tix_invoice_table td.tix-right label:first-child {
     margin-top: 0;
   }
 }
 .tix-attendee-form td.tix-right input[type=radio],
-.tix-attendee-form td.tix-right input[type=checkbox], .tix_invoice_table td.tix-right input[type=radio],
+.tix-attendee-form td.tix-right input[type=checkbox],
+.tix_invoice_table td.tix-right input[type=radio],
 .tix_invoice_table td.tix-right input[type=checkbox] {
   float: left;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
 }
-.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select, .tix_invoice_table td.tix-right input, .tix_invoice_table td.tix-right textarea, .tix_invoice_table td.tix-right select {
+.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select,
+.tix_invoice_table td.tix-right input,
+.tix_invoice_table td.tix-right textarea,
+.tix_invoice_table td.tix-right select {
   width: 100% !important;
 }
-.tix-attendee-form td.tix-right textarea, .tix_invoice_table td.tix-right textarea {
+.tix-attendee-form td.tix-right textarea,
+.tix_invoice_table td.tix-right textarea {
   min-height: 6rem;
 }
-.tix-attendee-form .tix-required-star, .tix_invoice_table .tix-required-star {
+.tix-attendee-form .tix-required-star,
+.tix_invoice_table .tix-required-star {
   color: #DE8E95;
   font-weight: 700;
 }
-.tix-attendee-form .tix-row-question-3968 .tix-left:after, .tix_invoice_table .tix-row-question-3968 .tix-left:after {
+.tix-attendee-form .tix-row-question-3968 .tix-left:after,
+.tix_invoice_table .tix-row-question-3968 .tix-left:after {
   content: "(include @)";
   display: block;
   font-size: 70%;
   color: #DE8E95;
 }
-.tix-attendee-form .tix-row-question-3969 .tix-left:after, .tix_invoice_table .tix-row-question-3969 .tix-left:after {
+.tix-attendee-form .tix-row-question-3969 .tix-left:after,
+.tix_invoice_table .tix-row-question-3969 .tix-left:after {
   content: "(https required)";
   display: block;
   font-size: 70%;
   color: #DE8E95;
 }
-.tix-attendee-form .tix-row-coc, .tix_invoice_table .tix-row-coc {
+.tix-attendee-form .tix-row-coc,
+.tix_invoice_table .tix-row-coc {
   margin-bottom: 4rem;
 }
-.tix-attendee-form .tix-row-covid-waiver .tix-left, .tix_invoice_table .tix-row-covid-waiver .tix-left {
+.tix-attendee-form .tix-row-covid-waiver .tix-left,
+.tix_invoice_table .tix-row-covid-waiver .tix-left {
   width: 100%;
   text-align: left;
 }
-.tix-attendee-form .tix-row-covid-waiver .tix-left label, .tix_invoice_table .tix-row-covid-waiver .tix-left label {
+.tix-attendee-form .tix-row-covid-waiver .tix-left label,
+.tix_invoice_table .tix-row-covid-waiver .tix-left label {
   text-align: left;
   display: inline;
   flex-flow: row wrap;
 }
-.tix-attendee-form .tix-row-covid-waiver p, .tix_invoice_table .tix-row-covid-waiver p {
+.tix-attendee-form .tix-row-covid-waiver p,
+.tix_invoice_table .tix-row-covid-waiver p {
   font-size: 1.125rem;
   color: #DE8E95;
 }

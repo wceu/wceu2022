@@ -249,7 +249,9 @@
 }
 
 /*_______ Registry information _______*/
-.tix-attendee-form, .tix_invoice_table{
+.tix-attendee-form,
+.tix_invoice_table{
+	display: inherit;
 	tr {
 		width: 100%;
 		display: flex;

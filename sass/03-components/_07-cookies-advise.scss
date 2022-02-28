@@ -29,7 +29,7 @@
 				border-radius: 5rem;
 				box-shadow: 0.125em 0.125em 0 $color__secondary;
 				margin-left: auto;
-				@include is-hover-supported {
+				@include is-hover-supported{
 					&:hover {
 						color: $color__primary;
 						background-color: $color__secondary;
