@@ -251,7 +251,7 @@
 /*_______ Registry information _______*/
 .tix-attendee-form,
 .tix_invoice_table{
-	display: inherit;
+	display: inherit !important;
 	tr {
 		width: 100%;
 		display: flex;
