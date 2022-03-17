@@ -4857,6 +4857,9 @@ h6 + .notation {
   width: 100%;
   text-align: center !important;
 }
+.tix-js .tix-row-coupon #tix-coupon-link {
+  color: #30394A;
+}
 .tix-js #tix-coupon-container {
   text-align: center;
 }
