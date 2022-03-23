@@ -143,13 +143,29 @@ div[class^="wcorg-sponsor-level-"] {
 .single{
 	&.single-wcb_sponsor{
 		.entry-image{
-			@extend %inner-supertiny;
-			padding: 0 2rem;
+			display: flex;
+			align-items: center;
+			width: 200px;
+			height: 200px;
+			padding: 0 1rem;
 			background: white;
-			margin-bottom: -5.5rem;
+			border-radius: 100%;
+			margin-bottom: 1.5rem;
+			@include tablet-portrait{
+				width: 300px;
+				height: 300px;
+				padding: 0 2rem;
+			}
 		}
 		.entry-title{
-			margin-bottom: 4rem;
+			&::before{
+				content: '/Sponsor';
+				display: block;
+				font-size: 1.5rem;
+				line-height: 1rem;
+				color: $color__tertiary_half;
+				margin: 0;
+			}
 		}
 	}
 }

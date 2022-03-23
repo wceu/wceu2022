@@ -102,17 +102,6 @@ input[type=submit] {
   }
 }
 
-.single.single-wcb_sponsor .entry-image {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (min-width: 769px) {
-  .single.single-wcb_sponsor .entry-image {
-    max-width: 400px;
-  }
-}
-
 .error404 .page-content, .wp-block-jetpack-contact-form, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
@@ -5323,12 +5312,29 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 
 /*_______ Sponsors single _______*/
 .single.single-wcb_sponsor .entry-image {
-  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 0 1rem;
   background: white;
-  margin-bottom: -5.5rem;
+  border-radius: 100%;
+  margin-bottom: 1.5rem;
 }
-.single.single-wcb_sponsor .entry-title {
-  margin-bottom: 4rem;
+@media only screen and (min-width: 769px) {
+  .single.single-wcb_sponsor .entry-image {
+    width: 300px;
+    height: 300px;
+    padding: 0 2rem;
+  }
+}
+.single.single-wcb_sponsor .entry-title::before {
+  content: "/Sponsor";
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  color: #A3F1E6;
+  margin: 0;
 }
 
 .sponsor-booths {
