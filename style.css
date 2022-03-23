@@ -5312,6 +5312,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 
 /*_______ Sponsors single _______*/
 .single.single-wcb_sponsor .entry-image {
+  order: 0;
   display: flex;
   align-items: center;
   width: 200px;
