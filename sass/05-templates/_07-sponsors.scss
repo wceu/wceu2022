@@ -162,10 +162,13 @@ div[class^="wcorg-sponsor-level-"] {
 			&::before{
 				content: '/Sponsor';
 				display: block;
-				font-size: 1.5rem;
-				line-height: 1rem;
+				font-size: 1.25rem;
+				line-height: 100%;
 				color: $color__tertiary_half;
 				margin: 0;
+				@include tablet-portrait{
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}

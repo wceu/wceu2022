@@ -5332,10 +5332,15 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .single.single-wcb_sponsor .entry-title::before {
   content: "/Sponsor";
   display: block;
-  font-size: 1.5rem;
-  line-height: 1rem;
+  font-size: 1.25rem;
+  line-height: 100%;
   color: #A3F1E6;
   margin: 0;
+}
+@media only screen and (min-width: 769px) {
+  .single.single-wcb_sponsor .entry-title::before {
+    font-size: 1.5rem;
+  }
 }
 
 .sponsor-booths {
