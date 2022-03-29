@@ -5,7 +5,6 @@
 		display: block;
 	}
 	.entry-title{
-		@extend %inner-moretiny;
 		&:before{
 			content: '';
 			display: block;
@@ -30,8 +29,16 @@
 		margin-bottom: -3rem;
 	}
 	.entry-title{
-		&:before{
-			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-speaker.png);
+		&::before{
+			content: '/Speaker';
+			display: block;
+			font-size: 1.25rem;
+			line-height: 100%;
+			color: $color__tertiary_half;
+			margin: 0;
+			@include tablet-portrait{
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
