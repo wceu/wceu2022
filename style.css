@@ -87,13 +87,15 @@ input[type=submit] {
   }
 }
 
-.session-categories-links {
+.session-categories-links, .single-wcb_speaker .entry-content,
+.single-wcb_session .entry-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (min-width: 769px) {
-  .session-categories-links {
+  .session-categories-links, .single-wcb_speaker .entry-content,
+.single-wcb_session .entry-content {
     max-width: 600px;
   }
 }
@@ -5981,13 +5983,8 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .single-wcb_session .entry-header {
   display: block;
 }
-
-.single-wcb_speaker .entry-header {
-  padding: 5rem 2rem 3rem;
-  margin-bottom: -3rem;
-}
-.single-wcb_speaker .entry-title::before {
-  content: "/Speaker";
+.single-wcb_speaker .entry-title::before,
+.single-wcb_session .entry-title::before {
   display: block;
   font-size: 1.25rem;
   line-height: 100%;
@@ -5995,21 +5992,22 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin: 0;
 }
 @media only screen and (min-width: 769px) {
-  .single-wcb_speaker .entry-title::before {
+  .single-wcb_speaker .entry-title::before,
+.single-wcb_session .entry-title::before {
     font-size: 1.5rem;
   }
 }
+.single-wcb_speaker .entry-content,
+.single-wcb_session .entry-content {
+  margin: 0 auto;
+}
 
-.single-wcb_session .entry-header {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+.single-wcb_speaker .entry-title::before {
+  content: "/Speaker";
 }
-.single-wcb_session .entry-title {
-  text-align: left;
-}
-.single-wcb_session .entry-title:before {
-  background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-session.png);
-  margin: 0 0 1rem;
+
+.single-wcb_session .entry-title::before {
+  content: "/Session";
 }
 
 /*_______ Speaker single _______*/

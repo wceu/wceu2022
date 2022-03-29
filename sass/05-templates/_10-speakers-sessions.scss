@@ -4,16 +4,8 @@
 	.entry-header{
 		display: block;
 	}
-}
-
-.single-wcb_speaker{
-	.entry-header{
-		padding: 5rem 2rem 3rem;
-		margin-bottom: -3rem;
-	}
 	.entry-title{
 		&::before{
-			content: '/Speaker';
 			display: block;
 			font-size: 1.25rem;
 			line-height: 100%;
@@ -24,18 +16,24 @@
 			}
 		}
 	}
+	.entry-content{
+		@extend %inner-moretiny;
+		margin: 0 auto;
+	}
+}
+
+.single-wcb_speaker{
+	.entry-title{
+		&::before{
+			content: '/Speaker';
+		}
+	}
 }
 
 .single-wcb_session{
-	.entry-header{
-		padding-bottom: 2rem;
-		margin-bottom: 2rem;
-	}
 	.entry-title{
-		text-align: left;
-		&:before{
-			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-session.png);
-			margin: 0 0 1rem;
+		&::before{
+			content: '/Session';
 		}
 	}
 }
