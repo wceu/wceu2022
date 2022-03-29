@@ -6017,7 +6017,9 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 .speaker-avatar img {
   display: block;
-  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
 }
 
 .speaker-sessions:after {
