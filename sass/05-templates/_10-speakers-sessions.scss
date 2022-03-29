@@ -4,23 +4,6 @@
 	.entry-header{
 		display: block;
 	}
-	.entry-title{
-		&:before{
-			content: '';
-			display: block;
-			width: 5rem;
-			height: 5rem;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
-			margin: 0 auto 1rem;
-			filter: contrast(0.5);
-		}
-	}
-	.entry-content{
-		@extend %inner-moretiny;
-		margin: 0 auto;
-	}
 }
 
 .single-wcb_speaker{

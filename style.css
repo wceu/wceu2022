@@ -87,15 +87,13 @@ input[type=submit] {
   }
 }
 
-.session-categories-links, .single-wcb_speaker .entry-content,
-.single-wcb_session .entry-content {
+.session-categories-links {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (min-width: 769px) {
-  .session-categories-links, .single-wcb_speaker .entry-content,
-.single-wcb_session .entry-content {
+  .session-categories-links {
     max-width: 600px;
   }
 }
@@ -5982,22 +5980,6 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .single-wcb_speaker .entry-header,
 .single-wcb_session .entry-header {
   display: block;
-}
-.single-wcb_speaker .entry-title:before,
-.single-wcb_session .entry-title:before {
-  content: "";
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin: 0 auto 1rem;
-  filter: contrast(0.5);
-}
-.single-wcb_speaker .entry-content,
-.single-wcb_session .entry-content {
-  margin: 0 auto;
 }
 
 .single-wcb_speaker .entry-header {
