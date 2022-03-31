@@ -6022,7 +6022,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   border-radius: 100%;
 }
 
-.wp-block-wordcamp-speaker-sessions li {
+.wp-block-wordcamp-speaker-sessions {
   border-left: 0.25rem solid;
 }
 .wp-block-wordcamp-speaker-sessions li::before {

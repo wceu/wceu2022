@@ -51,8 +51,8 @@
 }
 
 .wp-block-wordcamp-speaker-sessions{
+	border-left: 0.25rem solid;
 	li{
-		border-left: 0.25rem solid;
 		&::before{
 			display: none;
 		}
