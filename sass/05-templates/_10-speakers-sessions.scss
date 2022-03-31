@@ -51,13 +51,8 @@
 }
 
 .wp-block-wordcamp-speaker-sessions{
-	border-left: 0.25rem solid;
-	&:before{
-		content: 'Sessions:';
-		font-size: 1.75rem;
-    	font-weight: bold;
-	}
 	li{
+		border-left: 0.25rem solid;
 		&::before{
 			display: none;
 		}
@@ -66,48 +61,40 @@
 		}
 	}
 }
-.speaker-sessions,
+
 #speaker-session-names{
-	display: none;
+	list-style: none;
+	@extend %camptix-item;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	@include tablet-portrait{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&:hover{
+		transform: none;
+	}
+	li{
+		padding: 0;
+		margin: 0;
+		&:before{
+			display: none;
+		}
+		a{
+			font-family: $font__main;
+			font-size: 1.75rem;
+			font-weight: 700;
+			line-height: 110%;
+			color: $color__secondary;
+			&:focus,
+			&:hover{
+				text-decoration: underline;
+				color: $color__primary;
+			}
+		}
+	}
 }
-// .speaker-sessions{
-// 	&:after{
-// 		content: ':';
-// 	}
-// }
-// #speaker-session-names{
-// 	list-style: none;
-// 	@extend %camptix-item;
-// 	margin-left: 2rem;
-// 	margin-right: 2rem;
-// 	margin-bottom: 2rem;
-// 	@include tablet-portrait{
-// 		margin-left: auto;
-// 		margin-right: auto;
-// 	}
-// 	&:hover{
-// 		transform: none;
-// 	}
-// 	li{
-// 		padding: 0;
-// 		margin: 0;
-// 		&:before{
-// 			display: none;
-// 		}
-// 		a{
-// 			font-family: $font__main;
-// 			font-size: 1.75rem;
-// 			font-weight: 700;
-// 			line-height: 110%;
-// 			color: $color__secondary;
-// 			&:focus,
-// 			&:hover{
-// 				text-decoration: underline;
-// 				color: $color__primary;
-// 			}
-// 		}
-// 	}
-// }
 
 /*_______ Session single _______*/
 .session-speakers{
