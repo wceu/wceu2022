@@ -9,7 +9,7 @@
 			display: block;
 			font-size: 1.25rem;
 			line-height: 100%;
-			color: $color__tertiary_half;
+			color: $color__tertiary;
 			margin: 0;
 			@include tablet-portrait{
 				font-size: 1.5rem;
@@ -98,11 +98,8 @@
 
 /*_______ Session single _______*/
 .session-speakers{
-	display: inline-block;
-	font-family: $font__main;
-	font-weight: 700;
 	font-size: 1.25rem;
-	margin-right: .5rem !important;
+	color: $color__secondary;
 	&:after{
 		content: ':';
 	}

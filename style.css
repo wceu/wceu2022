@@ -3616,23 +3616,22 @@ h6 + .notation {
 /*_______ Layout without sidebar _______*/
 /*_______ Layout for 404 and No results pages _______*/
 /*_______ Home page _______*/
-.home .site,
-.page-template-page-full-width .site {
+.home .site {
   margin-top: 0;
 }
 .home .site-content,
 .home .entry-content,
-.home .hentry,
-.page-template-page-full-width .site-content,
-.page-template-page-full-width .entry-content,
-.page-template-page-full-width .hentry {
+.home .hentry {
   margin-bottom: 0;
 }
-.home .entry-header,
-.page-template-page-full-width .entry-header {
+.home .entry-header {
   display: none !important;
   padding: 0 !important;
   margin: 0 !important;
+}
+.home .entry-content h1, .home .entry-content h2, .home .entry-content h3,
+.home .entry-content h4, .home .entry-content h5, .home .entry-content h6 {
+  color: #381FD1 !important;
 }
 
 /*_______ Big header on home page _______*/
@@ -6337,7 +6336,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   display: block;
   font-size: 1.25rem;
   line-height: 100%;
-  color: #D880FE;
+  color: #B200FD;
   margin: 0;
 }
 @media only screen and (min-width: 769px) {
@@ -6417,11 +6416,8 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 
 /*_______ Session single _______*/
 .session-speakers {
-  display: inline-block;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 700;
   font-size: 1.25rem;
-  margin-right: 0.5rem !important;
+  color: #381FD1;
 }
 .session-speakers:after {
   content: ":";

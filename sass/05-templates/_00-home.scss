@@ -1,6 +1,5 @@
 /*_______ Home page _______*/
-.home,
-.page-template-page-full-width{
+.home{
 	.site{
 		margin-top: 0;
 	}
@@ -13,6 +12,11 @@
 		display: none !important;
 		padding: 0 !important;
 		margin: 0 !important;
+	}
+	.entry-content{
+		%headings{
+			color: $color__secondary !important;
+		}
 	}
 }
 
