@@ -1330,7 +1330,7 @@ input[type=submit].outlined:hover {
   box-shadow: none;
 }
 .wp-block-button.anchor-link .wp-block-button__link:after {
-  content: "\f504";
+  content: "\f346";
   font-family: "dashicons";
   vertical-align: middle;
 }
