@@ -18,6 +18,7 @@ input[type="submit"] {
 	margin: 1rem auto;
 	padding: .75em 1.25em;
 	background-color: $color__quaternary;
+	border: .125rem solid $color__quaternary;
 	border: none;
 	border-radius: .25rem;
 	cursor: pointer;
@@ -30,7 +31,8 @@ input[type="submit"] {
 	}
 	&:focus,
 	&:hover{
-		background-color: $color__tertiary;
+		color: $color__quaternary !important;
+		background-color: $color__white;
 	}
 	&:active{
 		color: $color__primary;
@@ -79,6 +81,7 @@ input[type="submit"] {
 		text-align: center;
 		padding: .75em 1.25em;
 		background-color: $color__quaternary;
+		border: .125rem solid $color__quaternary;
 		border-radius: .25rem !important;
 		@extend %transition;
 		@include phone-portrait{
@@ -89,8 +92,8 @@ input[type="submit"] {
 		}
 		&:focus,
 		&:hover{
-			color: $color__white !important;
-			background-color: $color__tertiary;
+			color: $color__quaternary !important;
+			background-color: $color__white;
 		}
 	}
 	&.is-style-outline{
@@ -106,7 +109,7 @@ input[type="submit"] {
 			&:focus,
 			&:hover{
 				color: $color__white !important;
-				border-color: $color__white;
+				background-color: $color__quaternary;
 			}
 		}
 	}

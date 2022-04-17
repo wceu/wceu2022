@@ -29,10 +29,10 @@ body {
 
 *{
 	&::selection{		
-		background-color: $color__tertiary;
+		background-color: $color__grey_verylight;
 	}
 	&::-moz-selection{
-		background-color: $color__tertiary;
+		background-color: $color__grey_verylight;
 	}
 }
 

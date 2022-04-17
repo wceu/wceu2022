@@ -7,6 +7,247 @@
 	}
 }
 
+/*_______ Footer widgets _______*/
+.footer-widgets-block{
+	@extend %inner;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	padding: 0 2rem;
+	@include phone-portrait{
+		flex-flow: row wrap;
+	}
+	input,
+	select,
+	textarea {
+		height: 2.5rem;
+		background-color: transparent;
+		border-color: $color__tertiary;
+		&::placeholder{
+			color: $color__grey_blue !important;
+		}
+		&:focus{
+			outline: none;
+			border-color: $color__secondary;
+		}
+	}
+	button,
+	input[type="submit"] {
+		height: 2.5rem;
+		font-size: 1.25rem;
+		color: $color__white;
+		padding: 0;
+		background-color: $color__quaternary;
+		&:focus,
+		&:hover{
+			color: $color__quaternary !important;
+			background-color: $color__white;
+		}
+	}
+	.widget-title{
+		font-size: 1.5rem;
+		color: $color__secondary;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		@include phone-portrait{
+			font-size: 1.25rem;
+		}
+		@include tablet-portrait{
+			font-size: 1.5rem;
+		}
+	}
+	.widget_nav_menu{
+		.menu{
+			list-style: none;
+			padding-left: .5rem;
+			margin-top: 0;
+			margin-left: 0;
+			.menu-item{
+				font-size: 1.25rem;
+				line-height: 100%;
+				margin-bottom: 1.5rem;
+				@include tablet-portrait{
+					font-size: 1rem;
+					margin-bottom: 1.25rem;
+				}
+				a{
+					color: $color__quaternary;
+					text-decoration: none;
+					padding: .125rem .125rem;
+					border-bottom: .0625rem solid;
+					@extend %transition;
+					&:hover{
+						color: $color__tertiary;
+						padding-bottom: .05rem;
+					}
+				}
+				.sub-menu{
+					list-style: none;
+					padding-left: .5rem;
+					border-left: .125rem solid $color__grey_light;
+					margin-top: 1rem;
+					margin-left: 0;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
+
+/*_______ Widget area for sponsors widget _______*/
+// #footer-widget-1{
+// 	width: 100%;
+// 	padding: 4rem 2rem;
+// 	background-color: $color__tertiary;
+// 	.widget{
+// 		text-align: center;
+// 		.widget-title{
+// 			color: $color__primary;
+// 			margin-bottom: 2rem;
+// 		}
+// 	}
+// 	.module-header{
+// 		@extend %inner;
+// 		margin-bottom: 1rem;
+// 	}
+// }
+
+/*_______ Widget area for secondary navigation _______*/
+#footer-widget-2{
+	margin-bottom: 2rem;
+	.widget_nav_menu{
+		
+	}
+	.widget{
+		&:nth-of-type(1),
+		&:nth-of-type(2),
+		&:nth-of-type(3){
+			@include phone-portrait{
+				flex: 0 1 45%;
+			}
+			@include tablet-portrait{
+				flex: 0 1 25%;	
+			}
+		}
+		&:nth-of-type(4){
+			flex: 0 1 10%;
+			margin: 0 auto;
+			@include phone-portrait{
+				flex: 0 1 48%;
+			}
+			@include tablet-portrait{
+				flex: 0 1 20%;
+				margin: 0 0 0 auto;
+			}
+			img{
+				display: block;
+				max-width: 11.25rem;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+#menu-social{
+	display: flex;
+	.menu-item{
+		font-size: .875rem;
+		text-align: center;
+		line-height: 100%;
+		margin: 0 .5rem;
+		a{
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			text-decoration: none;
+			border: none;
+			&:before{
+				display: block;
+				text-indent: 0;
+				font-size: 1.5rem;
+				line-height: 100%;
+				color: $color__quaternary;
+			}
+			&:focus,
+			&:hover{
+				background-color: transparent;
+				&:before{
+					color: $color__tertiary;
+				}
+			}
+		}
+		&.facebook{
+			a:before{
+				content: "\f305";
+				font-family: 'dashicons';
+			}
+		}
+		&.twitter{
+			a:before{
+				content: "\f301";
+				font-family: 'dashicons';
+			}
+		}
+		&.instagram{
+			a:before{
+				content: "\f12d";
+				font-family: 'dashicons';
+			}
+		}
+		&.linkedin{
+			a:before{
+				content: "\f18d";
+				font-family: 'dashicons';
+			}
+		}
+	}
+}
+
+/*_______ Widget area for suscription and search widgets _______*/
+#footer-widget-3{
+	// padding-top: 2rem;
+	// border-top: 1px solid $color__secondary;
+	.widget{
+		margin-bottom: 4rem;
+		@include phone-portrait{
+			flex: 0 1 48%;
+		}
+		@include tablet-portrait{
+			flex: 0 1 33%;	
+			margin-bottom: 0;
+		}
+	}
+	.widget_search{
+		max-width: 300px;
+		margin: 2rem auto 0;
+		@include tablet-portrait{
+			margin: 0;
+		}
+	}
+}
+
+/*_______ Search widget _______*/
+.search-form{
+	label, input{
+		display: inline-block;
+		margin: 0;
+	}
+	label{
+		float: left;
+		width: 60%;
+	}
+	.search-field{
+		padding: 0.625rem 1rem;
+		color: $color__quaternary !important;
+		background-color: $color__white;
+		border: .0625rem solid $color__quaternary;
+		border-radius: .25rem 0 0 .25rem;
+	}
+	.search-submit{
+		width: 40%;
+		border-radius: 0 .25rem .25rem 0;
+	}
+}
+
 /*_______ Suscription widget _______*/
 .jetpack_subscription_widget{
 	form{
@@ -22,24 +263,25 @@
 			}
 		}
 		#subscribe-email{
-			flex: 0 1 auto !important;
-			max-width: 60% !important;
-			margin: 0 !important;
+			@include phone-portrait{
+				flex: 0 1 auto !important;
+				max-width: 60% !important;
+				margin: 0 !important;
+			}
 			input{
 				width: 100% !important;
-				height: 3.75rem !important;
-				font-size: 1.125rem !important;
+				font-size: 1rem !important;
 				color: $color__quaternary !important;
-				padding: .25rem .5rem .25rem 1.5rem !important;
 				background-color: $color__white !important;
 				border: .0625rem solid $color__quaternary !important;
 				border-bottom: .0 solid #000;
-				border-radius: .25rem 0 0 .25rem !important;
 				@include phone-portrait{
+					border-radius: .25rem 0 0 .25rem !important;
 					font-size: 1.25rem !important;
 				}
 				&::placeholder{
-					color: $color__tertiary !important;
+					font-size: 1rem !important;
+					color: $color__grey_blue !important;
 				}
 				&:focus{
 					outline: none !important;
@@ -51,24 +293,24 @@
 			}
 		}
 		#subscribe-submit{
-			flex: 0 1 auto !important;
-			max-width: 40% !important;
-			margin: 0 !important;
+			@include phone-portrait{
+				flex: 0 1 auto !important;
+				max-width: 40% !important;
+				margin: 0 !important;
+			}
 			br{
 				display: none !important;
 			}
 			button{
 				width: 100% !important;
-				height: 3.75rem !important;
 				font-size: 1.125rem !important;
-				color: $color__white;
-				padding: .25rem 1.25rem .25rem .5rem !important;
-				background-color: $color__quaternary;
-				border: none !important;
-				border-radius: .25rem 0 0 .25rem !important;
+				padding: .25rem 1.25rem !important;
+				border: .0625rem solid $color__quaternary !important;
+				border-radius: .25rem !important;
 				margin: 0 !important;
 				@include phone-portrait{
 					font-size: 1.25rem !important;
+					border-radius: 0 .25rem .25rem 0 !important;
 				}
 			}
 		}
