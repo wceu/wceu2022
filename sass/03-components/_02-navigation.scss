@@ -260,13 +260,13 @@
 	top: 3.25rem;
 	right: 1rem;
 	@include phone-tiny{
-		right: 2rem;
 		position: static;
 		margin-left: 1rem;
 	}
 	.widget{
 		margin: 0;
 		p{
+			width: max-content;
 			margin: 0;
 		}
 	}

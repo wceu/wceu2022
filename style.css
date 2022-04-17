@@ -1965,7 +1965,6 @@ body.admin-bar .site-header {
 }
 @media only screen and (min-width: 350px) {
   #header-widgets {
-    right: 2rem;
     position: static;
     margin-left: 1rem;
   }
@@ -1974,6 +1973,7 @@ body.admin-bar .site-header {
   margin: 0;
 }
 #header-widgets .widget p {
+  width: max-content;
   margin: 0;
 }
 
