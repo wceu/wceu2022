@@ -166,13 +166,13 @@ input[type="submit"] {
 		.wp-block-button__link{
 			display: inline-block;
 			font-size: 1.125rem;
+			color: $color__quaternary;
 			padding: 0;
 			background-color: transparent;
 			border: none;
 			border-bottom: .125rem solid;
-			box-shadow: none;
 			margin: 0;
-			&:before{
+			&:after{
 				display: inline-block;
 				vertical-align: middle;
 				content: "\f504";
