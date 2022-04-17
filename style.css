@@ -3397,7 +3397,7 @@ table thead th {
 }
 .notation.dark {
   background-color: #10284B;
-  background-origin: none !important;
+  border: none !important;
   color: #ffffff !important;
 }
 .notation.dark h1, .notation.dark h2, .notation.dark h3,

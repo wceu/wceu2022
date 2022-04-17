@@ -45,7 +45,7 @@
 	}
 	&.dark{
 		background-color: $color__primary;
-		background-origin: none !important;
+		border: none !important;
 		color: $color__white !important;
 		%headings, p, a, label{
 			color: $color__white !important;
