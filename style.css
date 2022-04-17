@@ -2774,9 +2774,12 @@ table thead th {
   font-size: 0.875rem;
 }
 .wp-block-columns.info-columns {
-  justify-content: center;
+  gap: 1rem;
 }
 .wp-block-columns.info-columns .wp-block-column:not(:empty) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   padding: 0.25em 0 0.25em 0.75em;
   border-left: 0.25rem solid #B200FD;
   margin-bottom: 2rem;
@@ -2851,6 +2854,9 @@ table thead th {
 .wp-block-columns.info-columns .wp-block-column:not(:empty) ul:last-of-type,
 .wp-block-columns.info-columns .wp-block-column:not(:empty) ol:last-of-type {
   margin-bottom: 0;
+}
+.wp-block-columns.info-columns .wp-block-column:not(:empty) .wp-block-buttons {
+  margin-top: auto;
 }
 .wp-block-columns.info-columns .notation {
   margin-top: 0;

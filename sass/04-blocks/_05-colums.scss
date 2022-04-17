@@ -57,8 +57,11 @@
 		}
 	}
 	&.info-columns{
-		justify-content: center;
+		gap: 1rem;
 		.wp-block-column:not(:empty){
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
 			padding: .25em 0 .25em .75em;
 			border-left: .25rem solid $color__tertiary;
 			margin-bottom: 2rem;
@@ -108,6 +111,9 @@
 				&:last-of-type{
 					margin-bottom: 0;
 				}
+			}
+			.wp-block-buttons{
+				margin-top: auto;
 			}
 		}
 		.notation{
