@@ -164,7 +164,8 @@ input[type="submit"] {
 	&.external-link{
 		margin-bottom: 1.25em;
 		.wp-block-button__link{
-			display: inline-block;
+			display: flex;
+			align-items: center;
 			font-weight: normal;
 			font-size: 1.125rem;
 			color: $color__quaternary;
@@ -175,11 +176,9 @@ input[type="submit"] {
 			border-radius: 0 !important;
 			margin: 0;
 			&:after{
-				display: inline-block;
-				vertical-align: middle;
 				content: "\f504";
 				font-family: 'dashicons';
-				margin-right: .25rem;
+				margin-left: .25rem;
 			}
 		}
 	}
