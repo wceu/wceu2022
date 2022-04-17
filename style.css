@@ -1790,6 +1790,7 @@ body.admin-bar .site-header {
   text-align: center;
   text-decoration: none;
   background-color: #DB0A5B;
+  border: 0.125rem solid #DB0A5B;
   border-radius: 0.25rem;
 }
 @media only screen and (min-width: 1024px) {
@@ -1806,11 +1807,11 @@ body.admin-bar .site-header {
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised:focus, .main-navigation .menu .menu-item.emphasised:focus-within, .main-navigation .menu .menu-item.emphasised:hover {
-    border-color: #381FD1;
-    box-shadow: 0 0 0 #DB0A5B;
+    color: #DB0A5B !important;
+    background-color: #ffffff;
   }
   .main-navigation .menu .menu-item.emphasised:focus a, .main-navigation .menu .menu-item.emphasised:focus-within a, .main-navigation .menu .menu-item.emphasised:hover a {
-    color: #381FD1;
+    color: #DB0A5B;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -4605,7 +4606,7 @@ h6 + .notation {
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-heading {
   font-size: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem !important;
   color: #10284B !important;
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list {
@@ -4624,8 +4625,9 @@ h6 + .notation {
 .wordcamp-speakers__sessions .wordcamp-speakers__session-info {
   display: block;
   font-style: normal;
-  font-size: 1rem;
   font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
   color: #10284B;
 }
 

@@ -84,6 +84,7 @@
 				text-align: center;
 				text-decoration: none;
 				background-color: $color__quaternary;
+				border: .125rem solid $color__quaternary;
 				border-radius: .25rem;
 				@include tablet{
 					width: auto;
@@ -99,10 +100,10 @@
 				&:focus-within,
 				&:hover{
 					@include tablet{
-						border-color: $color__secondary;
-						box-shadow: 0 0 0 $color__quaternary;
+						color: $color__quaternary !important;
+						background-color: $color__white;
 						a{
-							color: $color__secondary;
+							color: $color__quaternary;
 						}
 					}
 				}

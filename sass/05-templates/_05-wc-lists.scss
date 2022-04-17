@@ -151,7 +151,7 @@
 	}
 	.wordcamp-speakers__sessions-heading{
 		font-size: 1rem;
-		margin-bottom: .25rem;
+		margin-bottom: .25rem !important;
 		color: $color__primary !important;
 	}
 	.wordcamp-speakers__sessions-list{
@@ -170,8 +170,9 @@
 	.wordcamp-speakers__session-info{
 		display: block;
 		font-style: normal;
-		font-size: 1rem;
 		font-weight: 400;
+		font-size: 1rem;
+		line-height: 100%;
 		color: $color__primary;
 		@extend %transition;
 	}
