@@ -2654,7 +2654,7 @@ body.admin-bar .site-header {
 }
 .entry-content ol li {
   position: relative;
-  color: #F4C3C8;
+  color: #9B8FE8;
   padding: 0;
   margin-bottom: 1rem;
   counter-increment: orderedlist-counter;
@@ -2936,7 +2936,7 @@ table thead th {
   font-style: normal;
   line-height: 120%;
   text-align: left !important;
-  color: #F4C3C8;
+  color: #9B8FE8;
 }
 .wp-block-quote cite a {
   color: #D880FE;
@@ -3006,7 +3006,7 @@ table thead th {
   font-size: 1rem;
   font-style: normal;
   line-height: 100%;
-  color: #F4C3C8;
+  color: #9B8FE8;
 }
 .wp-block-pullquote cite a {
   color: #381FD1;
@@ -5790,7 +5790,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   margin-right: 0px;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session {
-  background-color: #D880FE;
+  background-color: #F7E6FF;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
   color: #381FD1;
