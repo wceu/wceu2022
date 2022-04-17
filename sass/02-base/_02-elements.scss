@@ -7,10 +7,10 @@ html {
 body {
 	font-weight: 400;
 	font-size: 16px;
-	color: $color__secondary;
+	color: $color__primary;
 	margin: 0;
 	padding: 0;
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color__white; /* Fallback for when there is no custom background color defined. */
 	overflow-x: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -22,16 +22,17 @@ body {
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after {
 	box-sizing: inherit;
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 }
 
 *{
 	&::selection{		
-		background-color: $color__tertiary_half;
+		background-color: $color__tertiary;
 	}
 	&::-moz-selection{
-		background-color: $color__tertiary_half;
+		background-color: $color__tertiary;
 	}
 }
 

@@ -17,6 +17,7 @@
 	}
 	%headings, p{
 		flex: 1 1 100%;
+		margin-bottom: 1rem;
 	}
 	.grunion-field-wrap{
 		flex: 0 0 100%;
@@ -24,8 +25,13 @@
 		input[type=email],
 		input[type=tel],
 		input[type=text],
-		input[type=url]{
+		input[type=url],
+		textarea{
 			width: 100% !important;
+			margin-bottom: 1rem;
+		}
+		&.grunion-field-radio-wrap,
+		&.grunion-field-checkbox-multiple-wrap{
 			margin-bottom: 1rem;
 		}
 		&.mid-left-wrap{

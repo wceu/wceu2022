@@ -4,10 +4,7 @@
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
-	margin-top: 5rem;
-	@include tablet-portrait{
-		margin-top: 6rem;
-	}
+	
 }
 .site-content{
 	margin-bottom: 9rem;

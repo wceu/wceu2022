@@ -1,12 +1,7 @@
 /*_______ Page template _______*/
 .page-template-default .entry-header,
 .page-template .entry-header{
-	padding: 4rem 2rem 0;
-	margin-bottom: 4rem;
-	@include tablet-portrait{
-		padding: 4rem 10%;
-		margin-bottom: 4rem;
-	}
+	
 	.entry-title,
 	.page-title{
 		margin: 0;

@@ -3,17 +3,6 @@
 	.site-content{
 		margin-bottom: 0;
 	}
-	.entry-header{
-		display: flex;
-		flex-flow: column wrap;
-		position: relative;
-		padding: 8rem 1.5rem 0;
-		margin-bottom: 3rem;
-		@include tablet-portrait{
-			padding: 10rem 10% 0;
-			margin-bottom: 5rem;
-		}
-	}
 	.entry-image{
 		order: 3;
 		margin: 0 auto;
@@ -24,26 +13,20 @@
 			height: auto;
 		}
 	}
-	.entry-title{
-		color: $color__secondary;
-		margin-top: 0;
-		margin-bottom: 1rem;
-	}
 	.entry-meta{
 		width: 100%;
 		font-weight: 400;
 		font-size: .875rem;
 		line-height: 100%;
-		color: $color__secondary;
+		color: $color__grey_blue;
 		padding: .25rem 0 .25rem .5rem;
-		border-left: .0625rem solid $color__tertiary;
 		margin: 1rem 0;
 		@include tablet-portrait{
 			font-size: 1rem;
 			margin: 2rem 0;
 		}
 		a{
-			color: $color__secondary;
+			color: $color__grey_blue;
 			text-decoration: none;
 		}
 		.byline{
@@ -67,6 +50,35 @@
 			}
 		}
 	}
+	.entry-header{
+		display: flex;
+		flex-flow: column wrap;
+		position: relative;
+		padding: 8rem 0 0;
+		background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right-02.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: contain;
+		margin-bottom: 3rem;
+		@include tablet-portrait{
+			padding: 3.5rem 10% 0;
+			margin-bottom: 5rem;
+			background-size: 50%;
+		}
+		@include tablet{
+			background-size: auto 22rem;
+		}
+	}
+	.entry-title{
+		color: $color__secondary;
+		padding: 1rem;
+		background-color: $color__white;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		@include tablet-portrait{
+			max-width: 75%;
+		}
+	}
 	.entry-content{
 		> *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
 			@extend %inner-tiny;
@@ -80,6 +92,7 @@
 		}
 		/*_______ Anchors navigation fix _______*/
 		%headings{
+			color: $color__tertiary;
 			&[id]::before {
 				content: '';
 				display: block;
@@ -155,7 +168,7 @@
 				display: flex;
 				align-items: center;
 				margin: 0 auto;
-				border-bottom: .125rem solid $color__tertiary;
+				border-bottom: .125rem solid $color__quaternary;
 				@extend %transition;
 				@include tablet-portrait{
 					position: fixed;
@@ -167,14 +180,14 @@
 					font-size: 1rem;
 					line-height: 100%;
 					padding: 0;
-					color: $color__tertiary;
+					color: $color__quaternary;
 					background-color: transparent;
 					@extend %transition;
 					@include tablet-portrait{
 						font-size: 0;
 						width: 3rem;
 						height: 3rem;
-						background-color: $color__tertiary;
+						color: $color__quaternary;
 					}
 					&:before,
 					&:after{
@@ -192,7 +205,7 @@
 							display: block;
 							font-size: 1.5rem;
 							line-height: 0;
-							color: $color__primary;
+							color: $color__quaternary;
 						}
 					}
 					&:focus,
@@ -200,7 +213,11 @@
 						outline: none;
 						color: $color__secondary;
 						@include tablet-portrait{
-							background-color: $color__secondary;
+							background-color: $color__quaternary;
+						}
+						&:before,
+						&:after{
+							color: $color__white;
 						}
 					}
 				}

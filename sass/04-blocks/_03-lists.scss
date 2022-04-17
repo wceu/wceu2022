@@ -14,7 +14,6 @@
 		}
 		li{
 			position: relative;
-			color: $color__secondary-half;
 			padding: 0;
 			margin-bottom: 1rem;
 			&:before{
@@ -24,7 +23,7 @@
 				left: -.875rem;
 				width: .5rem;
 				height: .5rem;
-				border: .125rem solid $color__tertiary;
+				background-color: $color__secondary;
 				border-radius: 100%;
 				@include phone-portrait{
 					top: .45em;

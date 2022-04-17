@@ -9,10 +9,11 @@ body{
 @include headings {
 	font-weight: 700;
 	clear: both;
+	color: $color__secondary;
 }
 
 h1{
-	font-size: 18vw;
+	font-size: 3.5rem;
 	font-weight: 700;
 	line-height: 100%;
 	margin-top: 0;
@@ -22,24 +23,24 @@ h1{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	@include tablet-portrait{
-		@include font-size(10);
+		@include font-size(5.5);
 	}
 }
 
 h2{
 	font-size: 12vw;
 	line-height: 100%;
-	margin-top: 0;
-	margin-bottom: .5em;
 	word-break: break-word;
 	hyphens: auto;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
+	margin-top: 0;
+	margin-bottom: .5em;
 	@include phone-portrait{
 		font-size: 7vw;
 	}
 	@include tablet-portrait{
-		@include font-size(4.5);
+		@include font-size(3.5);
 		word-break: keep-all;
 		hyphens: none;
 		-ms-hyphens: none;
@@ -100,7 +101,6 @@ p {
 	@include font-size(1.25);
 	line-height: 140%;
 	margin: 0 0 1em;
-	color: $color__secondary-half;
 	@include tablet-portrait{
 		@include font-size(1.5);
 	}

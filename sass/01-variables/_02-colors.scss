@@ -1,21 +1,26 @@
 /*_______ Color variables _______*/
 
 /*_______ Brand colors _______*/
-$color__primary: 		#30394A;
-$color__secondary: 		#DE8E95;
+$color__primary: 		#10284B;
+$color__secondary: 		#381FD1;
 $color__secondary-half: #F4C3C8;
-$color__tertiary: 		#47E2CD;
-$color__tertiary_half:	#A3F1E6;
+$color__tertiary: 		#B200FD;
+$color__tertiary_half:	#D880FE;
+$color__quaternary: 	#DB0A5B;
+$color__quaternary_half:#ED84AD;
+
 /*_______ Grays _______*/
-$color__grey_blue: 		#787f86;
+$color__grey_blue: 		#8793A5;
 $color__grey: 			#737477;
 $color__grey_light: 	#968f88;
-$color__grey_morelight: #9e9e9e;
+$color__grey_morelight: #CFD4DB;
 $color__grey_verylight: #C4C4C4;
 $color__grey_minimus: 	#DADADD;
 
+$color__white: 			#ffffff;
+
 /*_______ Element colors _______*/
-$color__background-body: $color__primary;
+$color__background-body: $color__white;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;

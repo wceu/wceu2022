@@ -11,7 +11,7 @@ label{
 	font-size: 1.25rem;
 	line-height: 120%;
 	text-align: left;
-	color: $color__secondary;
+	color: $color__primary;
 	margin-bottom: .25rem;
 	@include phone-portrait{
 		font-size: 1.25rem;
@@ -35,7 +35,8 @@ textarea,
 	padding: .25rem .75em;
 	background-color: white;
 	border: none;
-	border-bottom: .25rem solid $color__tertiary;
+	border: .0625rem solid $color__grey_verylight;
+	border-bottom: .125rem solid $color__quaternary;
 	border-radius: .25rem;
 	outline: none;
 	resize: none;
@@ -79,7 +80,7 @@ input[type="radio"]{
 	height: 1.5rem;
 	min-height: 1.5rem;
 	padding: 0;
-	border: .125rem solid $color__tertiary;
+	border: .0625rem solid $color__quaternary;
 	overflow: hidden;
 	&:focus{
 		outline: none;
@@ -129,7 +130,7 @@ select,
 	position: relative;
 	font-size: 1.125rem;
 	padding-right: 2rem;
-	background-image: url('https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png');
+	background-image: url('https://europe.wordcamp.org/2022/files/2022/04/dashicons-arrow-down-alt2.png');
 	background-repeat: no-repeat;
 	background-position: right .5em top 50%;
 	background-size: 1rem;

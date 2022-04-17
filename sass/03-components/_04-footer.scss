@@ -1,19 +1,21 @@
 /*_______ Footer _______*/
 .site-footer{
-	margin-top: 8rem;
 	width: 100%;
-	padding: 0 0 2.5rem;
-	border-top: .0625rem solid $color__secondary;
+	padding: 0;
+	background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-hor.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	background-size: auto 4rem;
+	margin-top: 8rem;
+	margin-bottom: 0;
 	&:before {
 		content: '';
 		display: block;
 		height: 8rem;
-		margin: -8rem 0 0;
 	}
 }
 
 #footer-widgets{
-	background-color: $color__primary;
 	margin-bottom: 4rem;
 }
 
@@ -48,28 +50,20 @@
 	input[type="submit"] {
 		height: 2.5rem;
 		font-size: 1.25rem;
-		color: $color__primary;
+		color: $color__white;
 		padding: 0;
-		background-color: $color__tertiary;
-		border-color: $color__tertiary;
+		background-color: $color__quaternary;
 		&:focus,
 		&:hover{
 			outline: none;
 			color: $color__primary;
 			background-color: $color__secondary;
-			border-color: $color__secondary;
 		}
 		&:active{
 			outline: none;
 			color: $color__tertiary;
 			background-color: $color__grey_blue;
 			border-color: $color__grey_blue;
-		}
-	}
-	.jetpack_subscription_widget{
-		input,
-		button{
-			box-shadow: none !important;
 		}
 	}
 	.widget-title{
@@ -99,15 +93,14 @@
 					margin-bottom: 1.25rem;
 				}
 				a{
-					color: $color__tertiary;
+					color: $color__quaternary;
 					text-decoration: none;
-					padding: .25rem .125rem;
+					padding: .125rem .125rem;
 					border-bottom: .0625rem solid;
 					@extend %transition;
 					&:hover{
-						color: $color__primary;
-						background-color: $color__secondary;
-						border-color: $color__secondary;
+						color: $color__tertiary;
+						padding-bottom: .05rem;
 					}
 				}
 				.sub-menu{
@@ -144,14 +137,7 @@
 #footer-widget-2{
 	margin-bottom: 2rem;
 	.widget_nav_menu{
-		&:before{
-			content: '';
-			display: block;
-			width: 2.5rem;
-			height: .5rem;
-			background-color: $color__tertiary;
-			margin-bottom: 1rem;
-		}
+		
 	}
 	.widget{
 		&:nth-of-type(1),
@@ -172,7 +158,7 @@
 			}
 			@include tablet-portrait{
 				flex: 0 1 20%;
-				margin: 2rem 0 0 auto;
+				margin: 0 0 0 auto;
 			}
 			img{
 				display: block;
@@ -217,17 +203,16 @@
 	}
 	.search-field{
 		padding: 0.625rem 1rem;
-		color: $color__tertiary !important;
-		background-color: $color__primary;
-		border: .125rem solid $color__tertiary;
-		border-radius: 2rem 0 0 2rem;
+		color: $color__quaternary !important;
+		background-color: $color__white;
+		border: .0625rem solid $color__quaternary;
+		border-radius: .25rem 0 0 .25rem;
 	}
 	.search-submit{
 		width: 40%;
-		color: $color__primary !important;
-		background-color: $color__tertiary !important;
-		border: .125rem solid $color__tertiary;
-		border-radius: 0 2rem 2rem 0;
+		color: $color__white !important;
+		background-color: $color__quaternary !important;
+		border-radius: 0 .25rem .25rem 0;
 		box-shadow: none;
 	}
 }
@@ -250,13 +235,13 @@
 				text-indent: 0;
 				font-size: 1.5rem;
 				line-height: 100%;
-				color: $color__tertiary;
+				color: $color__quaternary;
 			}
 			&:focus,
 			&:hover{
 				background-color: transparent;
 				&:before{
-					color: $color__secondary;
+					color: $color__tertiary;
 				}
 			}
 		}
@@ -294,8 +279,7 @@
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 2rem;
-	border-top: .0625rem solid $color__secondary;
+	padding: 2rem 2rem 6rem;
 	@include tablet-portrait{
 		flex-flow: row wrap;
 		justify-content: space-between;

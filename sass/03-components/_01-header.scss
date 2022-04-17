@@ -1,52 +1,50 @@
 /*_______ Site header _______*/
 .site-header{
-	position: fixed;
-	top: 0;
 	width:100%;
 	display:flex;
 	flex-flow: row nowrap;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 .5rem 0 1rem;
+	background-color: $color__white;
+	padding: 1rem;
 	margin: 0 auto;
 	z-index: 10;
-	@include phone-tiny{
-		padding: 0 1rem 0 2rem;
-	}
 	@include phone-portrait{
-		padding: 0 2rem;
+		padding: 1rem 2rem;
 	}
-}
-
-.custom-header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	flex: 0 0 auto;
-	padding: 1rem 0 0;
-	@include tablet-portrait{
+	.custom-header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
-		padding: 1rem 0 0;
-	}
-	.custom-header-media{
-		display: none;
-	}
-	.site-branding{
-		.custom-logo-link{
-			display: block;
-			margin: 0;
-			padding: 0;
-			@extend %transition;
-			&:hover{
-				opacity: .7;
+		flex: 0 0 auto;
+		@include tablet-portrait{
+			height: 100%;
+		}
+		.custom-header-media{
+			display: none;
+		}
+		.site-branding{
+			.custom-logo-link{
+				display: block;
+				margin: 0;
+				padding: 0;
+				@extend %transition;
+				&:hover{
+					opacity: .7;
+				}
+			}
+			.custom-logo{
+				display: block;
+				width: 4rem;
+				height: auto;
+				@include tablet-portrait{
+					width: 5rem;
+				}
 			}
 		}
-		.custom-logo{
-			width: 88px;
-			height: auto;
-			@include tablet-portrait{
-				width: 111px;
-			}
-		}
+	}
+	.main-navigation{
+		flex-grow: 1;
 	}
 }

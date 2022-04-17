@@ -54,7 +54,6 @@
 		line-height: 100%;
 		color: $color__tertiary;
 		padding: 1rem;
-		background-color: $color__primary;
 		margin-bottom: 1rem;
 	}
 	.tix-ticket-excerpt {
@@ -316,7 +315,7 @@
 		}
 	}
 	.tix-required-star {
-		color: $color__secondary;
+		color: $color__tertiary;
 		font-weight: 700;
 	}
 	.tix-row-question-3968 .tix-left:after {
@@ -436,18 +435,15 @@
 			font-size: 1.5rem;
 			line-height: 100%;
 			text-transform: none;
-			color: $color__primary;
+			color: $color__white;
 			padding: .75em 1.25em;
-			background-color: $color__tertiary;
-			border-radius: 5rem;
-			box-shadow: 0.125em 0.125em 0 $color__secondary;
+			background-color: $color__quaternary;
 			@include is-hover-supported{
 				&:focus,
 				&:hover{
 					outline: none;
-					color: $color__primary !important;
-					background-color: $color__secondary;
-					box-shadow: 0 0 0 #47e2cd;
+					color: $color__white !important;
+					background-color: $color__tertiary;
 				}
 			}
 		}

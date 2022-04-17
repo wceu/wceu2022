@@ -10,7 +10,7 @@
 		margin-bottom: 0;
 	}
 	.entry-header{
-		display: none;
+		display: none !important;
 		padding: 0 !important;
 		margin: 0 !important;
 	}
@@ -20,23 +20,28 @@
 .home-big-hero{
 	padding-top: 4rem;
 	padding-bottom: 0;
-	background-image: url(https://europe.wordcamp.org/2022/files/2021/06/wp-dots.png);
+	background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right.png);
 	background-repeat: no-repeat;
-	background-size: 101%;
-	background-position: 8rem -5rem;
+	background-size: contain;
+	background-position: top right;
 	margin-top: 0;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	@include tablet-portrait{
+		padding-top: 5rem;
 		padding-bottom: 2rem;
-		background-size: 70%;
-		background-position: 130% -2.5rem;
-		margin-bottom: 0;
+		background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-full.png);
+		background-position: top right;
+		background-size: auto 38rem;
 	}
 	.wp-block-group__inner-container{
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 	.wp-block-columns{
+		padding: 0;
+		@include phone-tiny{
+			padding: 0 1rem;
+		}
 		&:first-child{
 			.wp-block-column{
 				flex-basis: 100% !important;
@@ -47,52 +52,59 @@
 		}
 	}
 	.wceu-big-title{
-		font-size: 20vw;
+		width: fit-content;
+		@include font-size(5);
 		font-weight: 700;
 		line-height: 80%;
 		color: $color__secondary !important;
+		background-color: $color__white;
+		padding: 1rem;
 		margin-top: 0;
 		margin-bottom: 0;
 		@include tablet-portrait{
-			@include font-size(15.5);
-		}
-		.second-word{
-			margin-left: 2rem;
+			@include font-size(8.5);
+			padding: 1.5rem;
 		}
 		strong{
-			font-size: 80%;
 			color: $color__tertiary;
 		}
 	}
 	.wceu-subtitle{
-		font-size: 1.75rem;
-		color: $color__secondary;
+		width: fit-content;
+		@include font-size(1.5);
+		color: $color__secondary !important;
+		padding: 1rem;
+		background-color: $color__white;
+		margin-top: 0 !important;
 		margin-bottom: 0 !important;
+		@include tablet-portrait{
+			@include font-size(2.5);
+		}
 		strong{
 			color: $color__tertiary;
 		}
 	}
-	.home-intro{
-		padding: 0 2rem;
-		margin-top: 0;
-		margin-bottom: 6rem;
-		@include tablet-portrait{
-			margin-bottom: 8rem;
-		}
-		.wp-block-column{
-			&:nth-child(2){
-				order: -1;
-				margin-bottom: 2rem;
-				@include phone{
-					order: 2;
-					margin-bottom: 0;
-				}
+}
+.home-intro{
+	padding: 0 2rem;
+	margin-top: 0;
+	margin-bottom: 6rem;
+	@include tablet-portrait{
+		margin-bottom: 8rem;
+	}
+	.wp-block-column{
+		&:nth-child(2){
+			order: -1;
+			margin-bottom: 2rem;
+			@include phone{
+				order: 2;
+				margin-bottom: 0;
 			}
 		}
-		
-		.wceu-big-claim{
-			color: $color__secondary;
-			margin-bottom: 0;
-		}
+	}
+	
+	.wceu-big-claim{
+		color: $color__primary;
+		margin-bottom: 0;
 	}
 }

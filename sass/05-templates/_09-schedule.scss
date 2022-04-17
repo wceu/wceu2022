@@ -1,7 +1,507 @@
 /*_______ Schedule page _______*/
-.schedule-block{
-	padding: 0 1rem;
+
+/*_____ Inline styles _____*/
+@supports ( display: grid ) {
+	@media screen and ( min-width: 550px ) {
+		#wordcamp-schedule__day-2022-06-03-tracks-all {
+			grid-template-columns:
+			[times] auto
+			[wordcamp-schedule-track-46-start] 1fr
+				[
+					wordcamp-schedule-track-46-end
+					wordcamp-schedule-track-47-start
+				] 1fr
+
+				[
+					wordcamp-schedule-track-47-end
+					wordcamp-schedule-track-48-start
+				] 1fr
+
+				[
+					wordcamp-schedule-track-48-end
+					wordcamp-schedule-track-49-start
+				] 1fr
+			[wordcamp-schedule-track-49-end];
+			/* Organizers: Set these to `1fr` to make the row height relative to the time duration of the session. */
+			grid-template-rows:
+				[tracks] auto
+				[time-030900] auto [time-030930] auto [time-030930] auto [time-031030] auto [time-031030] auto [time-031100] auto [time-031100] auto [time-031100] auto [time-031100] auto [time-031100] auto [time-031200] auto [time-031200] auto [time-031200] auto [time-031200] auto [time-031200] auto [time-031200] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031300] auto [time-031400] auto [time-031400] auto [time-031400] auto [time-031400] auto [time-031400] auto [time-031500] auto [time-031500] auto [time-031500] auto [time-031500] auto [time-031500] auto [time-031600] auto [time-031600] auto [time-031600] auto [time-031600] auto [time-031600] auto [time-031600] auto [time-031700] auto [time-031700] auto [time-031700] auto [time-031700] auto [time-031700] auto [time-031700] auto [time-031800] auto [time-031800] auto [time-031800] auto [time-031800] auto [time-031800] auto [time-031800] auto [time-031900] auto [time-031900] auto [time-031900] auto [time-031900] auto [time-031900] auto [time-031915] auto ;
+		}
+	}
 }
+
+/*_____ Block styles?? _____*/
+.wp-block[data-type="wordcamp/schedule"]
+	.editor-block-list__block-edit{
+		padding-left:1em;
+		padding-right:1em
+	}
+	.notice.day-has-overlapping-sessions{
+		background-color:#f8ebea;
+		margin:10px 0 20px
+	}
+	.notice.day-has-overlapping-sessions p{
+		margin:0
+	}
+	.notice.day-has-overlapping-sessions ul{
+		margin:2px 0 8px
+	}
+	.wordcamp-schedule__day{
+		background-color:#fbfbfc
+	}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__day{
+	grid-gap:1px;display:grid
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__day{
+	grid-gap:1px;display:grid
+}
+
+}
+
+}
+.editor-styles-wrapper .wordcamp-schedule__date{
+	margin-bottom:0
+}
+.editor-styles-wrapper .wordcamp-schedule__date:before{
+	content:none
+}
+.wordcamp-schedule__column-header{
+	background-color:#fff;display:none;font-size:.75em;font-weight:700;text-align:center
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__column-header{
+	background-color:rgba(251,251,252,.92);display:block;grid-row:tracks;margin:0 -1px;padding:10px 5px 5px;position:sticky;top:0;z-index:10
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__column-header{
+	background-color:rgba(251,251,252,.92);display:block;grid-row:tracks;margin:0 -1px;padding:10px 5px 5px;position:sticky;top:0;z-index:10
+}
+
+}
+
+}
+.editor-styles-wrapper h3.wordcamp-schedule__time-slot-header,.wordcamp-schedule__session,.wordcamp-schedule__time-slot-header{
+	border:1px solid #e0e5e9;border-top:none;font-size:14px;padding:14px
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .editor-styles-wrapper h3.wordcamp-schedule__time-slot-header,body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session,body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	border:none;box-shadow:0 0 1px 1px #e0e5e9;margin-bottom:0;position:relative;z-index:5
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .editor-styles-wrapper h3.wordcamp-schedule__time-slot-header,body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session,body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	border:none;box-shadow:0 0 1px 1px #e0e5e9;margin-bottom:0;position:relative;z-index:5
+}
+
+}
+
+}
+.editor-styles-wrapper h3.wordcamp-schedule__time-slot-header.wordcamp-schedule__session-type-regular,.wordcamp-schedule__session.wordcamp-schedule__session-type-regular,.wordcamp-schedule__time-slot-header.wordcamp-schedule__session-type-regular{
+	padding:4px 10px 12px
+}
+.wordcamp-schedule__time-slot-header{
+	background-color:#e0e5e9;border-bottom:none;display:flex;flex-direction:column;justify-content:center;min-width:100px;text-align:center
+}
+.wordcamp-schedule__time-slot-header.is-empty{
+	display:none
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header.is-empty{
+	display:flex
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header.is-empty{
+	display:flex
+}
+
+}
+
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	background-color:transparent;grid-column:times
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	background-color:transparent;grid-column:times
+}
+
+}
+
+}
+.editor-styles-wrapper .wordcamp-schedule__time-slot-header,.wordcamp-schedule__time-slot-header{
+	font-weight:400;margin:2em 0 0
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .editor-styles-wrapper .wordcamp-schedule__time-slot-header,body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	margin-top:0
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .editor-styles-wrapper .wordcamp-schedule__time-slot-header,body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header{
+	margin-top:0
+}
+
+}
+
+}
+body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-overlapping-another-session,body.block-editor-page .wordcamp-schedule__session.is-overlapping-another-session{
+	border:2px solid #cb423b
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session{
+	margin:0
+}
+body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-overlapping-another-session{
+	padding-bottom:125px
+}
+body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-spanning-some-tracks{
+	text-align:center
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session{
+	margin:0
+}
+body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-overlapping-another-session{
+	padding-bottom:125px
+}
+body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-spanning-some-tracks{
+	text-align:center
+}
+
+}
+
+}
+.editor-styles-wrapper .wordcamp-schedule__session-title,.editor-styles-wrapper .wp-block .wordcamp-schedule h4,.wordcamp-schedule__session-title{
+	font-size:1.1em;margin:0
+}
+.editor-styles-wrapper .wordcamp-schedule__session-speakers a{
+	color:#23282d
+}
+.editor-styles-wrapper h4.wordcamp-schedule__session-title,.wordcamp-schedule__session-category,.wordcamp-schedule__session-speakers,.wordcamp-schedule__session-title,.wordcamp-schedule__session-tracks{
+	display:block;line-height:1.6
+}
+.editor-styles-wrapper h4.wordcamp-schedule__session-title a,.wordcamp-schedule__session-category a,.wordcamp-schedule__session-speakers a,.wordcamp-schedule__session-title a,.wordcamp-schedule__session-tracks a{
+	text-decoration:none
+}
+.editor-styles-wrapper h4.wordcamp-schedule__session-title a:hover,.wordcamp-schedule__session-category a:hover,.wordcamp-schedule__session-speakers a:hover,.wordcamp-schedule__session-title a:hover,.wordcamp-schedule__session-tracks a:hover{
+	text-decoration:underline
+}
+.editor-styles-wrapper dl.wordcamp-schedule__session-category dd,.editor-styles-wrapper dl.wordcamp-schedule__session-speakers dd,.editor-styles-wrapper dl.wordcamp-schedule__session-tracks dd,dl.wordcamp-schedule__session-category dd,dl.wordcamp-schedule__session-speakers dd,dl.wordcamp-schedule__session-tracks dd{
+	display:inline;margin-left:0;margin-right:0
+}
+.editor-styles-wrapper dl.wordcamp-schedule__session-category dd:after,.editor-styles-wrapper dl.wordcamp-schedule__session-speakers dd:after,.editor-styles-wrapper dl.wordcamp-schedule__session-tracks dd:after,dl.wordcamp-schedule__session-category dd:after,dl.wordcamp-schedule__session-speakers dd:after,dl.wordcamp-schedule__session-tracks dd:after{
+	content:", "
+}
+.editor-styles-wrapper dl.wordcamp-schedule__session-category dd:last-child:after,.editor-styles-wrapper dl.wordcamp-schedule__session-speakers dd:last-child:after,.editor-styles-wrapper dl.wordcamp-schedule__session-tracks dd:last-child:after,dl.wordcamp-schedule__session-category dd:last-child:after,dl.wordcamp-schedule__session-speakers dd:last-child:after,dl.wordcamp-schedule__session-tracks dd:last-child:after{
+	content:""
+}
+@supports(display:grid){
+	@media screen and (min-width:550px){
+	body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session-tracks{
+	display:none
+}
+
+}
+@media screen and (min-width:1025px){
+	body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session-tracks{
+	display:none
+}
+}
+}
+
+
+/*_____ Cusom Block styles _____*/
+.wordcamp-schedule__date{
+	font-size: 2.5rem;
+	line-height: 120%;
+	text-align: center;
+}
+.wordcamp-schedule__day{
+	background-color: $color__white !important;
+	.wordcamp-schedule__column-header{
+		color: $color__white;
+		font-size: 1rem;
+		line-height: 100%;
+		padding: 1rem 0 !important;
+		background-color: $color__secondary !important;
+		box-shadow: 0 0 1px 1px $color__secondary !important;
+		&.is-column-time{
+			font-size: 0;
+			text-indent: -9999px;
+			background-color: $color__white !important;
+			box-shadow: none !important;
+		}
+	}
+	.wordcamp-schedule__time-slot-header{
+		color: $color__white !important;
+		background-color: $color__primary !important;
+		justify-content: flex-start;
+		margin: 0;
+		&::after{
+			font-size: .75rem;
+		}
+	}
+	.wordcamp-schedule__session{
+		display: flex;
+		flex-flow: column;
+		padding: 1rem;
+		box-shadow: 0 0 1px 0 $color__grey_verylight !important;
+		&-title{
+			order: 1;
+			display: flex;
+			justify-content: space-between;
+			line-height: 110%;
+			@include tablet{
+				font-size: 1.125rem;
+			}
+			>a{
+				color: $color__secondary;
+				&:hover{
+					color: $color__quaternary;
+					text-decoration: underline;
+				}
+			}
+			+ p{
+				display: none;
+			}
+		}
+		&-category{
+			order: 2;
+			font-size: .75rem;
+			color: $color__grey_blue;
+			margin-top: 0;
+		}
+		&-speakers{
+			order: 3;
+			margin-top: 0;
+			a{
+				color: $color__quaternary;
+				text-decoration: underline;
+			}
+			&:before{
+				content: 'by ';
+				color: $color__grey_blue;
+			}
+		}
+		&.is-type-custom{
+			.wordcamp-schedule__session-title{
+				justify-content: center;
+			}
+		}
+		.dashicons {
+			position: relative;
+			box-sizing: content-box;
+			width: 1rem;
+			height: 1rem;
+			overflow: hidden;
+			white-space: nowrap;
+			font-size: 16px;
+			line-height: 1;
+			color: $color__quaternary_half;
+			cursor: pointer;
+			&:before {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+
+
+
+/* Schedule styling */
+.page-slug-schedule .wordcamp-schedule__day {
+	background-color: unset;
+	gap: 0 !important;
+}
+
+.page-slug-schedule .wordcamp-schedule__column-header {
+	background-color: #47E2CD !important;
+	font-size: 2rem;
+	color: #30394A;
+}
+
+.page-slug-schedule .wordcamp-schedule__time-slot-header {
+	box-shadow: unset !important;
+	background-color: #DE8E95 !important;
+	color: #30394A !important;
+}
+
+.page-slug-schedule .wordcamp-schedule__session {
+	border-top: 2px solid #DE8E95 !important;
+	border-left: 2px solid #DE8E95 !important;
+	box-shadow: unset !important;
+}
+
+// #wordcamp-schedule__session-7563,
+// #wordcamp-schedule__session-7567,
+// #wordcamp-schedule__session-7569,
+// #wordcamp-schedule__session-8742,
+// #wordcamp-schedule__session-8744,
+// #wordcamp-schedule__session-8746,
+// #wordcamp-schedule__session-8703,
+// #wordcamp-schedule__session-8748,
+// #wordcamp-schedule__session-8750,
+// #wordcamp-schedule__session-8752,
+// #wordcamp-schedule__session-7681,
+// #wordcamp-schedule__session-7683,
+// #wordcamp-schedule__session-8873,
+// #wordcamp-schedule__session-8875,
+// #wordcamp-schedule__session-8877,
+// #wordcamp-schedule__session-8830,
+// #wordcamp-schedule__session-8879,
+// #wordcamp-schedule__session-8839,
+// #wordcamp-schedule__session-8841,
+// #wordcamp-schedule__session-8843,
+// #wordcamp-schedule__session-8845 {
+// 	border-right: 2px solid #DE8E95;
+// }
+
+// #wordcamp-schedule__session-7681,
+// #wordcamp-schedule__session-8845 {
+// 	border-bottom: 2px solid #DE8E95;
+// }
+
+.page-slug-schedule .wordcamp-schedule__session-category {
+	display: inline-block;
+	font-weight: 700;
+	font-size: .75rem;
+	font-style: normal !important;
+	line-height: 100%;
+	color: #30394A;
+	background-color: #F4C3C8;
+	padding: .25rem .75rem;
+	border-radius: 2rem;
+	margin-top: .5rem;
+}
+
+.page-slug-schedule .wordcamp-schedule__session-speakers a {
+	color: #47E2CD;
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(1)::after {
+	content: "(08:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(2)::after {
+	content: "(08:30 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(3)::after {
+	content: "(09:30 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(4)::after {
+	content: "(10:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(5)::after {
+	content: "(11:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(6)::after {
+	content: "(12:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(7)::after {
+	content: "(13:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(8)::after {
+	content: "(14:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(9)::after {
+	content: "(15:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(10)::after {
+	content: "(16:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(11)::after {
+	content: "(17:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-03-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(12)::after {
+	content: "(18:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(1)::after {
+	content: "(08:30 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(2)::after {
+	content: "(09:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(3)::after {
+	content: "(10:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(4)::after {
+	content: "(11:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(5)::after {
+	content: "(12:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(6)::after {
+	content: "(13:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(7)::after {
+	content: "(14:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(8)::after {
+	content: "(15:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(9)::after {
+	content: "(16:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(10)::after {
+	content: "(17:00 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(11)::after {
+	content: "(17:30 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(12)::after {
+	content: "(18:30 Porto)";
+}
+
+#wordcamp-schedule__day-2022-06-04-tracks-all .wordcamp-schedule__time-slot-header:nth-of-type(13)::after {
+	content: "(20:30 Porto)";
+}
+
+/*_______ Old schedule block _____*/
 .wcpt-schedule{
 	border-collapse: collapse;
 	margin-left: auto !important;
@@ -189,151 +689,6 @@
 		}
 	}
 }
-
-/*_______ Hidden speaker name for the Matt's session _______*/
-// .wcb-speaker-matt-mullenweg{
-// 	.wcpt-session-speakers{
-// 		display: none;
-// 	}
-// }
-
-/*_______ Adding session categories on the schedule table - Sjoerd Blom (@vertizio) _______*/
-.wcpt-schedule{
-	td{
-		&.wcpt-session-type-session{
-			&:after{
-				display: inline-block;
-				font-weight: 400;
-				font-size: .75rem;
-				line-height: 100%;
-				color: $color__primary;
-				background-color: $color__secondary_half;
-				padding: .25rem .75rem;
-				border-radius: 2rem;
-				margin-top: .5rem;
-			}
-			&.wcb-session-category-business{
-				&:after{
-					content: "Business";
-				}
-			}
-			&.wcb-session-category-community{
-				&:after{
-					content: "Community";
-				}
-			}
-			&.wcb-session-category-content{
-				&:after{
-					content: "Content";
-				}
-			}
-			&.wcb-session-category-design{
-				&:after{
-					content: "Design";
-				}
-			}
-			&.wcb-session-category-development{
-				&:after{
-					content: "Development";
-				}
-			}
-		}
-	}
-}
-
-/*_______ Adding 2 timezones to the schedule time cells - Sjoerd Blom (@vertizio) _______*/
-// .wcpt-schedule{
-// 	tbody{
-// 		tr{
-// 			&.wcpt-time-1300{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "15:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1315{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "15:15 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1400{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1445{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:45 CEST";
-// 					}
-// 				}
-// 			}
-
-// 			&.wcpt-time-1455{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:55 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1505{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "17:05 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1530{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "17:30 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1615{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "18:15 CEST";
-// 					}
-// 				}
-// 			}
-
-// 			&.wcpt-time-1700{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "19:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1745{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "19:45 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1800{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "20:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1815{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "20:15 CEST";
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 /*_______ Favorite Sessions tool styles _______*/
 .entry-content{

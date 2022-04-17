@@ -1,8 +1,9 @@
 /*_______ Main navigation _______*/
-.main-navigation {
-	display: block;
-	width: 100%;
-	margin: 0 auto;
+.main-navigation{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin: 0;
 	.menu{
 		display:flex;
 		flex-flow: column nowrap;
@@ -13,10 +14,14 @@
 		position: fixed;
 		top: 0;
 		right: -200%;
-		width: 60vw;
+		width: 100vw;
 		height: 100vh;
 		padding: 10vh 10vw 10vh;
-		background-color: $color__secondary;
+		background-color: $color__white;
+		background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-vert.png);
+		background-repeat: repeat-y;
+		background-position: top right;
+		background-size: 2rem;
 		margin:0;
 		overflow-y: auto;
 		z-index: 10;
@@ -33,8 +38,8 @@
 			align-items: center;
 			padding: 1rem 0;
 			background-color: transparent;
+			background-image: none;
 			overflow-y: visible;
-			text-shadow: .0625rem .0625rem 0 $color__primary;
 		}
 		.menu-item{
 			margin: 0 0 1.5rem;
@@ -48,11 +53,10 @@
 				font-weight: 400;
 				font-size: 1.5rem;
 				line-height: 100%;
-				color: $color__primary;
+				color: $color__quaternary;
 				@extend %transition;
 				@include tablet{
 					font-size: 1rem;
-					color: $color__tertiary;
 					padding: .5rem;
 				}
 				@include tablet{
@@ -70,25 +74,24 @@
 			}
 			&.current-menu-item{
 				> a{
-					color: $color__primary;
+					color: $color__grey_blue;
 					@include tablet{
-						color: $color__secondary;
+						color: $color__grey_blue;
 					}
 				}
 			}
 			&.emphasised{
 				text-align: center;
 				text-decoration: none;
-				background-color: $color__primary;
-				border: .125rem solid $color__tertiary;
-				border-radius: 2rem;
-				box-shadow: .125em .125em 0 $color__secondary;
+				background-color: $color__quaternary;
+				border-radius: .25rem;
 				@include tablet{
 					width: auto;
 					margin: 0 0 0 1rem;
 				}
 				a{
-					color: $color__tertiary;
+					font-weight: 600;
+					color: $color__white;
 					padding: .5rem .75rem;
 					text-shadow: none;
 				}
@@ -97,7 +100,7 @@
 				&:hover{
 					@include tablet{
 						border-color: $color__secondary;
-						box-shadow: 0 0 0 $color__tertiary;
+						box-shadow: 0 0 0 $color__quaternary;
 						a{
 							color: $color__secondary;
 						}
@@ -105,10 +108,10 @@
 				}
 				&:active{
 					@include tablet{
-						background-color: $color__tertiary;
-						box-shadow: 0 0 0 $color__tertiary;
+						background-color: $color__quaternary;
+						box-shadow: 0 0 0 $color__quaternary;
 						a{
-							color: $color__tertiary;
+							color: $color__quaternary;
 						}
 					}
 				}
@@ -123,18 +126,16 @@
 			&.menu-item-has-children{
 				position: relative;
 				background-color: transparent;
-				@include tablet{
-					> a{
-						&:after{
-							content: "\f543";
-							font-family: 'dashicons';
-							display: inline-block;
-							vertical-align: middle;
-							font-size: .875rem;
-							line-height: 110%;
-							margin-left: .25rem;
-							transition: all .25s ease-in-out;
-						}
+				> a{
+					&:after{
+						content: "\f347";
+						font-family: 'dashicons';
+						display: inline-block;
+						vertical-align: middle;
+						font-size: .875rem;
+						line-height: 110%;
+						margin-left: .25rem;
+						transition: all .25s ease-in-out;
 					}
 				}
 				&.focus,
@@ -143,14 +144,14 @@
 				> a:focus,
 				> a:hover{
 					@include tablet{
-						color: $color__secondary;
-						a:after{
-							color: $color__primary;
+						>a{
+							color: $color__quaternary;
+							&:after{
+								color: $color__quaternary;
+							}
 						}
 						.sub-menu{
 							max-height: 30rem;
-							border: .125rem solid $color__tertiary;
-							box-shadow: .125rem .125rem 0 $color__tertiary;
 						}
 					}
 				}
@@ -176,20 +177,20 @@
 		overflow: hidden;
 		height: auto;
 		padding: 0 0 0 .5rem;
-		border-left: .0625rem solid $color__primary;
-		margin: .25rem 0 0;
+		margin: 1rem 0 0;
 		text-shadow: none;
 		z-index: 10;
 		@include tablet{
 			position: absolute;
-			top: 1rem;
+			top: 1.5rem;
 			left: 0;
 			width: 12rem;
 			max-height: 0;
 			padding: 0;
-			background-color: $color__primary;
-			border: 0;
-			border-radius: 0 0 1rem 1rem;
+			background-color: $color__white;
+			border: none;
+			box-shadow: .125rem .125rem .25rem transparentize($color__primary, .8);
+			margin: 0;
 			overflow: hidden;
 			transition: all .25s ease-in-out;
 		}
@@ -197,7 +198,7 @@
 			top: 1.25rem;
 		}
 		@include content{
-			top: 1.5rem;
+			top: 2rem;
 		}
 		.menu-item{
 			width: 100%;
@@ -215,11 +216,10 @@
 			}
 			a{
 				font-size: 1.5rem;
-				color: $color__primary;
+				color: $color__quaternary;
 				padding: .5rem .25rem;
 				@include tablet{
 					font-size: 1rem;
-					color: $color__tertiary;
 					padding: 1rem;
 				}
 				@include tablet{
@@ -229,9 +229,9 @@
 			&:focus,
 			&:focus-within,
 			&:hover{
-				background-color: $color__tertiary;
+				background-color: $color__quaternary;
 				a{
-					color: $color__primary !important;
+					color: $color__white !important;
 				}
 			}
 			&:active{
@@ -254,9 +254,14 @@
 	}
 }
 
-#header-widget-1{
-	@include tablet{
-		margin-left: 1.5rem;
+#header-widgets{
+	position: absolute;
+	top: 3.25rem;
+	right: 1rem;
+	@include phone-tiny{
+		right: 2rem;
+		position: static;
+		margin-left: 1rem;
 	}
 	.widget{
 		margin: 0;
@@ -265,38 +270,33 @@
 		}
 	}
 }
+
 .more-info{
 	display: block;
-	width: 3rem;
-	font-size: 1rem;
+	font-size: .75rem;
 	line-height: 100%;
-	text-align: left;
+	text-align: right;
 	text-decoration: none;
-	text-shadow: .0625rem .0625rem 0 $color__primary;
-	color: $color__tertiary !important;
+	color: $color__quaternary !important;
 	padding: 0;
 	@extend %transition;
 	@include tablet{
 		font-size: 1rem;
-		width: 5rem;
 		padding: 0;
 	}
 	@include content{
 		top: 1rem;
 	}
 	&:focus{
-		outline: .125rem solid $color__tertiary;
+		outline: .125rem solid $color__quaternary;
 	}
 	&:hover{
-		color: $color__secondary !important;
+		color: $color__quaternary !important;
 	}
 }
 
 /*_______ Mobile navigation _______*/
 .menu-toggle{
-	position: absolute;
-	top: 1.5rem;
-	right: 4rem;
 	display: block;
 	font-weight: 400;
 	font-size: 0;
@@ -306,11 +306,8 @@
 	margin: 0;
 	z-index: 20;
 	@extend %transition;
-	@include phone-tiny{
-		right: 5rem;
-	}
 	@include tablet-portrait{
-		top: 2rem;
+	
 	}
 	@include tablet{
 		display: none;
@@ -318,11 +315,10 @@
 	&:before{
 	    content: "menu";
 		font-size: 1rem;
-		line-height: 2rem;
+		line-height: 100%;
 		text-align: center;
 		text-transform: uppercase;
-		color: $color__tertiary;
-		text-shadow: .0625rem .0625rem 0 $color__primary;
+		color: $color__quaternary;
 	}
 	&:focus{
 		outline: 0;
@@ -335,12 +331,13 @@
 			right: 0;
 		}
 		.menu-toggle{
+			
 			&:before{
 				content: "\f335";
 				font-family: 'dashicons';
-				font-weight: 400;
+				font-weight: 300;
 				font-size: 3rem;
-				color: $color__primary;
+				color: $color__quaternary;
 				background-color: transparent;
 			}
 		}
@@ -363,17 +360,17 @@
 		font-weight: 800;
 		line-height: 100%;
 		text-align: center;
-		color: $color__tertiary;
+		color: $color__quaternary;
 		padding: .5rem;
 		background-color: $color__secondary;
 		margin: 0 .5rem;
 		@extend %transition;
 		&.current{
-			color: $color__tertiary;
+			color: $color__quaternary;
 			background-color: $color__grey_minimus;
 		}
 		&:not(.current):hover{
-			color: $color__tertiary;
+			color: $color__quaternary;
 			background-color: $color__primary;
 		}
 	}

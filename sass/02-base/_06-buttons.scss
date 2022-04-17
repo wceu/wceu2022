@@ -11,16 +11,15 @@ input[type="submit"] {
 	font-size: 1.5rem;
 	letter-spacing: 0;
 	line-height: 100%;
-	color: $color__primary;
+	color: $color__white;
 	text-align: center;
 	text-transform: none;
 	text-decoration: none;
 	margin: 1rem auto;
 	padding: .75em 1.25em;
-	background-color: $color__tertiary;
+	background-color: $color__quaternary;
 	border: none;
-	border-radius: 5rem;
-	box-shadow: 0.125em 0.125em 0 $color__secondary;
+	border-radius: .25rem;
 	cursor: pointer;
 	@extend %transition;
 	@include phone-portrait{
@@ -31,9 +30,7 @@ input[type="submit"] {
 	}
 	&:focus,
 	&:hover{
-		color: $color__primary;
-		background-color: $color__secondary;
-		border-color: $color__secondary !important;
+		background-color: $color__tertiary;
 	}
 	&:active{
 		color: $color__primary;
@@ -78,12 +75,11 @@ input[type="submit"] {
 		font-weight: 700;
 		font-size: 1.5rem;
 		line-height: 100%;
-		color: $color__primary;
+		color: $color__white;
 		text-align: center;
 		padding: .75em 1.25em;
-		background-color: $color__tertiary;
-		border-radius: 5rem;
-		box-shadow: 0.125em 0.125em 0 $color__secondary;
+		background-color: $color__quaternary;
+		border-radius: .25rem !important;
 		@extend %transition;
 		@include phone-portrait{
 			font-size: 1.75rem;
@@ -93,28 +89,24 @@ input[type="submit"] {
 		}
 		&:focus,
 		&:hover{
-			color: $color__primary !important;
-			background-color: $color__secondary;
-			box-shadow: 0 0 0 $color__tertiary;
+			color: $color__white !important;
+			background-color: $color__tertiary;
 		}
 	}
 	&.is-style-outline{
 		.wp-block-button__link{
 			font-size: 1.25rem;
-			color: $color__tertiary;
+			color: $color__quaternary;
 			padding: .75em 1.25em;
-			background-color: $color__primary;
-			border: .125rem solid $color__tertiary;
-			border-radius: 5rem;
-			box-shadow: 0.125em 0.125em 0 $color__secondary;
+			border: .125rem solid $color__quaternary;
+			border-radius: .25rem;
 			&:focus{
 				outline: none;
 			}
 			&:focus,
 			&:hover{
-				color: $color__secondary !important;
-				border-color: $color__secondary;
-				box-shadow: 0 0 0 $color__secondary;
+				color: $color__white !important;
+				border-color: $color__white;
 			}
 		}
 	}

@@ -29,12 +29,12 @@
 				width: 100% !important;
 				height: 3.75rem !important;
 				font-size: 1.125rem !important;
-				color: $color__tertiary !important;
+				color: $color__quaternary !important;
 				padding: .25rem .5rem .25rem 1.5rem !important;
-				background-color: $color__primary !important;
-				border: .125rem solid $color__tertiary !important;
-				border-radius: 2rem 0 0 2rem !important;
-				box-shadow: 0.25em 0.125em 0 $color__secondary;
+				background-color: $color__white !important;
+				border: .0625rem solid $color__quaternary !important;
+				border-bottom: .0 solid #000;
+				border-radius: .25rem 0 0 .25rem !important;
 				@include phone-portrait{
 					font-size: 1.25rem !important;
 				}
@@ -61,12 +61,11 @@
 				width: 100% !important;
 				height: 3.75rem !important;
 				font-size: 1.125rem !important;
-				color: $color__primary;
+				color: $color__white;
 				padding: .25rem 1.25rem .25rem .5rem !important;
-				background-color: $color__tertiary;
-				border: .125rem solid $color__tertiary !important;
-				border-radius: 0 2rem 2rem 0 !important;
-				box-shadow: 0.125em 0.125em 0 $color__secondary;
+				background-color: $color__quaternary;
+				border: none !important;
+				border-radius: .25rem 0 0 .25rem !important;
 				margin: 0 !important;
 				@include phone-portrait{
 					font-size: 1.25rem !important;

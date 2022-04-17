@@ -1,7 +1,7 @@
 /*_______ Comments area _______*/
 .comments-area{
 	padding: 5rem 0;
-	background-color: $color__primary;
+	border-top: .0625rem solid $color__tertiary;
 }
 
 .comments-title, .comment-respond,.comment-list{
@@ -10,7 +10,7 @@
 }
 
 .comments-title{
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 }
 
 
@@ -49,7 +49,11 @@
 			margin-right: 1rem;
 		}
 		.fn{
+			font-size: 1rem;
 			margin-right: .5rem;
+		}
+		.says{
+			font-size: 1rem;
 		}
 	}
 	.comment-metadata{
@@ -69,7 +73,7 @@
 	}
 	.comment-content{
 		p{
-			font-size: 1.5rem;
+			font-size: 1rem;
 			margin-bottom: 1rem;
 		}
 		a{
@@ -82,10 +86,11 @@
 			display: inline-block;
 			font-weight: 700;
 			font-size: 1rem;
-			color: $color__tertiary;
+			color: $color__quaternary;
 			text-decoration: none;
 			padding: .25em .75em;
 			border: .125rem solid;
+			border-radius: .25rem;
 		}
 	}
 	.children{
@@ -120,12 +125,10 @@
 	}
 	.form-submit{
 		.submit{
-			color: $color__primary;
-			background-color: $color__secondary;
-			box-shadow: .25rem .25rem 0 $color__tertiary;
-			border-radius: 5rem;
+			color: $color__white;
+			background-color: $color__quaternary;
+			border-radius: .25rem;
 			&:hover{
-				color: $color__primary;
 				background-color: $color__tertiary;
 			}
 		}

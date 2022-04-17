@@ -1,11 +1,11 @@
 /*_______ General styles for some Camptix elements _______*/
 %camptix-item{
 	padding: 1.25rem;
-	background-color: $color__primary;
-	border: .125rem solid $color__tertiary;
-	box-shadow: 0.25em 0.25em 0 $color__tertiary;
-	border-radius: 1rem;
+	background-color: $color__white;
+	border: none;
+	border-radius: 0;
 	margin-bottom: 1rem;
+	box-shadow: .125rem .125rem .5rem transparentize($color__grey_blue, .5);
 	@extend %transition;
 	img{
 		display: block;
