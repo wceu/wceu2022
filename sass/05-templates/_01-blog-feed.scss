@@ -7,13 +7,15 @@
 		@extend %inner-padding;
 		display: flex;
 		flex-flow: row wrap;
-		margin-top: 8rem;
-		header,
-		.page-header{
+		> header{
 			flex: 1 1 100%;
 			width: 100%;
 			padding: 2rem;
 			margin-bottom: 4rem;
+			background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right-02.png);
+			background-repeat: no-repeat;
+			background-position: top right;
+			background-size: contain;
 			@include tablet-portrait{
 				padding: 4rem 0;
 			}
@@ -158,6 +160,22 @@
 		}
 		.entry-footer{
 			display:none;
+		}
+	}
+}
+
+.posts-navigation{
+	width: 100%;
+	margin: 0;
+	.nav-links{
+		display: flex;
+		justify-content: space-between;
+		.nav-previous{
+			a{
+				&::before{
+
+				}
+			}
 		}
 	}
 }

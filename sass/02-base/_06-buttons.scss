@@ -191,7 +191,7 @@ input[type="submit"] {
 			border: .25rem solid $color__primary;
 			box-shadow: none;
 			&:after{
-				content: ' ';
+				content: "\f504";
 				font-family: 'dashicons';
 				vertical-align: middle;
 			}
@@ -211,7 +211,6 @@ input[type="submit"] {
 	margin-left: auto;
 	margin-right: 0;
 	margin-bottom: 0;
-	border-bottom: .125rem solid;
 	&:hover{
 		color: $color__secondary;
 	}
