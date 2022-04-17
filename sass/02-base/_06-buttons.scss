@@ -172,7 +172,7 @@ input[type="submit"] {
 			background-color: transparent;
 			border: none;
 			border-bottom: .125rem solid;
-			border-radius: 0;
+			border-radius: 0 !important;
 			margin: 0;
 			&:after{
 				display: inline-block;

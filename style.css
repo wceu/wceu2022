@@ -1312,7 +1312,7 @@ input[type=submit].outlined:hover {
   background-color: transparent;
   border: none;
   border-bottom: 0.125rem solid;
-  border-radius: 0;
+  border-radius: 0 !important;
   margin: 0;
 }
 .wp-block-button.external-link .wp-block-button__link:after {
