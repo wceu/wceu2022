@@ -3554,18 +3554,6 @@ h6 + .notation {
 .wordcamp-speakers .wordcamp-post-list__post img,
 .wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img {
   display: block;
-  filter: grayscale(100);
-}
-#speaker-session-names:hover, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover, .tix-js .tix_tickets_table tr[class^=tix-ticket-]:hover, .wordcamp-organizers .wordcamp-post-list__post:hover,
-.wordcamp-speakers .wordcamp-post-list__post:hover,
-.wordcamp-sessions .wordcamp-post-list__post:hover, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) {
-  box-shadow: 0 0 0 #B200FD;
-  z-index: 5;
-}
-#speaker-session-names:hover img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover img, .tix-js .tix_tickets_table tr[class^=tix-ticket-]:hover img, .wordcamp-organizers .wordcamp-post-list__post:hover img,
-.wordcamp-speakers .wordcamp-post-list__post:hover img,
-.wordcamp-sessions .wordcamp-post-list__post:hover img, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) img {
-  filter: grayscale(0);
 }
 
 .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a {
@@ -5798,7 +5786,20 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   cursor: pointer;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session .dashicons:before {
+  content: "\f154";
   margin-right: 0px;
+}
+.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session {
+  background-color: #D880FE;
+}
+.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
+  color: #381FD1;
+}
+.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
+  content: "\f155";
+}
+.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session:hover {
+  background-color: #DB0A5B;
 }
 
 /*_______ Adding Porto times to the schedule (by Bernhard Kau) _____*/

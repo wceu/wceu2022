@@ -9,15 +9,7 @@
 	@extend %transition;
 	img{
 		display: block;
-		filter: grayscale(100);
 		@extend %transition;
-	}
-	&:hover{
-		box-shadow: 0 0 0 $color__tertiary;
-		z-index: 5;
-		img{
-			filter: grayscale(0);
-		}
 	}
 }
 

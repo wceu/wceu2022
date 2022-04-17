@@ -322,7 +322,22 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			color: $color__quaternary_half;
 			cursor: pointer;
 			&:before {
+				content: "\f154";
 				margin-right: 0px;
+			}
+		}
+		&.wcb-favourite-session{
+			background-color: $color__tertiary_half;
+			.wcb-session-favourite-icon{
+				.dashicons{
+					color: $color__secondary;
+					&:before{
+						content: "\f155";
+					}
+				}
+			}
+			&:hover{
+				background-color: $color__quaternary;
 			}
 		}
 	}
