@@ -1775,7 +1775,7 @@ body.admin-bar .site-header {
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item:focus > a, .main-navigation .menu .menu-item:focus-within > a, .main-navigation .menu .menu-item:hover > a {
-    color: #381FD1;
+    color: #ED84AD;
   }
 }
 .main-navigation .menu .menu-item.current-menu-item > a {
@@ -1848,12 +1848,12 @@ body.admin-bar .site-header {
   .main-navigation .menu .menu-item.menu-item-has-children.focus > a, .main-navigation .menu .menu-item.menu-item-has-children:focus-within > a, .main-navigation .menu .menu-item.menu-item-has-children:hover > a,
 .main-navigation .menu .menu-item.menu-item-has-children > a:focus > a,
 .main-navigation .menu .menu-item.menu-item-has-children > a:hover > a {
-    color: #DB0A5B;
+    color: #ED84AD;
   }
   .main-navigation .menu .menu-item.menu-item-has-children.focus > a:after, .main-navigation .menu .menu-item.menu-item-has-children:focus-within > a:after, .main-navigation .menu .menu-item.menu-item-has-children:hover > a:after,
 .main-navigation .menu .menu-item.menu-item-has-children > a:focus > a:after,
 .main-navigation .menu .menu-item.menu-item-has-children > a:hover > a:after {
-    color: #DB0A5B;
+    color: #ED84AD;
   }
   .main-navigation .menu .menu-item.menu-item-has-children.focus .sub-menu, .main-navigation .menu .menu-item.menu-item-has-children:focus-within .sub-menu, .main-navigation .menu .menu-item.menu-item-has-children:hover .sub-menu,
 .main-navigation .menu .menu-item.menu-item-has-children > a:focus .sub-menu,

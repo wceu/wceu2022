@@ -68,7 +68,7 @@
 			&:hover{
 				> a{
 					@include tablet{
-						color: $color__secondary;
+						color: $color__quaternary_half;
 					}
 				}
 			}
@@ -146,9 +146,9 @@
 				> a:hover{
 					@include tablet{
 						>a{
-							color: $color__quaternary;
+							color: $color__quaternary_half;
 							&:after{
-								color: $color__quaternary;
+								color: $color__quaternary_half;
 							}
 						}
 						.sub-menu{
