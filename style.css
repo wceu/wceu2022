@@ -1305,12 +1305,14 @@ input[type=submit].outlined:hover {
 }
 .wp-block-button.external-link .wp-block-button__link {
   display: inline-block;
+  font-weight: normal;
   font-size: 1.125rem;
   color: #DB0A5B;
   padding: 0;
   background-color: transparent;
   border: none;
   border-bottom: 0.125rem solid;
+  border-radius: 0;
   margin: 0;
 }
 .wp-block-button.external-link .wp-block-button__link:after {
@@ -1318,9 +1320,6 @@ input[type=submit].outlined:hover {
   vertical-align: middle;
   content: "\f504";
   font-family: "dashicons";
-  font-weight: normal;
-  font-size: 1rem;
-  color: #381FD1;
   margin-right: 0.25rem;
 }
 .wp-block-button.anchor-link .wp-block-button__link {
