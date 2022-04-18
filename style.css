@@ -6102,7 +6102,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   padding: 0.5rem;
   background: #ffffff;
   border: 0.125rem solid #DB0A5B;
-  border-radius: 0;
+  border-radius: 0.25rem !important;
   z-index: 9999;
 }
 .entry-content a.show-email-form:hover {
@@ -6131,7 +6131,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   bottom: 4rem !important;
   font-size: 1rem;
   background-color: #ffffff !important;
-  border-radius: 0.25rem !important;
+  border-radius: 0 !important;
 }
 @media only screen and (min-width: 350px) {
   .email-form {

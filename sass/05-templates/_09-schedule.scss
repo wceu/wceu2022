@@ -642,7 +642,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 		padding: .5rem;
 		background: $color__white;
 		border: .125rem solid $color__quaternary;
-		border-radius: 0;
+		border-radius: .25rem !important;
 		z-index: 9999;
 		@extend %transition;
 		&:hover{
@@ -675,7 +675,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 	bottom: 4rem !important;
 	font-size: 1rem;
 	background-color: $color__white !important;
-	border-radius: .25rem !important;
+	border-radius: 0 !important;
 	@include phone-tiny{
 		max-width: 350px;
 		right: 1rem;
