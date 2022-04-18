@@ -1290,6 +1290,10 @@ input[type=submit].outlined:hover {
   background-color: #10284B;
 }
 
+.wp-block-buttons {
+  margin-bottom: 2rem;
+}
+
 .wp-block-button {
   margin-bottom: 2rem;
 }
@@ -1344,7 +1348,6 @@ input[type=submit].outlined:hover {
   vertical-align: middle;
   font-family: "dashicons";
   font-size: 1.5rem;
-  font-weight: normal;
   margin-left: 0.5rem;
 }
 .wp-block-button.with-icon.right-arrow .wp-block-button__link:after {
