@@ -5782,7 +5782,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   white-space: nowrap;
   font-size: 16px;
   line-height: 1;
-  color: #ED84AD;
+  color: #DB0A5B;
   cursor: pointer;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session .dashicons:before {
@@ -5791,9 +5791,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 .wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session {
   background-color: #F7E6FF;
-}
-.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
-  color: #381FD1;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
   content: "\f155";

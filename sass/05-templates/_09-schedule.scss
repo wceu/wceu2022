@@ -319,7 +319,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			white-space: nowrap;
 			font-size: 16px;
 			line-height: 1;
-			color: $color__quaternary_half;
+			color: $color__quaternary;
 			cursor: pointer;
 			&:before {
 				content: "\f154";
@@ -330,7 +330,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			background-color: $color__tertiary_10;
 			.wcb-session-favourite-icon{
 				.dashicons{
-					color: $color__secondary;
 					&:before{
 						content: "\f155";
 					}
