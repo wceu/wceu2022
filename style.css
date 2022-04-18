@@ -6131,7 +6131,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   bottom: 4rem !important;
   font-size: 1rem;
   background-color: #ffffff !important;
-  border-radius: 0 !important;
+  border-radius: 0.25rem !important;
 }
 @media only screen and (min-width: 350px) {
   .email-form {
@@ -6146,18 +6146,19 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 
 .fav-session-share-tab {
-  background-color: white;
-  border: none;
+  border: none !important;
 }
 .fav-session-share-tab .fav-session-tablinks {
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
 .fav-session-share-tab .fav-session-tablinks:hover {
+  color: #ffffff !important;
   background-color: #B200FD;
 }
 .fav-session-share-tab .fav-session-tablinks.active {
   font-weight: 700;
+  color: #ffffff !important;
   background-color: #B200FD;
 }
 
@@ -6165,10 +6166,12 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   font-weight: 700;
   font-size: 1.25rem;
   padding: 1rem;
-  background-color: white;
+  background-color: #ffffff !important;
+  border: none !important;
 }
 
 #fav-session-email-form {
+  line-height: 100%;
   margin: 0;
 }
 #fav-session-email-form #fav-sessions-email-address {

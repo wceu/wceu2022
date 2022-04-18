@@ -675,7 +675,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 	bottom: 4rem !important;
 	font-size: 1rem;
 	background-color: $color__white !important;
-	border-radius: 0 !important;
+	border-radius: .25rem !important;
 	@include phone-tiny{
 		max-width: 350px;
 		right: 1rem;
@@ -688,17 +688,18 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 
 .fav-session-share-tab {
-	background-color: white;
-	border: none;
+	border: none !important;
 	@extend %transition;
 	.fav-session-tablinks{
 		font-size: 1rem;
 		padding: .5rem 1rem;
 		&:hover{
+			color: $color__white !important;
 			background-color: $color__tertiary;
 		}
 		&.active {
 			font-weight: 700;
+			color: $color__white !important;
 			background-color: $color__tertiary;
 		}
 	}
@@ -708,10 +709,12 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 	font-weight: 700;
 	font-size: 1.25rem;
 	padding: 1rem;
-	background-color: white;
+	background-color: $color__white !important;
+	border: none !important;
 }
 
 #fav-session-email-form{
+	line-height: 100%;
 	margin: 0;
 	#fav-sessions-email-address{
 		margin-top: .5rem;
