@@ -912,8 +912,8 @@ textarea,
   padding: 0.25rem 0.75em;
   background-color: white;
   border: none;
-  border: 0.0625rem solid #C4C4C4;
-  border-bottom: 0.125rem solid #DB0A5B;
+  border: 0.0625rem solid #C4C4C4 !important;
+  border-bottom: 0.125rem solid #DB0A5B !important;
   border-radius: 0.25rem;
   outline: none;
   resize: none;
@@ -930,7 +930,7 @@ input:focus,
 select:focus,
 textarea:focus,
 .select2-selection__rendered:focus {
-  border-color: #381FD1;
+  border-color: #381FD1 !important;
 }
 input::placeholder,
 select::placeholder,
