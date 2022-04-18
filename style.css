@@ -1867,6 +1867,7 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .sub-menu {
+  display: block !important;
   list-style: none;
   width: auto;
   margin: 0 auto;
