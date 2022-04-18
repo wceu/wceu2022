@@ -262,6 +262,9 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 		&::after{
 			font-size: .75rem;
 		}
+		&.is-empty{
+			display: none;
+		}
 	}
 	.wordcamp-schedule__session{
 		display: flex;

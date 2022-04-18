@@ -5726,6 +5726,9 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 .wordcamp-schedule__day .wordcamp-schedule__time-slot-header::after {
   font-size: 0.75rem;
 }
+.wordcamp-schedule__day .wordcamp-schedule__time-slot-header.is-empty {
+  display: none;
+}
 .wordcamp-schedule__day .wordcamp-schedule__session {
   display: flex;
   flex-flow: column;
