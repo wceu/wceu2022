@@ -5727,7 +5727,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   font-size: 0.75rem;
 }
 .wordcamp-schedule__day .wordcamp-schedule__time-slot-header.is-empty {
-  display: none;
+  display: none !important;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session {
   display: flex;
@@ -5798,9 +5798,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 .wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
   content: "\f155";
-}
-.wordcamp-schedule__day .wordcamp-schedule__session.wcb-favourite-session:hover {
-  background-color: #DB0A5B;
 }
 
 /*_______ Adding Porto times to the schedule (by Bernhard Kau) _____*/

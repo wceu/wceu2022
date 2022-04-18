@@ -263,7 +263,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			font-size: .75rem;
 		}
 		&.is-empty{
-			display: none;
+			display: none !important;
 		}
 	}
 	.wordcamp-schedule__session{
@@ -337,9 +337,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 						content: "\f155";
 					}
 				}
-			}
-			&:hover{
-				background-color: $color__quaternary;
 			}
 		}
 	}
