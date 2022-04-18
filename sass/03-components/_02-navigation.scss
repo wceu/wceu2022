@@ -84,14 +84,13 @@
 				text-align: center;
 				text-decoration: none;
 				background-color: $color__quaternary;
-				border: .125rem solid $color__quaternary;
+				border: .0625rem solid $color__quaternary;
 				border-radius: .25rem;
 				@include tablet{
 					width: auto;
 					margin: 0 0 0 1rem;
 				}
 				a{
-					font-weight: 600;
 					color: $color__white;
 					padding: .5rem .75rem;
 					text-shadow: none;
@@ -110,17 +109,16 @@
 				&:active{
 					@include tablet{
 						background-color: $color__quaternary;
-						box-shadow: 0 0 0 $color__quaternary;
 						a{
 							color: $color__quaternary;
 						}
 					}
 				}
 				&.current-menu-item{
-					border-color: $color__secondary;
-					box-shadow: none;
+					border-color: $color__grey_blue;
+					background-color: $color__white;
 					> a{
-						color: $color__secondary;
+						color: $color__grey_blue;
 					}
 				}
 			}

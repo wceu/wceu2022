@@ -1787,7 +1787,7 @@ body.admin-bar .site-header {
   text-align: center;
   text-decoration: none;
   background-color: #DB0A5B;
-  border: 0.125rem solid #DB0A5B;
+  border: 0.0625rem solid #DB0A5B;
   border-radius: 0.25rem;
 }
 @media only screen and (min-width: 1024px) {
@@ -1797,7 +1797,6 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .menu .menu-item.emphasised a {
-  font-weight: 600;
   color: #ffffff;
   padding: 0.5rem 0.75rem;
   text-shadow: none;
@@ -1814,18 +1813,17 @@ body.admin-bar .site-header {
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised:active {
     background-color: #DB0A5B;
-    box-shadow: 0 0 0 #DB0A5B;
   }
   .main-navigation .menu .menu-item.emphasised:active a {
     color: #DB0A5B;
   }
 }
 .main-navigation .menu .menu-item.emphasised.current-menu-item {
-  border-color: #381FD1;
-  box-shadow: none;
+  border-color: #8793A5;
+  background-color: #ffffff;
 }
 .main-navigation .menu .menu-item.emphasised.current-menu-item > a {
-  color: #381FD1;
+  color: #8793A5;
 }
 .main-navigation .menu .menu-item.menu-item-has-children {
   position: relative;
