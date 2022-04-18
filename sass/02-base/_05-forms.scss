@@ -18,7 +18,21 @@ label{
 	}
 }
 
-input,
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 select,
 textarea,
 .select2-selection__rendered{
@@ -44,7 +58,7 @@ textarea,
 		font-size: 1.25rem;
 	}
 	&:focus{
-		border-color: $color__secondary !important;
+		border-color: $color__quaternary !important;
 	}
 	&::placeholder{
 		color: $color__primary;
@@ -58,19 +72,21 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 select:-webkit-autofill,
 select:-webkit-autofill:hover{
-	border: .1875rem solid $color__primary !important;
+	border: .1875rem solid $color__grey_verylight !important;
 	-webkit-text-fill-color: $color__primary !important;
-	-webkit-box-shadow: 0 0 0px 1000px $color__tertiary inset !important;
 }
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill:focus{
-	border: .1875rem solid $color__secondary !important;
+	border: .1875rem solid $color__quaternary !important;
 }
 
 
 input[type="checkbox"],
 input[type="radio"]{
+	appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -80,23 +96,24 @@ input[type="radio"]{
 	height: 1.5rem;
 	min-height: 1.5rem;
 	padding: 0;
-	border: .0625rem solid $color__quaternary;
+	border: .0625rem solid $color__quaternary !important;
+	border-radius: .25rem;
 	overflow: hidden;
 	&:focus{
 		outline: none;
-		border: 1px solid $color__secondary;
+		border: 1px solid $color__quaternary;
 	}
 }
 input[type="checkbox"]{
 	&:checked{
 		&:after{
-			content: '';
+			content: "\f147";
 			position: absolute;
-			top: 0;
-			left: -3px;
+			top: -.125rem;
+			left: -.125rem;
 			font-family: 'dashicons';
 			font-size: 1.5rem;
-			color: $color__secondary;
+			color: $color__quaternary;
 		}
 	}
 }
@@ -112,8 +129,8 @@ input[type="radio"]{
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: $color__secondary;
-			border: .125rem solid white;
+			background-color: $color__quaternary;
+			border: .25rem solid white;
 			border-radius: 100%;
 		}
 	}

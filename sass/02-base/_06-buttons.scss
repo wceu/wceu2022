@@ -19,7 +19,6 @@ input[type="submit"] {
 	padding: .75em 1.25em;
 	background-color: $color__quaternary;
 	border: .125rem solid $color__quaternary;
-	border: none;
 	border-radius: .25rem;
 	cursor: pointer;
 	@extend %transition;

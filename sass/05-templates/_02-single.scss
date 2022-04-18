@@ -42,11 +42,13 @@
 .page{
 	.site-content{
 		a{
-			&:focus,
-			&:hover{
-				outline: none;
-				color: $color__secondary;
-				text-decoration: none;
+			@include is-hover-supported{
+				&:focus,
+				&:hover{
+					outline: none;
+					color: $color__secondary;
+					text-decoration: none;
+				}
 			}
 		}
 	}

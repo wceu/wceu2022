@@ -10,7 +10,7 @@
 		flex: 1 1 100%;
 		display: flex;
 		flex-flow: column wrap;
-		background-color: $color__white;
+		background-color: $color__quaternary;
 		border: .25rem solid $color__quaternary;
 		border-radius: 0;
 		padding: 1.5rem !important;
@@ -21,22 +21,24 @@
 		@include tablet-portrait{
 			flex: 0 1 25%;
 		}
-		&:focus,
-		&:focus-within,
-		&:hover{
-			background-color: $color__quaternary;
-			%headings,
-			p{
-				color: $color__white;
-				a{
-					outline: none;
-					color: $color__white;
+		@include is-hover-supported{
+			&:focus,
+			&:focus-within,
+			&:hover{
+				background-color: $color__white;
+				%headings,
+				p{
+					color: $color__quaternary;
+					a{
+						outline: none;
+						color: $color__quaternary;
+					}
 				}
-			}
-			.wp-block-image{
-				a{
-					img{
-						filter: grayscale(1) brightness(2);
+				.wp-block-image{
+					a{
+						img{
+							filter: hue-rotate(90deg);
+						}
 					}
 				}
 			}
@@ -54,7 +56,7 @@
 					max-width: 2.5rem;
 					height: auto;
 					margin-left: 0;
-					filter: hue-rotate(90deg);
+					filter: grayscale(1) brightness(2);
 					@include phone-portrait{
 						max-width: 3.5rem;
 					}
@@ -63,34 +65,27 @@
 		}
 		%headings,
 		p{
-			color: $color__quaternary;
+			color: $color__white;
 			position: relative;
 			padding-right: 2rem;
 			margin-top: 0 !important;
 			margin: auto 0 0;
 			line-height: 80%;
-			// &:after{
-			// 	position: absolute;
-			// 	bottom: 0;
-			// 	right: 0;
-			// 	content: "\f344";
-			// 	font-family: 'dashicons';
-			// 	font-size: 1.75rem;
-			// 	color: $color__tertiary;
-			// }
 			a{
 				display: block;
 				font-size: 1.75rem;
-				color: $color__quaternary;
+				color: $color__white;
 				text-decoration: none;
 				margin-top: auto;
 				margin-bottom: 0;
 				@include phone-portrait{
 					font-size: 2rem;
 				}
-				&:focus,
-				&:hover{
-					color: $color__white;
+				@include is-hover-supported{
+					&:focus,
+					&:hover{
+						color: $color__quaternary;
+					}
 				}
 			}
 			br{
