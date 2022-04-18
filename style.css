@@ -2490,7 +2490,7 @@ body.admin-bar .site-header {
   line-height: 120%;
   color: #10284B;
   padding: 1.25rem 1.25rem 4rem 1.25rem;
-  background-color: #B200FD;
+  background-color: #ffffff;
   border: 0.25rem solid #10284B;
 }
 .widget.widget_eu_cookie_law_widget #eu-cookie-law form {
@@ -2504,19 +2504,17 @@ body.admin-bar .site-header {
   display: block;
   font-size: 1rem;
   font-weight: 600;
-  color: #B200FD;
+  color: #ffffff;
   padding: 0.75em 1.25em;
-  background-color: #10284B;
-  border: none;
-  border-radius: 5rem;
-  box-shadow: 0.125em 0.125em 0 #381FD1;
+  background-color: #DB0A5B;
+  border: 0.125rem solid #DB0A5B;
+  border-radius: 0.25rem;
   margin-left: auto;
 }
 @media not all and (hover: none) {
   .widget.widget_eu_cookie_law_widget #eu-cookie-law form input[type=submit]:hover {
-    color: #10284B;
-    background-color: #381FD1;
-    box-shadow: 0 0 0 #B200FD;
+    color: #DB0A5B;
+    background-color: #ffffff;
   }
 }
 @media only screen and (min-width: 480px) {

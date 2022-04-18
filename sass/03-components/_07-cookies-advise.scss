@@ -10,7 +10,7 @@
 		line-height: 120%;
 		color: $color__primary;
 		padding: 1.25rem 1.25rem 4rem 1.25rem;
-		background-color: $color__tertiary;
+		background-color: $color__white;
 		border: .25rem solid $color__primary;
 		form {
 			position: absolute;
@@ -22,18 +22,16 @@
 				display: block;
 				font-size: 1rem;
 				font-weight: 600;
-				color: $color__tertiary;
+				color: $color__white;
 				padding: .75em 1.25em;
-				background-color: $color__primary;
-				border: none;
-				border-radius: 5rem;
-				box-shadow: 0.125em 0.125em 0 $color__secondary;
+				background-color: $color__quaternary;
+				border: .125rem solid $color__quaternary;
+				border-radius: .25rem;
 				margin-left: auto;
 				@include is-hover-supported{
 					&:hover {
-						color: $color__primary;
-						background-color: $color__secondary;
-						box-shadow: 0 0 0 $color__tertiary;
+						color: $color__quaternary;
+						background-color: $color__white;
 					}
 				}
 			}
