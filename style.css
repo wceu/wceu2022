@@ -2253,7 +2253,6 @@ body.admin-bar .site-header {
 .footer-widgets-block textarea {
   height: 2.5rem;
   background-color: transparent;
-  border-color: #B200FD;
 }
 .footer-widgets-block input::placeholder,
 .footer-widgets-block select::placeholder,
@@ -2520,7 +2519,6 @@ body.admin-bar .site-header {
   width: 100% !important;
   font-size: 1.125rem !important;
   padding: 0.25rem 1.25rem !important;
-  border: 0.0625rem solid #DB0A5B !important;
   border-radius: 0.25rem !important;
   margin: 0 !important;
 }

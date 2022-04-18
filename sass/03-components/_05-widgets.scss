@@ -22,7 +22,6 @@
 	textarea {
 		height: 2.5rem;
 		background-color: transparent;
-		border-color: $color__tertiary;
 		&::placeholder{
 			color: $color__grey_blue !important;
 		}
@@ -305,7 +304,6 @@
 				width: 100% !important;
 				font-size: 1.125rem !important;
 				padding: .25rem 1.25rem !important;
-				border: .0625rem solid $color__quaternary !important;
 				border-radius: .25rem !important;
 				margin: 0 !important;
 				@include phone-portrait{
