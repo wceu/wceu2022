@@ -91,13 +91,6 @@
 		}
 		%headings{
 			color: $color__tertiary;
-			/*_______ Anchors navigation fix _______*/
-			&[id]::before {
-				content: '';
-				display: block;
-				height: 8rem;
-				margin: -8rem 0 0;
-			}
 		}
 		span[id^="more-"]{
 			display: none;

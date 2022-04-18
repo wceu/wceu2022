@@ -4169,20 +4169,6 @@ h6 + .notation {
 .page .entry-content h5,
 .page .entry-content h6 {
   color: #B200FD;
-  /*_______ Anchors navigation fix _______*/
-}
-.single .entry-content h1[id]::before, .single .entry-content h2[id]::before, .single .entry-content h3[id]::before,
-.single .entry-content h4[id]::before, .single .entry-content h5[id]::before, .single .entry-content h6[id]::before,
-.page .entry-content h1[id]::before,
-.page .entry-content h2[id]::before,
-.page .entry-content h3[id]::before,
-.page .entry-content h4[id]::before,
-.page .entry-content h5[id]::before,
-.page .entry-content h6[id]::before {
-  content: "";
-  display: block;
-  height: 8rem;
-  margin: -8rem 0 0;
 }
 .single .entry-content span[id^=more-],
 .page .entry-content span[id^=more-] {
