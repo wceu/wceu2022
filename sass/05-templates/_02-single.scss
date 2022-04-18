@@ -33,9 +33,6 @@
 			display: none;
 		}
 	}
-	.entry-content{
-		
-	}
 }
 
 .single,
@@ -92,9 +89,9 @@
 		%headings + %headings{
 			margin-top: inherit;
 		}
-		/*_______ Anchors navigation fix _______*/
 		%headings{
 			color: $color__tertiary;
+			/*_______ Anchors navigation fix _______*/
 			&[id]::before {
 				content: '';
 				display: block;

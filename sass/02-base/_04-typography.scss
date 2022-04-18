@@ -163,11 +163,11 @@ big {
 
 /*_______ Lists _______*/
 ol, ul{
-	@include font-size(1.25);
+	@include font-size(1.125);
 	line-height: 120%;
 	margin-bottom: 1em;
 	@include tablet-portrait{
-		@include font-size(1.5);
+		@include font-size(1.25);
 	}
 }
 

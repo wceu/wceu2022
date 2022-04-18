@@ -786,15 +786,15 @@ big {
 
 /*_______ Lists _______*/
 ol, ul {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   margin-bottom: 1em;
 }
 @media only screen and (min-width: 769px) {
   ol, ul {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -4049,6 +4049,7 @@ h6 + .notation {
 .single .entry-meta .byline {
   display: none;
 }
+
 @media not all and (hover: none) {
   .single .site-content a:focus, .single .site-content a:hover,
 .page .site-content a:focus,
@@ -4097,10 +4098,6 @@ h6 + .notation {
 .page .entry-title {
     max-width: 75%;
   }
-}
-.single .entry-content,
-.page .entry-content {
-  /*_______ Anchors navigation fix _______*/
 }
 .single .entry-content *:not([id^=more-]) + h1, .single .entry-content *:not([id^=more-]) + h2, .single .entry-content *:not([id^=more-]) + h3,
 .single .entry-content *:not([id^=more-]) + h4, .single .entry-content *:not([id^=more-]) + h5, .single .entry-content *:not([id^=more-]) + h6,
@@ -4171,6 +4168,7 @@ h6 + .notation {
 .page .entry-content h5,
 .page .entry-content h6 {
   color: #B200FD;
+  /*_______ Anchors navigation fix _______*/
 }
 .single .entry-content h1[id]::before, .single .entry-content h2[id]::before, .single .entry-content h3[id]::before,
 .single .entry-content h4[id]::before, .single .entry-content h5[id]::before, .single .entry-content h6[id]::before,
