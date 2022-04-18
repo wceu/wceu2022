@@ -28,10 +28,12 @@ input[type="submit"] {
 	&:visited{
 		color: inherit;
 	}
-	&:focus,
-	&:hover{
-		color: $color__quaternary !important;
-		background-color: $color__white;
+	@include is-hover-supported{
+		&:focus,
+		&:hover{
+			color: $color__quaternary !important;
+			background-color: $color__white;
+		}
 	}
 	&:active{
 		color: $color__primary;
@@ -89,10 +91,12 @@ input[type="submit"] {
 		&:focus{
 			outline: none;
 		}
-		&:focus,
-		&:hover{
-			color: $color__quaternary !important;
-			background-color: $color__white;
+		@include is-hover-supported{
+			&:focus,
+			&:hover{
+				color: $color__quaternary !important;
+				background-color: $color__white;
+			}
 		}
 	}
 	&.is-style-outline{
@@ -105,10 +109,12 @@ input[type="submit"] {
 			&:focus{
 				outline: none;
 			}
-			&:focus,
-			&:hover{
-				color: $color__white !important;
-				background-color: $color__quaternary;
+			@include is-hover-supported{
+				&:focus,
+				&:hover{
+					color: $color__white !important;
+					background-color: $color__quaternary;
+				}
 			}
 		}
 	}
@@ -179,6 +185,12 @@ input[type="submit"] {
 				font-family: 'dashicons';
 				margin-left: .25rem;
 			}
+			@include is-hover-supported{
+				&:focus,
+				&:hover{
+					color: $color__tertiary;
+				}
+			}
 		}
 	}
 	&.anchor-link{
@@ -192,9 +204,11 @@ input[type="submit"] {
 				font-family: 'dashicons';
 				vertical-align: middle;
 			}
-			&:hover{
-				color: $color__tertiary;
-				background-color: $color__primary;
+			@include is-hover-supported{
+				&:focus,
+				&:hover{
+					color: $color__tertiary;
+				}
 			}
 		}
 	}
@@ -208,8 +222,11 @@ input[type="submit"] {
 	margin-left: auto;
 	margin-right: 0;
 	margin-bottom: 0;
-	&:hover{
-		color: $color__secondary;
+	@include is-hover-supported{
+		&:focus,
+		&:hover{
+			color: $color__tertiary;
+		}
 	}
 }
 
