@@ -2938,6 +2938,7 @@ table thead th {
 }
 .wp-block-media-text h1, .wp-block-media-text h2, .wp-block-media-text h3,
 .wp-block-media-text h4, .wp-block-media-text h5, .wp-block-media-text h6 {
+  color: #381FD1 !important;
   margin-top: 0;
 }
 .wp-block-media-text .wp-block-media-text__media {
