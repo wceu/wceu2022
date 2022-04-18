@@ -6098,19 +6098,16 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   bottom: 1rem;
   right: 1rem;
   line-height: 100%;
-  color: #10284B !important;
+  color: #DB0A5B !important;
   padding: 0.5rem;
-  background: #381FD1;
-  border: 0.125rem solid #381FD1;
+  background: #ffffff;
+  border: 0.125rem solid #DB0A5B;
   border-radius: 0;
-  box-shadow: -0.25em 0.25em 0 #B200FD;
   z-index: 9999;
 }
 .entry-content a.show-email-form:hover {
-  color: #B200FD !important;
-  background-color: #10284B;
-  box-shadow: -0.125em 0.125em 0 #B200FD;
-  border-color: #10284B;
+  color: #ffffff !important;
+  background-color: #DB0A5B;
 }
 .entry-content a.show-email-form .dashicons-star-filled:before {
   content: "\f537";
@@ -6130,10 +6127,11 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 
 .email-form {
   max-width: 300px;
-  right: 0.5rem;
-  bottom: 4rem;
+  right: 0.5rem !important;
+  bottom: 4rem !important;
   font-size: 1rem;
-  border-radius: 0;
+  background-color: #ffffff !important;
+  border-radius: 0 !important;
 }
 @media only screen and (min-width: 350px) {
   .email-form {
@@ -6143,8 +6141,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 .email-form.fav-session-email-form-show {
   padding: 0;
-  border: 0.125rem solid #10284B;
-  box-shadow: -0.25em 0.25em 0 #10284B;
+  border: 0.125rem solid #B200FD;
   margin-bottom: 0;
 }
 

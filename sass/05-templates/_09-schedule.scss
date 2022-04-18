@@ -638,19 +638,16 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 		bottom: 1rem;
 		right: 1rem;
 		line-height: 100%;
-		color: $color__primary !important;
+		color: $color__quaternary !important;
 		padding: .5rem;
-		background: $color__secondary;
-		border: .125rem solid $color__secondary;
+		background: $color__white;
+		border: .125rem solid $color__quaternary;
 		border-radius: 0;
-		box-shadow: -.25em .25em 0 $color__tertiary;
 		z-index: 9999;
 		@extend %transition;
 		&:hover{
-			color: $color__tertiary !important;
-			background-color: $color__primary;
-			box-shadow: -.125em .125em 0 $color__tertiary;
-			border-color: $color__primary;
+			color: $color__white !important;
+			background-color: $color__quaternary;
 		}
 		.dashicons-star-filled{
 			&:before{
@@ -674,18 +671,18 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 
 .email-form {
 	max-width: $size__content-minimun;
-	right: .5rem;
-	bottom: 4rem;
+	right: .5rem !important;
+	bottom: 4rem !important;
 	font-size: 1rem;
-	border-radius: 0;
+	background-color: $color__white !important;
+	border-radius: 0 !important;
 	@include phone-tiny{
 		max-width: 350px;
 		right: 1rem;
 	}
 	&.fav-session-email-form-show{
 		padding: 0;
-		border: .125rem solid $color__primary;
-		box-shadow: -0.25em 0.25em 0 $color__primary;
+		border: .125rem solid $color__tertiary;
 		margin-bottom: 0;
 	}
 }
