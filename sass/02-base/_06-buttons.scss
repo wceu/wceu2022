@@ -189,6 +189,7 @@ input[type="submit"] {
 				&:focus,
 				&:hover{
 					color: $color__tertiary;
+					background-color: transparent;
 				}
 			}
 		}
@@ -208,6 +209,7 @@ input[type="submit"] {
 				&:focus,
 				&:hover{
 					color: $color__tertiary;
+					background-color: transparent;
 				}
 			}
 		}
