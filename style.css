@@ -1744,6 +1744,7 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .menu .menu-item {
+  flex: 1 1 100%;
   margin: 0 0 1.5rem;
 }
 @media only screen and (min-width: 1024px) {

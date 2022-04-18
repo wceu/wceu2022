@@ -42,6 +42,7 @@
 			overflow-y: visible;
 		}
 		.menu-item{
+			flex: 1 1 100%;
 			margin: 0 0 1.5rem;
 			@extend %transition;
 			@include tablet{
