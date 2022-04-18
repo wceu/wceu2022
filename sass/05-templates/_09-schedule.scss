@@ -289,6 +289,9 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			+ p{
 				display: none;
 			}
+			.wcb-session-favourite-icon{
+				margin-left: .5rem;
+			}
 		}
 		&-category{
 			order: 2;
@@ -308,7 +311,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 				color: $color__grey_blue;
 			}
 		}
-		&.is-type-custom{
+		&.is-spanning-some-tracks{
 			.wordcamp-schedule__session-title{
 				justify-content: center;
 			}

@@ -5757,6 +5757,9 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 .wordcamp-schedule__day .wordcamp-schedule__session-title + p {
   display: none;
 }
+.wordcamp-schedule__day .wordcamp-schedule__session-title .wcb-session-favourite-icon {
+  margin-left: 0.5rem;
+}
 .wordcamp-schedule__day .wordcamp-schedule__session-category {
   order: 2;
   font-size: 0.75rem;
@@ -5775,7 +5778,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   content: "by ";
   color: #8793A5;
 }
-.wordcamp-schedule__day .wordcamp-schedule__session.is-type-custom .wordcamp-schedule__session-title {
+.wordcamp-schedule__day .wordcamp-schedule__session.is-spanning-some-tracks .wordcamp-schedule__session-title {
   justify-content: center;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session .dashicons {
