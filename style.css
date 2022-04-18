@@ -1383,7 +1383,7 @@ input[type=submit].outlined:hover {
 }
 @media not all and (hover: none) {
   .wp-block-button.external-link .wp-block-button__link:focus, .wp-block-button.external-link .wp-block-button__link:hover {
-    color: #B200FD;
+    color: #B200FD !important;
     background-color: transparent;
   }
 }
@@ -1400,7 +1400,7 @@ input[type=submit].outlined:hover {
 }
 @media not all and (hover: none) {
   .wp-block-button.anchor-link .wp-block-button__link:focus, .wp-block-button.anchor-link .wp-block-button__link:hover {
-    color: #B200FD;
+    color: #B200FD !important;
     background-color: transparent;
   }
 }

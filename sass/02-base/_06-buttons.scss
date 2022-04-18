@@ -188,7 +188,7 @@ input[type="submit"] {
 			@include is-hover-supported{
 				&:focus,
 				&:hover{
-					color: $color__tertiary;
+					color: $color__tertiary !important;
 					background-color: transparent;
 				}
 			}
@@ -208,7 +208,7 @@ input[type="submit"] {
 			@include is-hover-supported{
 				&:focus,
 				&:hover{
-					color: $color__tertiary;
+					color: $color__tertiary !important;
 					background-color: transparent;
 				}
 			}
