@@ -1197,7 +1197,7 @@ input[type=submit] {
   margin: 1rem auto;
   padding: 0.75em 1.25em;
   background-color: #DB0A5B;
-  border: 0.125rem solid #DB0A5B;
+  border: 0.125rem solid #DB0A5B !important;
   border-radius: 0.25rem;
   cursor: pointer;
 }
