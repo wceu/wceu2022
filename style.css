@@ -2470,7 +2470,7 @@ body.admin-bar .site-header {
   padding: 0.625rem 1rem;
   color: #DB0A5B !important;
   background-color: #ffffff;
-  border: 0.0625rem solid #DB0A5B;
+  border: 0.0625rem solid #DB0A5B !important;
   border-radius: 0.25rem 0 0 0.25rem;
 }
 .search-form .search-submit {

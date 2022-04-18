@@ -238,7 +238,7 @@
 		padding: 0.625rem 1rem;
 		color: $color__quaternary !important;
 		background-color: $color__white;
-		border: .0625rem solid $color__quaternary;
+		border: .0625rem solid $color__quaternary !important;
 		border-radius: .25rem 0 0 .25rem;
 	}
 	.search-submit{
