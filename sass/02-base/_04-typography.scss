@@ -165,7 +165,7 @@ big {
 ol, ul{
 	@include font-size(1.125);
 	line-height: 120%;
-	margin-bottom: 1em;
+	margin: 0 0 1em 0;
 	@include tablet-portrait{
 		@include font-size(1.25);
 	}

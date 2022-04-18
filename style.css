@@ -789,7 +789,7 @@ ol, ul {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 120%;
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 @media only screen and (min-width: 769px) {
   ol, ul {
