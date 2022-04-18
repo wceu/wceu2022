@@ -1703,7 +1703,7 @@ body.admin-bar .site-header {
   /*_______ Submenus _______*/
 }
 .main-navigation .menu {
-  display: flex;
+  display: flex !important;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
