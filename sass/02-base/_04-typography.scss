@@ -216,22 +216,6 @@ a {
 	}
 }
 
-.entry-title{
-	a {
-		text-decoration: underline;
-	}
-}
-
-.entry-content{
-	a {
-		color: inherit;
-		text-decoration: underline;
-		&:hover{
-			color: $color__secondary;
-		}
-	}
-}
-
 a.wp-block-button__link,
 a.more-link, .entry-title a {
 	text-decoration: none;
