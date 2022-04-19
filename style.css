@@ -3640,7 +3640,7 @@ h6 + .notation {
   font-size: 1.125rem;
   line-height: 100%;
   text-decoration: underline;
-  color: #B200FD;
+  color: #DB0A5B;
   margin-bottom: 0.25rem;
   z-index: 1;
 }
@@ -3821,7 +3821,7 @@ h6 + .notation {
 .search-results .site-main > header {
   flex: 1 1 100%;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 0;
   margin-bottom: 4rem;
   background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right-02.png);
   background-repeat: no-repeat;
@@ -3832,7 +3832,7 @@ h6 + .notation {
   .blog .site-main > header,
 .archive .site-main > header,
 .search-results .site-main > header {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
   }
 }
 .blog .site-main > header .page-title,
@@ -3842,9 +3842,25 @@ h6 + .notation {
   width: auto;
   height: auto;
   clip-path: none;
-  text-align: left;
   color: #381FD1;
-  margin: 0;
+  padding: 1rem 1rem 1rem 0;
+  background-color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 480px) {
+  .blog .site-main > header .page-title,
+.archive .site-main > header .page-title,
+.search-results .site-main > header .page-title {
+    max-width: 75%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .blog .site-main > header .page-title,
+.archive .site-main > header .page-title,
+.search-results .site-main > header .page-title {
+    padding: 1rem;
+  }
 }
 
 .archive .hentry,
@@ -4262,6 +4278,7 @@ h6 + .notation {
 @media only screen and (min-width: 769px) {
   .single .posts-navigation .nav-links div,
 .single .post-navigation .nav-links div {
+    width: fit-content;
     position: fixed;
     top: 50%;
     z-index: 50;
@@ -6486,17 +6503,15 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 /*_______ Session single _______*/
 .session-speakers {
   font-size: 1.25rem;
-  color: #381FD1;
+  color: #10284B;
 }
 .session-speakers:after {
   content: ":";
 }
 
 #session-speaker-names {
-  display: inline-block;
+  display: block !important;
   list-style: none;
-  padding-left: 0;
-  margin-left: 0 !important;
 }
 #session-speaker-names li {
   padding: 0;
@@ -6511,7 +6526,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 
 .session-categories-links {
-  margin: 0 auto;
+  margin-top: 0 !important;
   display: block;
 }
 .session-categories-links:before {

@@ -99,16 +99,14 @@
 /*_______ Session single _______*/
 .session-speakers{
 	font-size: 1.25rem;
-	color: $color__secondary;
+	color: $color__primary;
 	&:after{
 		content: ':';
 	}
 }
 #session-speaker-names{
-	display: inline-block;
+	display: block !important;
 	list-style: none;
-	padding-left: 0;
-	margin-left: 0 !important;
 	li{
 		padding: 0;
 		margin: 0;
@@ -125,7 +123,7 @@
 
 .session-categories-links{
 	@extend %inner-moretiny;
-	margin: 0 auto;
+	margin-top: 0 !important;
 	display: block;
 	&:before{
 		content: 'Category: ';

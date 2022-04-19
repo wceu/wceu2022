@@ -163,6 +163,7 @@
 				border-bottom: .125rem solid $color__quaternary;
 				@extend %transition;
 				@include tablet-portrait{
+					width: fit-content;
 					position: fixed;
 					top: 50%;
 					z-index: 50;
