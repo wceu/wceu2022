@@ -6502,16 +6502,19 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 
 /*_______ Session single _______*/
 .session-speakers {
-  font-size: 1.25rem;
-  color: #10284B;
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #10284B !important;
+  margin-right: 0.5rem;
 }
 .session-speakers:after {
   content: ":";
 }
 
 #session-speaker-names {
-  display: block !important;
+  display: inline-block !important;
   list-style: none;
+  padding-left: 0 !important;
 }
 #session-speaker-names li {
   padding: 0;
@@ -6522,7 +6525,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 #session-speaker-names li a {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.25rem;
 }
 
 .session-categories-links {

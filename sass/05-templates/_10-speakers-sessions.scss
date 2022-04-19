@@ -98,15 +98,18 @@
 
 /*_______ Session single _______*/
 .session-speakers{
-	font-size: 1.25rem;
-	color: $color__primary;
+	display: inline-block;
+	font-size: 1.125rem;
+	color: $color__primary !important;
+    margin-right: .5rem;
 	&:after{
 		content: ':';
 	}
 }
 #session-speaker-names{
-	display: block !important;
+	display: inline-block !important;
 	list-style: none;
+	padding-left: 0 !important;
 	li{
 		padding: 0;
 		margin: 0;
@@ -116,7 +119,6 @@
 		a{
 			@extend %camptix-nice-link;
 			font-family: $font__main;
-			font-size: 1.25rem;
 		}
 	}
 }
