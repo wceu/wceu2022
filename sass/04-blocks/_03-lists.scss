@@ -39,7 +39,6 @@
 		}
 		li{
 			position: relative;
-			color: $color__secondary_half;
 			padding: 0;
 			margin-bottom: 1rem;
 			counter-increment: orderedlist-counter;
@@ -52,7 +51,7 @@
 				height: 1.25rem;
 				font-weight: 400;
 				line-height: .5rem;
-				color: $color__tertiary;
+				color: $color__secondary;
 				margin-top: .5rem;
 				@include phone-portrait{
 					top: .125rem;

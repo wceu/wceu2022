@@ -2724,7 +2724,6 @@ body.admin-bar .site-header {
 }
 .entry-content ol li {
   position: relative;
-  color: #9B8FE8;
   padding: 0;
   margin-bottom: 1rem;
   counter-increment: orderedlist-counter;
@@ -2738,7 +2737,7 @@ body.admin-bar .site-header {
   height: 1.25rem;
   font-weight: 400;
   line-height: 0.5rem;
-  color: #B200FD;
+  color: #381FD1;
   margin-top: 0.5rem;
 }
 @media only screen and (min-width: 480px) {
