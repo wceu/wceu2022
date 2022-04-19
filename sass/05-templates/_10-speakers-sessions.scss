@@ -101,7 +101,7 @@
 	display: inline-block;
 	font-size: 1.125rem;
 	color: $color__primary !important;
-    margin-right: .5rem;
+    margin-right: .5rem !important;
 	&:after{
 		content: ':';
 	}
@@ -131,7 +131,7 @@
 		content: 'Category: ';
 		font-family: $font__main;
 		font-weight: 700;
-		font-size: 1rem;
+		font-size: 1.125rem !important;
 	}
 	a{
 		@extend %camptix-nice-link;

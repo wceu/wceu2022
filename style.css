@@ -6505,7 +6505,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   display: inline-block;
   font-size: 1.125rem;
   color: #10284B !important;
-  margin-right: 0.5rem;
+  margin-right: 0.5rem !important;
 }
 .session-speakers:after {
   content: ":";
@@ -6535,7 +6535,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
   content: "Category: ";
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.125rem !important;
 }
 /*_______ 404 page _______*/
 .error404 .page-header {
