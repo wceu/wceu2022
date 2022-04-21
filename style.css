@@ -1291,6 +1291,7 @@ input[type=submit].outlined:hover {
   line-height: 100%;
   color: #ffffff;
   text-align: center;
+  text-decoration: none;
   padding: 0.75em 1.25em;
   background-color: #DB0A5B;
   border: 0.125rem solid #DB0A5B;
@@ -3427,6 +3428,7 @@ table thead th {
   padding: 1rem;
   background-color: #ffffff;
   border: 0.25rem solid #381FD1;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 350px) {
@@ -4200,18 +4202,15 @@ h6 + .notation {
 .page .entry-content span[id^=more-] {
   display: none;
 }
-.single .entry-content p:not(.wp-block-button) a,
-.page .entry-content p:not(.wp-block-button) a {
-  color: #DB0A5B;
-}
-.single .entry-content a,
-.page .entry-content a {
+.single .entry-content a:not(.wp-block-button__link),
+.page .entry-content a:not(.wp-block-button__link) {
   text-decoration: underline;
+  color: #DB0A5B;
   word-break: break-word;
 }
-.single .entry-content a:hover,
-.page .entry-content a:hover {
-  color: #381FD1;
+.single .entry-content a:not(.wp-block-button__link):hover,
+.page .entry-content a:not(.wp-block-button__link):hover {
+  color: #B200FD;
 }
 .single .entry-footer,
 .page .entry-footer {

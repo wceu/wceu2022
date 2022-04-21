@@ -98,16 +98,12 @@
 		span[id^="more-"]{
 			display: none;
 		}
-		p:not(.wp-block-button){
-			a{
-				color: $color__quaternary;
-			}
-		}
 		a:not(.wp-block-button__link){
 			text-decoration: underline;
+			color: $color__quaternary;
 			word-break: break-word;
 			&:hover{
-				color: $color__secondary;
+				color: $color__tertiary;
 			}
 		}
 	}
