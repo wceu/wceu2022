@@ -103,7 +103,7 @@
 				color: $color__quaternary;
 			}
 		}
-		a {
+		a:not(.wp-block-button__link){
 			text-decoration: underline;
 			word-break: break-word;
 			&:hover{
