@@ -281,6 +281,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 			}
 			>a{
 				color: $color__secondary;
+				text-decoration: none;
 				&:hover{
 					color: $color__quaternary;
 					text-decoration: underline;

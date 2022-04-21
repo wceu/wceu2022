@@ -98,12 +98,14 @@
 		span[id^="more-"]{
 			display: none;
 		}
-		a:not(.wp-block-button__link){
-			text-decoration: underline;
-			color: $color__quaternary;
-			word-break: break-word;
-			&:hover{
-				color: $color__tertiary;
+		p{
+			a{
+				text-decoration: underline;
+				color: $color__quaternary;
+				word-break: break-word;
+				&:hover{
+					color: $color__tertiary;
+				}
 			}
 		}
 	}

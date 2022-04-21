@@ -4202,14 +4202,14 @@ h6 + .notation {
 .page .entry-content span[id^=more-] {
   display: none;
 }
-.single .entry-content a:not(.wp-block-button__link),
-.page .entry-content a:not(.wp-block-button__link) {
+.single .entry-content p a,
+.page .entry-content p a {
   text-decoration: underline;
   color: #DB0A5B;
   word-break: break-word;
 }
-.single .entry-content a:not(.wp-block-button__link):hover,
-.page .entry-content a:not(.wp-block-button__link):hover {
+.single .entry-content p a:hover,
+.page .entry-content p a:hover {
   color: #B200FD;
 }
 .single .entry-footer,
@@ -5822,6 +5822,7 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 .wordcamp-schedule__day .wordcamp-schedule__session-title > a {
   color: #381FD1;
+  text-decoration: none;
 }
 .wordcamp-schedule__day .wordcamp-schedule__session-title > a:hover {
   color: #DB0A5B;
