@@ -38,3 +38,18 @@
 		}
 	}
 }
+
+.wp-block-file{
+	[id^="wp-block-file--media"]{
+		@include font-size(1);
+		color: $color__grey;
+		text-decoration: none;
+	}
+	.wp-block-file__button{
+		font-size: 1.25rem;
+		color: $color__quaternary;
+		padding: .75em 1.25em;
+		border: .125rem solid $color__quaternary;
+		border-radius: .25rem;
+	}
+}

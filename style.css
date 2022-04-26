@@ -2668,6 +2668,20 @@ body.admin-bar .site-header {
   filter: grayscale(1) brightness(1.25);
 }
 
+.wp-block-file [id^=wp-block-file--media] {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #737477;
+  text-decoration: none;
+}
+.wp-block-file .wp-block-file__button {
+  font-size: 1.25rem;
+  color: #DB0A5B;
+  padding: 0.75em 1.25em;
+  border: 0.125rem solid #DB0A5B;
+  border-radius: 0.25rem;
+}
+
 /*_______ Lists _______*/
 .entry-content ol, .entry-content ul {
   list-style: none;
