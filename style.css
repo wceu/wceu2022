@@ -2677,10 +2677,16 @@ body.admin-bar .site-header {
 .wp-block-file .wp-block-file__button {
   font-size: 1rem;
   color: #DB0A5B;
-  padding: 0.75em 1.25em;
-  background-color: #ffffff;
-  border: 0.125rem solid #DB0A5B;
-  border-radius: 0.25rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.125rem solid;
+  border-radius: 0 !important;
+}
+.wp-block-file .wp-block-file__button:after {
+  content: "\f316";
+  font-family: "dashicons";
+  margin-left: 0.25rem;
 }
 
 /*_______ Lists _______*/
