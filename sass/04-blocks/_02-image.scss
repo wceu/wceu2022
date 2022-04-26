@@ -54,9 +54,11 @@
 		border-bottom: .125rem solid;
 		border-radius: 0 !important;
 		&:after{
-			content: "\f346";
+			content: "\f316";
+			display: inline-block;
+			vertical-align: middle;
 			font-family: 'dashicons';
-			margin-left: .25rem;
+			margin-left: .125rem;
 		}
 	}
 }
