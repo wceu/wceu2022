@@ -108,9 +108,6 @@ p {
 		color: $color__tertiary;
 		text-decoration: underline;
 		word-break: break-word;
-		&:visited {
-			color: $color__primary;
-		}
 	}
 	&.has-small-font-size{
 		@include font-size(1);
@@ -205,10 +202,10 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__secondary;
+		color: $color__quaternary;
 	}
 	&:focus {
-		outline: .0625rem solid $color__tertiary;
+		outline: .0625rem solid $color__grey_blue;
 	}
 	&:hover,
 	&:active {

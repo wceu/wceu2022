@@ -731,9 +731,6 @@ p a {
   text-decoration: underline;
   word-break: break-word;
 }
-p a:visited {
-  color: #10284B;
-}
 p.has-small-font-size {
   font-size: 16px;
   font-size: 1rem;
@@ -829,10 +826,10 @@ a {
   color: #DB0A5B;
 }
 a:hover, a:focus, a:active {
-  color: #381FD1;
+  color: #DB0A5B;
 }
 a:focus {
-  outline: 0.0625rem solid #B200FD;
+  outline: 0.0625rem solid #8793A5;
 }
 a:hover, a:active {
   outline: 0;
@@ -4227,14 +4224,16 @@ h6 + .notation {
 .page .entry-content span[id^=more-] {
   display: none;
 }
-.single .entry-content p a,
-.page .entry-content p a {
+.single .entry-content p a, .single .entry-content ul a,
+.page .entry-content p a,
+.page .entry-content ul a {
   text-decoration: underline;
   color: #DB0A5B;
   word-break: break-word;
 }
-.single .entry-content p a:hover,
-.page .entry-content p a:hover {
+.single .entry-content p a:hover, .single .entry-content ul a:hover,
+.page .entry-content p a:hover,
+.page .entry-content ul a:hover {
   color: #B200FD;
 }
 .single .entry-footer,
