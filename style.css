@@ -2684,7 +2684,7 @@ body.admin-bar .site-header {
   border-radius: 0 !important;
 }
 .wp-block-file .wp-block-file__button:after {
-  content: "\f316";
+  content: "\f346";
   font-family: "dashicons";
   margin-left: 0.25rem;
 }
