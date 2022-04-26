@@ -2675,9 +2675,10 @@ body.admin-bar .site-header {
   text-decoration: none;
 }
 .wp-block-file .wp-block-file__button {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #DB0A5B;
   padding: 0.75em 1.25em;
+  background-color: #ffffff;
   border: 0.125rem solid #DB0A5B;
   border-radius: 0.25rem;
 }

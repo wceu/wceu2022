@@ -46,9 +46,10 @@
 		text-decoration: none;
 	}
 	.wp-block-file__button{
-		font-size: 1.25rem;
+		font-size: 1rem;
 		color: $color__quaternary;
 		padding: .75em 1.25em;
+		background-color: $color__white;
 		border: .125rem solid $color__quaternary;
 		border-radius: .25rem;
 	}
