@@ -13,10 +13,10 @@
 	// display: flex;
 	// flex-flow: column wrap;
 	// justify-content: space-between;
-	padding: 0 2rem;
-	@include phone-portrait{
-		// flex-flow: row wrap;
-	}
+	// padding: 0 2rem;
+	// @include phone-portrait{
+	// 	flex-flow: row wrap;
+	// }
 	input,
 	select,
 	textarea {
@@ -94,26 +94,29 @@
 }
 
 /*_______ Widget area for sponsors widget _______*/
-// #footer-widget-1{
-// 	width: 100%;
-// 	padding: 4rem 2rem;
-// 	background-color: $color__tertiary;
-// 	.widget{
-// 		text-align: center;
-// 		.widget-title{
-// 			color: $color__primary;
-// 			margin-bottom: 2rem;
-// 		}
-// 	}
-// 	.module-header{
-// 		@extend %inner;
-// 		margin-bottom: 1rem;
-// 	}
-// }
+#footer-widget-1{
+	width: 100%;
+	padding: 4rem 2rem;
+	.widget{
+		text-align: center;
+		// .widget-title{
+		// 	color: $color__primary;
+		// 	margin-bottom: 2rem;
+		// }
+	}
+}
 
 /*_______ Widget area for secondary navigation _______*/
 #footer-widget-2{
+	@extend %inner;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	padding: 0 2rem;
 	margin-bottom: 2rem;
+	@include phone-portrait{
+		flex-flow: row wrap;
+	}
 	.widget_nav_menu{
 		
 	}

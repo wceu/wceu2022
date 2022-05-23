@@ -56,7 +56,7 @@ input[type=submit] {
 .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
   max-width: 100%;
   margin-left: auto;
@@ -66,7 +66,7 @@ input[type=submit] {
   .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
     max-width: 1200px;
   }
@@ -2242,9 +2242,6 @@ body.admin-bar .site-header {
 }
 
 /*_______ Footer widgets _______*/
-.footer-widgets-block {
-  padding: 0 2rem;
-}
 .footer-widgets-block input,
 .footer-widgets-block select,
 .footer-widgets-block textarea {
@@ -2329,9 +2326,26 @@ body.admin-bar .site-header {
 }
 
 /*_______ Widget area for sponsors widget _______*/
+#footer-widget-1 {
+  width: 100%;
+  padding: 4rem 2rem;
+}
+#footer-widget-1 .widget {
+  text-align: center;
+}
+
 /*_______ Widget area for secondary navigation _______*/
 #footer-widget-2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 480px) {
+  #footer-widget-2 {
+    flex-flow: row wrap;
+  }
 }
 @media only screen and (min-width: 480px) {
   #footer-widget-2 .widget:nth-of-type(1), #footer-widget-2 .widget:nth-of-type(2), #footer-widget-2 .widget:nth-of-type(3) {
