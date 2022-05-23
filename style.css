@@ -2243,15 +2243,7 @@ body.admin-bar .site-header {
 
 /*_______ Footer widgets _______*/
 .footer-widgets-block {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
   padding: 0 2rem;
-}
-@media only screen and (min-width: 480px) {
-  .footer-widgets-block {
-    flex-flow: row wrap;
-  }
 }
 .footer-widgets-block input,
 .footer-widgets-block select,

@@ -10,12 +10,12 @@
 /*_______ Footer widgets _______*/
 .footer-widgets-block{
 	@extend %inner;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
+	// display: flex;
+	// flex-flow: column wrap;
+	// justify-content: space-between;
 	padding: 0 2rem;
 	@include phone-portrait{
-		flex-flow: row wrap;
+		// flex-flow: row wrap;
 	}
 	input,
 	select,
