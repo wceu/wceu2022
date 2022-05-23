@@ -2334,7 +2334,7 @@ body.admin-bar .site-header {
   text-align: center;
 }
 
-*[class^=block-sponsors-] {
+ul[class^=block-sponsors-] {
   padding: 0 !important;
 }
 
