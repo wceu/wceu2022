@@ -56,7 +56,7 @@ input[type=submit] {
 .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, #footer-widget-3, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
   max-width: 100%;
   margin-left: auto;
@@ -66,7 +66,7 @@ input[type=submit] {
   .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
+.search-results .site-main, #footer-widget-3, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
 .is-style-wide {
     max-width: 1200px;
   }
@@ -2425,6 +2425,18 @@ body.admin-bar .site-header {
 }
 
 /*_______ Widget area for suscription and search widgets _______*/
+#footer-widget-3 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 480px) {
+  #footer-widget-3 {
+    flex-flow: row wrap;
+  }
+}
 #footer-widget-3 .widget {
   margin-bottom: 4rem;
 }

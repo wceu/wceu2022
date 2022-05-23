@@ -208,6 +208,15 @@
 #footer-widget-3{
 	// padding-top: 2rem;
 	// border-top: 1px solid $color__secondary;
+	@extend %inner;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	padding: 0 2rem;
+	margin-bottom: 2rem;
+	@include phone-portrait{
+		flex-flow: row wrap;
+	}
 	.widget{
 		margin-bottom: 4rem;
 		@include phone-portrait{
