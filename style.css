@@ -2344,8 +2344,14 @@ body.admin-bar .site-header {
   justify-content: center;
 }
 .block-sponsors-admin li {
-  flex: 0 1 20%;
-  margin: 0 1%;
+  flex: 0 1 80%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .block-sponsors-admin li {
+    flex: 0 1 20%;
+    margin: 0 1%;
+  }
 }
 
 /*_______ Widget area for secondary navigation _______*/
