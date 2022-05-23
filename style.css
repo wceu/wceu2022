@@ -2334,12 +2334,12 @@ body.admin-bar .site-header {
   text-align: center;
 }
 
-*[class^=block-sponsors] {
-  padding: 0;
+*[class^=block-sponsors-] {
+  padding: 0 !important;
 }
 
 .block-sponsors-admin {
-  display: flex;
+  display: flex !important;
   flex-flow: row wrap;
   justify-content: center;
 }
