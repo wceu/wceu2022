@@ -2334,7 +2334,7 @@ body.admin-bar .site-header {
   text-align: center;
 }
 
-ul[class^=block-sponsors-] {
+.wordcamp-post-list.has-layout-grid {
   padding: 0 !important;
 }
 
