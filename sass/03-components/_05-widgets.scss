@@ -105,6 +105,18 @@
 		// }
 	}
 }
+*[class^="block-sponsors"]{
+	padding: 0;
+}
+.block-sponsors-admin{
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	li{
+		flex: 0 1 20%;
+		margin: 0 1%;
+	}
+}
 
 /*_______ Widget area for secondary navigation _______*/
 #footer-widget-2{
