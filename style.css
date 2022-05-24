@@ -5210,17 +5210,13 @@ h6 + .notation {
 }
 
 .block-sponsors-superadmin li,
-.block-sponsors-author li,
-.block-sponsors-afterparty li,
-.block-sponsors-charging li {
+.block-sponsors-author li {
   flex: 0 1 100%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
   .block-sponsors-superadmin li,
-.block-sponsors-author li,
-.block-sponsors-afterparty li,
-.block-sponsors-charging li {
+.block-sponsors-author li {
     flex: 0 1 23%;
     margin: 0;
   }
@@ -5246,6 +5242,19 @@ h6 + .notation {
 @media only screen and (min-width: 480px) {
   .block-sponsors-smallbusines li {
     flex: 0 1 15%;
+    margin: 0 1%;
+  }
+}
+
+.block-sponsors-afterparty li,
+.block-sponsors-charging li {
+  flex: 0 1 80%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .block-sponsors-afterparty li,
+.block-sponsors-charging li {
+    flex: 0 1 48%;
     margin: 0 1%;
   }
 }

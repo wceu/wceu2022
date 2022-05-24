@@ -10,9 +10,7 @@
 }
 
 .block-sponsors-superadmin,
-.block-sponsors-author,
-.block-sponsors-afterparty,
-.block-sponsors-charging{
+.block-sponsors-author{
 	li{
 		flex: 0 1 100%;
 		margin: 0 auto;
@@ -40,6 +38,18 @@
 		margin: 0 auto;
 		@include phone-portrait{
 			flex: 0 1 15%;
+			margin: 0 1%;
+		}
+	}
+}
+
+.block-sponsors-afterparty,
+.block-sponsors-charging{
+	li{
+		flex: 0 1 80%;
+		margin: 0 auto;
+		@include phone-portrait{
+			flex: 0 1 48%;
 			margin: 0 1%;
 		}
 	}
