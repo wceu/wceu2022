@@ -1,6 +1,14 @@
-/*_______ Sponsors list _______*/
-.wordcamp-post-list.has-layout-grid{
-	padding: 0 !important;
+/*_______ Sponsors page _______*/
+.page-slug-sponsors{
+	#footer-widget-1{
+    	display: none;
+	}
+}
+
+.wordcamp-post-list{
+	&.has-layout-grid{
+		padding: 0 !important;
+	}
 }
 
 [class*="block-sponsors"]{
@@ -31,7 +39,6 @@
 		}
 	}
 }
-
 .block-sponsors-smallbusines{
 	li{
 		flex: 0 1 80%;
@@ -42,7 +49,6 @@
 		}
 	}
 }
-
 .block-sponsors-afterparty,
 .block-sponsors-charging{
 	li{

@@ -5198,7 +5198,11 @@ h6 + .notation {
   }
 }
 
-/*_______ Sponsors list _______*/
+/*_______ Sponsors page _______*/
+.page-slug-sponsors #footer-widget-1 {
+  display: none;
+}
+
 .wordcamp-post-list.has-layout-grid {
   padding: 0 !important;
 }
