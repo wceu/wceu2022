@@ -3,12 +3,22 @@
 	padding: 0 !important;
 }
 
-[class^="block-sponsors"]{
+[class*="block-sponsors"]{
 	display: flex !important;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
+.block-sponsors-superadmin{
+	li{
+		flex: 0 1 80%;
+		margin: 0 auto;
+		@include phone-portrait{
+			flex: 0 1 25%;
+			margin: 0;
+		}
+	}
+}
 .block-sponsors-admin,
 .block-sponsors-editor,
 .block-sponsors-author,
