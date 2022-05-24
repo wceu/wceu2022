@@ -1,62 +1,31 @@
 /*_______ Sponsors list _______*/
-.home-sponsors{
-	background-color: $color__tertiary;
-	padding: 4rem 2rem;
+.wordcamp-post-list.has-layout-grid{
+	padding: 0 !important;
 }
-
-.wcorg-sponsors{
-	@extend %inner;
-}
-
-.wceu-sponsors-title{
-	font-size: 2.5rem;
-	text-align: center;
-	@include tablet-portrait{
-		font-size: 3rem;
+.wordcamp-sponsors{
+	&[class^="block-sponsors-"]{
+		display: flex !important;
+		flex-flow: row wrap;
+		justify-content: center;
 	}
-}
-
-div[class^="wcorg-sponsor-level-"] {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	&:not(:last-of-type){
-		margin-bottom: 4rem;
-	}
-	%headings{
-		flex: 1 1 100%;
-		font-size: 1.5rem;
-		text-align: center;
-		margin-bottom: 1.5rem;
-		@include tablet-portrait{
-			font-size: 2rem;
-		}
-		&:before{
-			content: '';
-			display: block;
-			width: 2rem;
-			height: .25rem;
-			background-color: $color__secondary;
-			margin: 0 auto .5rem;
+	&.block-sponsors-admin,
+	&.block-sponsors-editor,
+	&.block-sponsors-author,
+	&.block-sponsors-smallbusines,
+	&.block-sponsors-afterparty,
+	&.block-sponsors-charging{
+		li{
+			flex: 0 1 80%;
+			margin: 0 auto;
+			@include phone-portrait{
+				flex: 0 1 20%;
+				margin: 0 1%;
+			}
 		}
 	}
 }
 
-.wcorg-sponsor{
-	margin: 0;
-	@include tablet-portrait{
-		max-width: inherit;
-		margin: 0;
-	}
-	a{
-		display: block;
-	}
-	img{
-		display: block;
-		margin: 0 auto;
-	}
-}
+
 
 .wcorg-sponsor-level-super-admin{
 	.wcorg-sponsor{

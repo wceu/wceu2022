@@ -53,7 +53,7 @@ input[type=submit] {
   width: 100%;
 }
 
-.wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, #footer-widget-3, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
@@ -63,7 +63,7 @@ input[type=submit] {
   margin-right: auto;
 }
 @media only screen and (min-width: 769px) {
-  .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
+  .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, #footer-widget-3, #footer-widget-2, .footer-widgets-block, .site-info, #secondary, .custom-posts-pagination, .alignwide,
@@ -5219,68 +5219,24 @@ h6 + .notation {
 }
 
 /*_______ Sponsors list _______*/
-.home-sponsors {
-  background-color: #B200FD;
-  padding: 4rem 2rem;
+.wordcamp-post-list.has-layout-grid {
+  padding: 0 !important;
 }
 
-.wceu-sponsors-title {
-  font-size: 2.5rem;
-  text-align: center;
-}
-@media only screen and (min-width: 769px) {
-  .wceu-sponsors-title {
-    font-size: 3rem;
-  }
-}
-
-div[class^=wcorg-sponsor-level-] {
-  display: flex;
+.wordcamp-sponsors[class^=block-sponsors-] {
+  display: flex !important;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
 }
-div[class^=wcorg-sponsor-level-]:not(:last-of-type) {
-  margin-bottom: 4rem;
-}
-div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
-div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
-  flex: 1 1 100%;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-@media only screen and (min-width: 769px) {
-  div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
-div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
-    font-size: 2rem;
-  }
-}
-div[class^=wcorg-sponsor-level-] h1:before, div[class^=wcorg-sponsor-level-] h2:before, div[class^=wcorg-sponsor-level-] h3:before,
-div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:before, div[class^=wcorg-sponsor-level-] h6:before {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 0.25rem;
-  background-color: #381FD1;
-  margin: 0 auto 0.5rem;
-}
-
-.wcorg-sponsor {
-  margin: 0;
-}
-@media only screen and (min-width: 769px) {
-  .wcorg-sponsor {
-    max-width: inherit;
-    margin: 0;
-  }
-}
-.wcorg-sponsor a {
-  display: block;
-}
-.wcorg-sponsor img {
-  display: block;
+.wordcamp-sponsors.block-sponsors-admin li, .wordcamp-sponsors.block-sponsors-editor li, .wordcamp-sponsors.block-sponsors-author li, .wordcamp-sponsors.block-sponsors-smallbusines li, .wordcamp-sponsors.block-sponsors-afterparty li, .wordcamp-sponsors.block-sponsors-charging li {
+  flex: 0 1 80%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .wordcamp-sponsors.block-sponsors-admin li, .wordcamp-sponsors.block-sponsors-editor li, .wordcamp-sponsors.block-sponsors-author li, .wordcamp-sponsors.block-sponsors-smallbusines li, .wordcamp-sponsors.block-sponsors-afterparty li, .wordcamp-sponsors.block-sponsors-charging li {
+    flex: 0 1 20%;
+    margin: 0 1%;
+  }
 }
 
 .wcorg-sponsor-level-super-admin .wcorg-sponsor {
