@@ -11,17 +11,36 @@
 
 .block-sponsors-superadmin{
 	li{
-		flex: 0 1 80%;
+		flex: 0 1 100%;
 		margin: 0 auto;
 		@include phone-portrait{
-			flex: 0 1 25%;
+			flex: 1 1 23%;
 			margin: 0;
 		}
 	}
 }
 .block-sponsors-admin,
-.block-sponsors-editor,
-.block-sponsors-author,
+.block-sponsors-editor{
+	li{
+		flex: 0 1 100%;
+		margin: 0 auto;
+		@include phone-portrait{
+			flex: 0 1 18%;
+			margin: 0 1%;
+		}
+	}
+}
+
+.block-sponsors-author{
+	li{
+		flex: 0 1 80%;
+		margin: 0 auto;
+		@include phone-portrait{
+			flex: 0 1 15%;
+			margin: 0 1%;
+		}
+	}
+}
 .block-sponsors-smallbusines,
 .block-sponsors-afterparty,
 .block-sponsors-charging{
@@ -29,91 +48,10 @@
 		flex: 0 1 80%;
 		margin: 0 auto;
 		@include phone-portrait{
-			flex: 0 1 20%;
+			flex: 0 1 10%;
 			margin: 0 1%;
 		}
 	}
-}
-
-.wcorg-sponsor-level-super-admin{
-	.wcorg-sponsor{
-		flex: 1 1 100%;
-		@include tablet-portrait{
-			flex: 0 1 50%;
-		}
-		img{
-			width: auto;
-			max-height: 14rem;
-		}
-	}	
-}
-
-.wcorg-sponsor-level-administrator{
-	.wcorg-sponsor{
-		flex: 0 1 80%;
-		@include tablet-portrait{
-			flex: 0 1 33.333%;
-		}
-		img{
-			width: auto;
-			max-height: 12rem;
-		}
-	}	
-}
-
-.wcorg-sponsor-level-editor{
-	.wcorg-sponsor{
-		flex: 0 1 80%;
-		@include tablet-portrait{
-			flex: 0 1 25%;
-		}
-		img{
-			width: auto;
-			max-height: 10rem;
-		}
-	}
-}
-
-.wcorg-sponsor-level-author{
-	.wcorg-sponsor{
-		flex: 0 1 80%;
-		@include tablet-portrait{
-			flex: 0 1 20%;
-		}
-		img{
-			width: auto;
-			max-height: 8rem;
-		}
-	}
-}
-
-.wcorg-sponsor-level-smb{
-	.wcorg-sponsor{
-		flex: 0 1 70%;
-		@include tablet-portrait{
-			flex: 0 1 20%;
-		}
-		img{
-			width: auto;
-			max-height: 8rem;
-		}
-	}	
-}
-
-.wcorg-sponsor-level-after-party,
-.wcorg-sponsor-level-coffee-break,
-.wcorg-sponsor-level-media-partners,
-.wcorg-sponsor-level-partner
-{
-	.wcorg-sponsor{
-		@include tablet-portrait{
-			flex: 0 1 31.333%;
-		}
-		img{
-			width: auto;
-			max-height: 10rem;
-		}
-	}	
 }
 
 /*_______ Sponsors single _______*/
