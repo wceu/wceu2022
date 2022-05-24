@@ -20,18 +20,18 @@
 .block-sponsors-superadmin,
 .block-sponsors-author{
 	li{
-		flex: 0 1 100%;
+		flex: 0 1 90%;
 		margin: 0 auto;
 		@include phone-portrait{
 			flex: 0 1 23%;
-			margin: 0;
+			margin: 0 1%;
 		}
 	}
 }
 .block-sponsors-admin,
 .block-sponsors-editor{
 	li{
-		flex: 0 1 100%;
+		flex: 0 1 80%;
 		margin: 0 auto;
 		@include phone-portrait{
 			flex: 0 1 18%;

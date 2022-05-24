@@ -5215,20 +5215,20 @@ h6 + .notation {
 
 .block-sponsors-superadmin li,
 .block-sponsors-author li {
-  flex: 0 1 100%;
+  flex: 0 1 90%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
   .block-sponsors-superadmin li,
 .block-sponsors-author li {
     flex: 0 1 23%;
-    margin: 0;
+    margin: 0 1%;
   }
 }
 
 .block-sponsors-admin li,
 .block-sponsors-editor li {
-  flex: 0 1 100%;
+  flex: 0 1 80%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
