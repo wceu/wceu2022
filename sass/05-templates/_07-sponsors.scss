@@ -3,30 +3,27 @@
 	padding: 0 !important;
 }
 
-*[class^="block-sponsors-"]{
+[class^="block-sponsors"]{
 	display: flex !important;
 	flex-flow: row wrap;
 	justify-content: center;
 }
-.wordcamp-sponsors{
-	&.block-sponsors-admin,
-	&.block-sponsors-editor,
-	&.block-sponsors-author,
-	&.block-sponsors-smallbusines,
-	&.block-sponsors-afterparty,
-	&.block-sponsors-charging{
-		li{
-			flex: 0 1 80%;
-			margin: 0 auto;
-			@include phone-portrait{
-				flex: 0 1 20%;
-				margin: 0 1%;
-			}
+
+.block-sponsors-admin,
+.block-sponsors-editor,
+.block-sponsors-author,
+.block-sponsors-smallbusines,
+.block-sponsors-afterparty,
+.block-sponsors-charging{
+	li{
+		flex: 0 1 80%;
+		margin: 0 auto;
+		@include phone-portrait{
+			flex: 0 1 20%;
+			margin: 0 1%;
 		}
 	}
 }
-
-
 
 .wcorg-sponsor-level-super-admin{
 	.wcorg-sponsor{

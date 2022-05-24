@@ -5203,18 +5203,28 @@ h6 + .notation {
   padding: 0 !important;
 }
 
-*[class^=block-sponsors-] {
+[class^=block-sponsors] {
   display: flex !important;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.wordcamp-sponsors.block-sponsors-admin li, .wordcamp-sponsors.block-sponsors-editor li, .wordcamp-sponsors.block-sponsors-author li, .wordcamp-sponsors.block-sponsors-smallbusines li, .wordcamp-sponsors.block-sponsors-afterparty li, .wordcamp-sponsors.block-sponsors-charging li {
+.block-sponsors-admin li,
+.block-sponsors-editor li,
+.block-sponsors-author li,
+.block-sponsors-smallbusines li,
+.block-sponsors-afterparty li,
+.block-sponsors-charging li {
   flex: 0 1 80%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  .wordcamp-sponsors.block-sponsors-admin li, .wordcamp-sponsors.block-sponsors-editor li, .wordcamp-sponsors.block-sponsors-author li, .wordcamp-sponsors.block-sponsors-smallbusines li, .wordcamp-sponsors.block-sponsors-afterparty li, .wordcamp-sponsors.block-sponsors-charging li {
+  .block-sponsors-admin li,
+.block-sponsors-editor li,
+.block-sponsors-author li,
+.block-sponsors-smallbusines li,
+.block-sponsors-afterparty li,
+.block-sponsors-charging li {
     flex: 0 1 20%;
     margin: 0 1%;
   }
