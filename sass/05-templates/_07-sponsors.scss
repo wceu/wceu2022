@@ -11,7 +11,8 @@
 
 .block-sponsors-superadmin,
 .block-sponsors-author,
-.block-sponsors-afterparty{
+.block-sponsors-afterparty,
+.block-sponsors-charging{
 	li{
 		flex: 0 1 100%;
 		margin: 0 auto;
@@ -33,23 +34,12 @@
 	}
 }
 
-.block-sponsors-charging{
-	li{
-		flex: 0 1 80%;
-		margin: 0 auto;
-		@include phone-portrait{
-			flex: 0 1 15%;
-			margin: 0 1%;
-		}
-	}
-}
-
 .block-sponsors-smallbusines{
 	li{
 		flex: 0 1 80%;
 		margin: 0 auto;
 		@include phone-portrait{
-			flex: 0 1 12%;
+			flex: 0 1 15%;
 			margin: 0 1%;
 		}
 	}
