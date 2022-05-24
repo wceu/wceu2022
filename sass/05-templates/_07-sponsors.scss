@@ -2,12 +2,13 @@
 .wordcamp-post-list.has-layout-grid{
 	padding: 0 !important;
 }
+
+*[class^="block-sponsors-"]{
+	display: flex !important;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 .wordcamp-sponsors{
-	&[class^="block-sponsors-"]{
-		display: flex !important;
-		flex-flow: row wrap;
-		justify-content: center;
-	}
 	&.block-sponsors-admin,
 	&.block-sponsors-editor,
 	&.block-sponsors-author,

@@ -2334,26 +2334,6 @@ body.admin-bar .site-header {
   text-align: center;
 }
 
-.wordcamp-post-list.has-layout-grid {
-  padding: 0 !important;
-}
-
-.block-sponsors-admin {
-  display: flex !important;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.block-sponsors-admin li {
-  flex: 0 1 80%;
-  margin: 0 auto;
-}
-@media only screen and (min-width: 480px) {
-  .block-sponsors-admin li {
-    flex: 0 1 20%;
-    margin: 0 1%;
-  }
-}
-
 /*_______ Widget area for secondary navigation _______*/
 #footer-widget-2 {
   display: flex;
@@ -5223,11 +5203,12 @@ h6 + .notation {
   padding: 0 !important;
 }
 
-.wordcamp-sponsors[class^=block-sponsors-] {
+*[class^=block-sponsors-] {
   display: flex !important;
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .wordcamp-sponsors.block-sponsors-admin li, .wordcamp-sponsors.block-sponsors-editor li, .wordcamp-sponsors.block-sponsors-author li, .wordcamp-sponsors.block-sponsors-smallbusines li, .wordcamp-sponsors.block-sponsors-afterparty li, .wordcamp-sponsors.block-sponsors-charging li {
   flex: 0 1 80%;
   margin: 0 auto;

@@ -105,22 +105,6 @@
 		// }
 	}
 }
-.wordcamp-post-list.has-layout-grid{
-	padding: 0 !important;
-}
-.block-sponsors-admin{
-	display: flex !important;
-    flex-flow: row wrap;
-    justify-content: center;
-	li{
-		flex: 0 1 80%;
-		margin: 0 auto;
-		@include phone-portrait{
-			flex: 0 1 20%;
-			margin: 0 1%;
-		}
-	}
-}
 
 /*_______ Widget area for secondary navigation _______*/
 #footer-widget-2{
