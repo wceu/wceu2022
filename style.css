@@ -5233,28 +5233,28 @@ h6 + .notation {
   }
 }
 
-.block-sponsors-author li {
+.block-sponsors-author li,
+.block-sponsors-afterparty li,
+.block-sponsors-charging li {
   flex: 0 1 80%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  .block-sponsors-author li {
+  .block-sponsors-author li,
+.block-sponsors-afterparty li,
+.block-sponsors-charging li {
     flex: 0 1 15%;
     margin: 0 1%;
   }
 }
 
-.block-sponsors-smallbusines li,
-.block-sponsors-afterparty li,
-.block-sponsors-charging li {
+.block-sponsors-smallbusines li {
   flex: 0 1 80%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  .block-sponsors-smallbusines li,
-.block-sponsors-afterparty li,
-.block-sponsors-charging li {
-    flex: 0 1 10%;
+  .block-sponsors-smallbusines li {
+    flex: 1 1 12%;
     margin: 0 1%;
   }
 }

@@ -31,7 +31,9 @@
 	}
 }
 
-.block-sponsors-author{
+.block-sponsors-author,
+.block-sponsors-afterparty,
+.block-sponsors-charging{
 	li{
 		flex: 0 1 80%;
 		margin: 0 auto;
@@ -41,14 +43,12 @@
 		}
 	}
 }
-.block-sponsors-smallbusines,
-.block-sponsors-afterparty,
-.block-sponsors-charging{
+.block-sponsors-smallbusines{
 	li{
 		flex: 0 1 80%;
 		margin: 0 auto;
 		@include phone-portrait{
-			flex: 0 1 10%;
+			flex: 1 1 12%;
 			margin: 0 1%;
 		}
 	}
