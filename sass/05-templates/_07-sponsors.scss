@@ -17,8 +17,7 @@
 	justify-content: center;
 }
 
-.block-sponsors-superadmin,
-.block-sponsors-author{
+.block-sponsors-superadmin{
 	li{
 		flex: 0 1 90%;
 		margin: 0 auto;
@@ -29,7 +28,8 @@
 	}
 }
 .block-sponsors-admin,
-.block-sponsors-editor{
+.block-sponsors-editor,
+.block-sponsors-author{
 	li{
 		flex: 0 1 80%;
 		margin: 0 auto;

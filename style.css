@@ -5213,27 +5213,27 @@ h6 + .notation {
   justify-content: center;
 }
 
-.block-sponsors-superadmin li,
-.block-sponsors-author li {
+.block-sponsors-superadmin li {
   flex: 0 1 90%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  .block-sponsors-superadmin li,
-.block-sponsors-author li {
+  .block-sponsors-superadmin li {
     flex: 0 1 23%;
     margin: 0 1%;
   }
 }
 
 .block-sponsors-admin li,
-.block-sponsors-editor li {
+.block-sponsors-editor li,
+.block-sponsors-author li {
   flex: 0 1 80%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
   .block-sponsors-admin li,
-.block-sponsors-editor li {
+.block-sponsors-editor li,
+.block-sponsors-author li {
     flex: 0 1 18%;
     margin: 0 1%;
   }
