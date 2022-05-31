@@ -7,6 +7,12 @@
 		> %headings{
 			margin-top: 0;
 		}
+		> .wp-block-buttons:last-child{
+			margin-bottom: 0 !important;
+		}
+		&.has-background{
+			padding: 1.5rem;
+		}
 	}
 	&.highlighted-columns{
 		.wp-block-column:not(:empty){

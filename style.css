@@ -2894,6 +2894,12 @@ table thead th {
 .wp-block-columns .wp-block-column > h4, .wp-block-columns .wp-block-column > h5, .wp-block-columns .wp-block-column > h6 {
   margin-top: 0;
 }
+.wp-block-columns .wp-block-column > .wp-block-buttons:last-child {
+  margin-bottom: 0 !important;
+}
+.wp-block-columns .wp-block-column.has-background {
+  padding: 1.5rem;
+}
 .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
   padding: 2rem !important;
 }
