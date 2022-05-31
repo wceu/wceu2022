@@ -2068,8 +2068,14 @@ body.admin-bar .site-header {
   font-size: 0;
   padding: 0.25rem 0.5rem;
   background-color: #ffffff !important;
+  border: none !important;
   margin: 0;
   z-index: 20;
+}
+@media only screen and (min-width: 769px) {
+  .menu-toggle {
+    border: inherit !important;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .menu-toggle {
