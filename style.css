@@ -2068,13 +2068,13 @@ body.admin-bar .site-header {
   font-size: 0;
   padding: 0.25rem 0.5rem;
   background-color: #ffffff !important;
-  border: none !important;
+  border: none;
   margin: 0;
   z-index: 20;
 }
 @media only screen and (min-width: 769px) {
   .menu-toggle {
-    border: inherit !important;
+    border: 0.125rem solid #B200FD;
   }
 }
 @media only screen and (min-width: 1024px) {

@@ -304,12 +304,12 @@
 	font-size: 0;
 	padding: .25rem .5rem;
 	background-color: $color__white !important;
-	border: none !important;
+	border: none;
 	margin: 0;
 	z-index: 20;
 	@extend %transition;
 	@include tablet-portrait{
-		border: inherit !important;
+		border: .125rem solid $color__tertiary;
 	}
 	@include tablet{
 		display: none;
