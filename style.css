@@ -3936,7 +3936,7 @@ h6 + .notation {
 }
 
 .page-template-page-day-of .wceu-big-title {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 /*_______ Blog feed _______*/
