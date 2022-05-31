@@ -1773,12 +1773,12 @@ body.admin-bar .site-header {
   right: -200%;
   width: 100vw;
   height: 100vh;
-  padding: 10vh 10vw 10vh;
+  padding: 15vh 15vw 10vh 5vw;
   background-color: #ffffff;
   background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-vert.png);
   background-repeat: repeat-y;
-  background-position: top right;
-  background-size: 2rem;
+  background-position: top right -2rem;
+  background-size: 4rem;
   margin: 0;
   overflow-y: auto;
   z-index: 10;
@@ -1803,10 +1803,12 @@ body.admin-bar .site-header {
   }
 }
 .main-navigation .menu .menu-item {
-  margin: 0 0 1.5rem;
+  width: 100%;
+  margin: 0;
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item {
+    width: auto;
     flex: 0 0 auto;
     margin: 0 0 0 1rem;
   }
@@ -1817,6 +1819,7 @@ body.admin-bar .site-header {
   font-size: 1.5rem;
   line-height: 100%;
   color: #DB0A5B;
+  padding: 1rem;
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item a {
@@ -1848,6 +1851,7 @@ body.admin-bar .site-header {
   background-color: #DB0A5B;
   border: 0.0625rem solid #DB0A5B;
   border-radius: 0.25rem;
+  margin: 2rem 0 0;
 }
 @media only screen and (min-width: 1024px) {
   .main-navigation .menu .menu-item.emphasised {
@@ -1933,7 +1937,7 @@ body.admin-bar .site-header {
   overflow: hidden;
   height: auto;
   padding: 0 0 0 0.5rem;
-  margin: 1rem 0 0;
+  margin: 0;
   box-shadow: none;
   z-index: 10;
 }
