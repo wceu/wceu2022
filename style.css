@@ -2068,14 +2068,8 @@ body.admin-bar .site-header {
   font-size: 0;
   padding: 0.25rem 0.5rem;
   background-color: #ffffff !important;
-  border: none !important;
   margin: 0;
   z-index: 20;
-}
-@media only screen and (min-width: 769px) {
-  .menu-toggle {
-    border: 0.125rem solid #B200FD !important;
-  }
 }
 @media only screen and (min-width: 1024px) {
   .menu-toggle {
@@ -2096,6 +2090,9 @@ body.admin-bar .site-header {
 
 .main-navigation.toggled-on .menu {
   right: 0;
+}
+.main-navigation.toggled-on .menu-toggle {
+  border: none;
 }
 .main-navigation.toggled-on .menu-toggle:before {
   content: "\f335";
