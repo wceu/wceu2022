@@ -304,7 +304,6 @@
 	font-size: 0;
 	padding: .25rem .5rem;
 	background-color: $color__white !important;
-	border:none;
 	margin: 0;
 	z-index: 20;
 	@extend %transition;
@@ -319,6 +318,7 @@
 		font-size: 1rem;
 		line-height: 100%;
 		text-align: center;
+		text-transform: capitalize;
 		color: $color__quaternary;
 	}
 	&:focus{

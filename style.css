@@ -2068,7 +2068,6 @@ body.admin-bar .site-header {
   font-size: 0;
   padding: 0.25rem 0.5rem;
   background-color: #ffffff !important;
-  border: none;
   margin: 0;
   z-index: 20;
 }
@@ -2082,6 +2081,7 @@ body.admin-bar .site-header {
   font-size: 1rem;
   line-height: 100%;
   text-align: center;
+  text-transform: capitalize;
   color: #DB0A5B;
 }
 .menu-toggle:focus {
