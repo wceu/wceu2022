@@ -73,7 +73,7 @@
 			color: $color__tertiary;
 		}
 	}
-	.wceu-subtitle{
+	.wceu-pretitle{
 		width: fit-content;
 		@include font-size(1.5);
 		color: $color__secondary !important;
@@ -110,5 +110,12 @@
 	.wceu-big-claim{
 		color: $color__primary;
 		margin-bottom: 0;
+	}
+}
+
+
+.page-template-page-day-of{
+	.wceu-big-title{
+		margin-top: 0;
 	}
 }

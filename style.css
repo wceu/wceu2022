@@ -3890,7 +3890,7 @@ h6 + .notation {
 .home-big-hero .wceu-big-title strong {
   color: #B200FD;
 }
-.home-big-hero .wceu-subtitle {
+.home-big-hero .wceu-pretitle {
   width: fit-content;
   font-size: 24px;
   font-size: 1.5rem;
@@ -3901,12 +3901,12 @@ h6 + .notation {
   margin-bottom: 0 !important;
 }
 @media only screen and (min-width: 769px) {
-  .home-big-hero .wceu-subtitle {
+  .home-big-hero .wceu-pretitle {
     font-size: 40px;
     font-size: 2.5rem;
   }
 }
-.home-big-hero .wceu-subtitle strong {
+.home-big-hero .wceu-pretitle strong {
   color: #B200FD;
 }
 
@@ -3933,6 +3933,10 @@ h6 + .notation {
 .home-intro .wceu-big-claim {
   color: #10284B;
   margin-bottom: 0;
+}
+
+.page-template-page-day-of .wceu-big-title {
+  margin-top: 0;
 }
 
 /*_______ Blog feed _______*/
