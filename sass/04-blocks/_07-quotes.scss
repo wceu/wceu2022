@@ -3,7 +3,7 @@
 	position: relative;
 	padding-right: 5%;
 	padding-left: 1.25rem;
-	border-left: .25rem solid $color__secondary;
+	border-left: .25rem solid $color__tertiary;
 	margin-bottom: 2rem;
 	p{
 		font-size: 1.75rem;
@@ -26,7 +26,7 @@
 		border: none;
 		margin-bottom: 2rem;
 		@include phone-portrait{
-			padding: 1rem 10% 0 3rem;
+			padding: 1rem 0 0 3rem;
 		}
 		p{
 			font-weight: 700;
@@ -37,16 +37,16 @@
 			padding: .5rem 0 0;
 			margin-bottom: 1rem;
 			@include phone-portrait{
-				font-size: 2.65rem;
+				font-size: 2.125rem;
 			}
 		}
-		&:after{
+		&:before{
 			content: '”';
 			position: absolute;
 			top: 0;
 			left: 0;
 			font-weight: 700;
-			font-size: 3.25rem;
+			font-size: 3rem;
 			font-style: normal;
 			line-height: 4.875rem;
 			color: $color__tertiary;
