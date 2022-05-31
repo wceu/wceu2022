@@ -2888,6 +2888,7 @@ table thead th {
 .wp-block-columns {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  column-gap: 4rem !important;
 }
 .wp-block-columns .wp-block-column > h1, .wp-block-columns .wp-block-column > h2, .wp-block-columns .wp-block-column > h3,
 .wp-block-columns .wp-block-column > h4, .wp-block-columns .wp-block-column > h5, .wp-block-columns .wp-block-column > h6 {
@@ -5827,8 +5828,6 @@ body.block-editor-page .wordcamp-schedule:not(.is-style-single-column-layout) .w
 }
 /*_____ Cusom Block styles _____*/
 .wordcamp-schedule__date {
-  font-size: 2.5rem;
-  line-height: 120%;
   text-align: center;
 }
 

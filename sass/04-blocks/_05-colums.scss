@@ -2,6 +2,7 @@
 .wp-block-columns {
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	column-gap: 4rem !important;
 	.wp-block-column{
 		> %headings{
 			margin-top: 0;
