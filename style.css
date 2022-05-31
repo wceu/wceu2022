@@ -3137,17 +3137,17 @@ table thead th {
 .wp-block-quote cite a {
   color: #D880FE;
 }
-.wp-block-quote.is-style-large {
+.wp-block-quote.is-style-plain {
   padding: 1rem 5% 0 2.5rem;
   border: none;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 480px) {
-  .wp-block-quote.is-style-large {
+  .wp-block-quote.is-style-plain {
     padding: 1rem 10% 0 3rem;
   }
 }
-.wp-block-quote.is-style-large p {
+.wp-block-quote.is-style-plain p {
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
@@ -3157,11 +3157,11 @@ table thead th {
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 480px) {
-  .wp-block-quote.is-style-large p {
+  .wp-block-quote.is-style-plain p {
     font-size: 2.65rem;
   }
 }
-.wp-block-quote.is-style-large:after {
+.wp-block-quote.is-style-plain:after {
   content: "”";
   position: absolute;
   top: 0;
@@ -3173,7 +3173,7 @@ table thead th {
   color: #B200FD;
 }
 @media only screen and (min-width: 480px) {
-  .wp-block-quote.is-style-large:after {
+  .wp-block-quote.is-style-plain:after {
     font-size: 4.875rem;
   }
 }
