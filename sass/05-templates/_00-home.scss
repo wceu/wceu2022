@@ -22,7 +22,7 @@
 
 /*_______ Big header on home page _______*/
 .home-big-hero{
-	padding-top: 4rem;
+	padding-top: 3.8rem;
 	padding-bottom: 0;
 	background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right.png);
 	background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 	margin-top: 0;
 	margin-bottom: 2rem;
 	@include tablet-portrait{
-		padding-top: 5rem;
+		padding-top: 5.475rem;
 		padding-bottom: 2rem;
 		background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-full.png);
 		background-position: top right;
@@ -73,7 +73,7 @@
 			color: $color__tertiary;
 		}
 	}
-	.wceu-pretitle{
+	.wceu-subtitle{
 		width: fit-content;
 		@include font-size(1.5);
 		color: $color__secondary !important;
@@ -83,6 +83,23 @@
 		margin-bottom: 0 !important;
 		@include tablet-portrait{
 			@include font-size(2.5);
+			padding: 1.5rem;
+		}
+		strong{
+			color: $color__tertiary;
+		}
+	}
+	.wceu-pretitle{
+		width: fit-content;
+		@include font-size(1.5);
+		color: $color__secondary !important;
+		padding: 1rem;
+		background-color: $color__white;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		@include tablet-portrait{
+			@include font-size(2.25);
+			padding: 1.5rem;
 		}
 		strong{
 			color: $color__tertiary;

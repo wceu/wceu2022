@@ -2066,8 +2066,8 @@ body.admin-bar .site-header {
   display: block;
   font-weight: 400;
   font-size: 0;
-  padding: 0;
-  background-color: transparent !important;
+  padding: 0.25rem 0.5rem;
+  background-color: #ffffff !important;
   border: none;
   margin: 0;
   z-index: 20;
@@ -2082,7 +2082,6 @@ body.admin-bar .site-header {
   font-size: 1rem;
   line-height: 100%;
   text-align: center;
-  text-transform: uppercase;
   color: #DB0A5B;
 }
 .menu-toggle:focus {
@@ -3830,7 +3829,7 @@ h6 + .notation {
 
 /*_______ Big header on home page _______*/
 .home-big-hero {
-  padding-top: 4rem;
+  padding-top: 3.8rem;
   padding-bottom: 0;
   background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-right.png);
   background-repeat: no-repeat;
@@ -3841,7 +3840,7 @@ h6 + .notation {
 }
 @media only screen and (min-width: 769px) {
   .home-big-hero {
-    padding-top: 5rem;
+    padding-top: 5.475rem;
     padding-bottom: 2rem;
     background-image: url(https://europe.wordcamp.org/2022/files/2022/04/wceu22-brand-elements-full.png);
     background-position: top right;
@@ -3890,6 +3889,26 @@ h6 + .notation {
 .home-big-hero .wceu-big-title strong {
   color: #B200FD;
 }
+.home-big-hero .wceu-subtitle {
+  width: fit-content;
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #381FD1 !important;
+  padding: 1rem;
+  background-color: #ffffff;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media only screen and (min-width: 769px) {
+  .home-big-hero .wceu-subtitle {
+    font-size: 40px;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+}
+.home-big-hero .wceu-subtitle strong {
+  color: #B200FD;
+}
 .home-big-hero .wceu-pretitle {
   width: fit-content;
   font-size: 24px;
@@ -3902,8 +3921,9 @@ h6 + .notation {
 }
 @media only screen and (min-width: 769px) {
   .home-big-hero .wceu-pretitle {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 36px;
+    font-size: 2.25rem;
+    padding: 1.5rem;
   }
 }
 .home-big-hero .wceu-pretitle strong {
