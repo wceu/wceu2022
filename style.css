@@ -2092,7 +2092,7 @@ body.admin-bar .site-header {
   right: 0;
 }
 .main-navigation.toggled-on .menu-toggle {
-  border: none;
+  border: none !important;
 }
 .main-navigation.toggled-on .menu-toggle:before {
   content: "\f335";
