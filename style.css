@@ -2794,6 +2794,96 @@ table thead th {
   padding: 0.25rem;
 }
 
+.wp-block-table {
+  font-size: 1rem;
+  line-height: 120%;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+@media only screen and (min-width: 769px) {
+  .wp-block-table {
+    font-size: 1.25rem;
+    min-width: inherit;
+    word-break: keep-all;
+  }
+}
+.wp-block-table thead {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #10284B;
+}
+.wp-block-table thead th {
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 0.5rem 1rem;
+  border-color: white;
+  border-top-color: #10284B;
+}
+@media only screen and (min-width: 769px) {
+  .wp-block-table thead th {
+    font-size: 1.25rem;
+  }
+}
+.wp-block-table thead th:first-child {
+  border-left-color: #10284B;
+}
+.wp-block-table thead th:last-child {
+  border-right-color: #10284B;
+}
+.wp-block-table td {
+  padding: 1rem;
+}
+.wp-block-table tfoot {
+  color: #10284B;
+  background-color: #B200FD;
+}
+.wp-block-table.firstcol-15 td:first-child {
+  text-align: left;
+  width: 15%;
+}
+.wp-block-table.firstcol-20 td:first-child {
+  text-align: left;
+  width: 20%;
+}
+.wp-block-table.firstcol-25 td:first-child {
+  text-align: left;
+  width: 25%;
+}
+.wp-block-table.firstcol-30 td:first-child {
+  text-align: left;
+  width: 30%;
+}
+.wp-block-table.firstcol-50 td:first-child {
+  text-align: left;
+  width: 50%;
+}
+.wp-block-table.is-style-stripes thead {
+  color: #10284B;
+  background-color: transparent;
+}
+.wp-block-table.is-style-stripes thead th {
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 100%;
+  padding: 1rem;
+  border-color: white;
+  border-top-color: #10284B;
+}
+@media only screen and (min-width: 769px) {
+  .wp-block-table.is-style-stripes thead th {
+    font-size: 1rem;
+  }
+}
+.wp-block-table.is-style-stripes thead th:first-child {
+  border-left-color: #10284B;
+}
+.wp-block-table.is-style-stripes thead th:last-child {
+  border-right-color: #10284B;
+}
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: #EBE9FA;
+}
+
 /*_______ Colums block _______*/
 .wp-block-columns {
   margin-top: 4rem;
