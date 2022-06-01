@@ -165,6 +165,14 @@ input[type="submit"] {
 				}
 			}
 		}
+		&.doc{
+			.wp-block-button__link{
+				&:after{
+					content: "\f491";
+					font-family: 'dashicons';
+				}
+			}
+		}
 	}
 	&.external-link{
 		margin-bottom: 1.25em;

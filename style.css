@@ -1349,6 +1349,10 @@ input[type=submit].outlined:hover {
   content: "\f231";
   font-family: "dashicons";
 }
+.wp-block-button.with-icon.doc .wp-block-button__link:after {
+  content: "\f491";
+  font-family: "dashicons";
+}
 .wp-block-button.external-link {
   margin-bottom: 1.25em;
 }
