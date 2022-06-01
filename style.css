@@ -2990,6 +2990,9 @@ table thead th {
   margin-bottom: 2rem;
   align-self: stretch;
 }
+.wp-block-columns.info-columns .wp-block-column:not(:empty).has-background {
+  padding: 1.5rem;
+}
 .wp-block-columns.info-columns .wp-block-column:not(:empty) h2 {
   font-size: 32px;
   font-size: 2rem;

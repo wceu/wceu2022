@@ -73,6 +73,9 @@
 			border-left: .25rem solid $color__tertiary;
 			margin-bottom: 2rem;
 			align-self: stretch;
+			&.has-background{
+				padding: 1.5rem;
+			}
 			h2{
 				@include font-size(2);
 				margin-bottom: .5em;
