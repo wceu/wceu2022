@@ -104,12 +104,6 @@
 			@include font-size(2.25);
 			padding: 1.5rem;
 		}
-		strong{
-			&:not(:first-of-type),
-			&:not(:last-of-type){
-				color: $color__tertiary;
-			}
-		}
 	}
 }
 .home-intro{

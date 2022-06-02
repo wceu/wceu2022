@@ -3941,9 +3941,6 @@ h6 + .notation {
     padding: 1.5rem;
   }
 }
-.home-big-hero .wceu-pretitle strong:not(:first-of-type), .home-big-hero .wceu-pretitle strong:not(:last-of-type) {
-  color: #B200FD;
-}
 
 .home-intro {
   padding: 0 2rem;
