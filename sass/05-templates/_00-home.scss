@@ -106,7 +106,7 @@
 		}
 		strong{
 			&:not(:first-of-type),
-			&:not(:first-of-type){
+			&:not(:last-of-type){
 				color: $color__tertiary;
 			}
 		}
