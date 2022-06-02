@@ -105,8 +105,8 @@
 			padding: 1.5rem;
 		}
 		strong{
-			&:not(:first-child),
-			&:not(:last-child){
+			&:not(:first-of-type),
+			&:not(:first-of-type){
 				color: $color__tertiary;
 			}
 		}

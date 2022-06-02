@@ -3941,7 +3941,7 @@ h6 + .notation {
     padding: 1.5rem;
   }
 }
-.home-big-hero .wceu-pretitle strong:not(:first-child), .home-big-hero .wceu-pretitle strong:not(:last-child) {
+.home-big-hero .wceu-pretitle strong:not(:first-of-type), .home-big-hero .wceu-pretitle strong:not(:first-of-type) {
   color: #B200FD;
 }
 
