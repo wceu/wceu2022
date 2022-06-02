@@ -87,7 +87,9 @@
 			padding: 1.5rem;
 		}
 		strong{
-			color: $color__tertiary;
+			&:not(:first-child){
+				color: $color__tertiary;
+			}
 		}
 	}
 	.wceu-pretitle{
