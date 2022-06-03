@@ -3836,11 +3836,6 @@ h6 + .notation {
   padding: 0 !important;
   margin: 0 !important;
 }
-.home .entry-content h1, .home .entry-content h2, .home .entry-content h3,
-.home .entry-content h4, .home .entry-content h5, .home .entry-content h6 {
-  color: #381FD1 !important;
-}
-
 /*_______ Big header on home page _______*/
 .home-big-hero {
   padding-top: 3.8rem;
