@@ -180,20 +180,24 @@
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: .125rem;
-		a{
-			font-size: 1.25rem;
-			color: $color__quaternary;
-			border-bottom: .125rem solid $color__quaternary;
-			&:after,
-			&:before{
-				display: inline-block;
-				vertical-align: middle;
-				font-family: 'dashicons';
-			}
-		}
+		.nav-next,
 		.nav-previous{
 			float: none;
 			flex: 0 1 auto;
+			a{
+				font-size: 1.25rem;
+				color: $color__quaternary;
+				border-bottom: .125rem solid $color__quaternary;
+				&:after,
+				&:before{
+					display: inline-block;
+					vertical-align: middle;
+					font-family: 'dashicons';
+				}
+			}
+		}
+		.nav-previous{
+			margin-right: auto;
 			a{
 				&:before{
 					content: "\f340";
@@ -202,8 +206,7 @@
 			}
 		}
 		.nav-next{
-			float: none;
-			flex: 0 1 auto;
+			margin-left: auto;
 			a{
 				&:after{
 					content: "\f344";
