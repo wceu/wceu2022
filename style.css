@@ -4189,19 +4189,28 @@ h6 + .notation {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.125rem;
-  border-bottom: 0.0125rem solid #DB0A5B;
 }
 .posts-navigation .nav-links a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: #DB0A5B;
+  border-bottom: 0.125rem solid #DB0A5B;
 }
 .posts-navigation .nav-links a:after, .posts-navigation .nav-links a:before {
   display: inline-block;
   vertical-align: middle;
   font-family: "dashicons";
 }
+.posts-navigation .nav-links .nav-previous {
+  float: none;
+  flex: 0 1 auto;
+}
 .posts-navigation .nav-links .nav-previous a:before {
   content: "\f340";
   margin-right: 0.5rem;
+}
+.posts-navigation .nav-links .nav-next {
+  float: none;
+  flex: 0 1 auto;
 }
 .posts-navigation .nav-links .nav-next a:after {
   content: "\f344";
