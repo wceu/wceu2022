@@ -4180,6 +4180,7 @@ h6 + .notation {
   display: none;
 }
 
+/*_______ Posts navigation _______*/
 .posts-navigation {
   width: 100%;
   margin: 0;
@@ -4187,7 +4188,26 @@ h6 + .notation {
 .posts-navigation .nav-links {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.125rem;
+  border-bottom: 0.0125rem solid #DB0A5B;
 }
+.posts-navigation .nav-links a {
+  font-size: 1.5rem;
+}
+.posts-navigation .nav-links a:after, .posts-navigation .nav-links a:before {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "dashicons";
+}
+.posts-navigation .nav-links .nav-previous a:before {
+  content: "\f340";
+  margin-right: 0.5rem;
+}
+.posts-navigation .nav-links .nav-next a:after {
+  content: "\f344";
+  margin-left: 0.5rem;
+}
+
 /*_______ Sessions Category archive _______*/
 .archive.tax-wcb_session_category .site-main {
   margin-top: 0;

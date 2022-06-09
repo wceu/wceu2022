@@ -172,16 +172,37 @@
 	}
 }
 
+/*_______ Posts navigation _______*/
 .posts-navigation{
 	width: 100%;
 	margin: 0;
 	.nav-links{
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: .125rem;
+		border-bottom: .0125rem solid $color__quaternary;
+		a{
+			font-size: 1.5rem;
+			&:after,
+			&:before{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: 'dashicons';
+			}
+		}
 		.nav-previous{
 			a{
-				&::before{
-
+				&:before{
+					content: "\f340";
+					margin-right: .5rem;
+				}
+			}
+		}
+		.nav-next{
+			a{
+				&:after{
+					content: "\f344";
+					margin-left: .5rem;
 				}
 			}
 		}
